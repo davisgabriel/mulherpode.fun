@@ -151,15 +151,20 @@ Você e algumas pessoas próximas <b class="yellow"><span id="locationJS"></span
 </div>
 </div>
 </section>
-<footer class="bg-dark py-3 text-center">
-<div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
-</footer>
+
+<script src="jquery-3.4.1.js"></script>
+<script src="npm/popper_js_1.16.0/dist/umd/popper.min.js"></script>
+<script src="bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+<script src="https://ssl.geoplugin.net/javascript.gp?k=292af9fb00c1353d" type="text/javascript"></script>
 <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 1748400); // temporização da Call to Action (em milissegundos)
+        document.getElementById("locationJS").innerHTML = geoplugin_city();
+        function redirect() {
+            location.href = "https://pay.kiwify.com.br/iyZNEQB";
+        }
     </script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="./assets/js/com.js"></script>
+<script src="pv2/js/scripts2.js?v=1"></script>
+<script src="pv2/js/jquery.enllax.min.js"></script>
+<script src="pv2/js/parallax.js"></script>
 </body>
 </html>
