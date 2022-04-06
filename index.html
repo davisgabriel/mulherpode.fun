@@ -1,873 +1,525 @@
-
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
-<meta charset="UTF-8">
-<title>Renda Com Vídeos</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript><link rel="stylesheet" href="https://rendacomvideos.com.br/wp-content/cache/min/1/697cf8e68cb76a985e8ab735fbafc186.css" media="all" data-minify="1" />
-<meta name='robots' content='max-image-preview:large' />
-<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
-<link rel="alternate" type="application/rss+xml" title="Renda Com Vídeos &raquo; Feed" href="https://rendacomvideos.com.br/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Renda Com Vídeos &raquo; Feed de comentários" href="https://rendacomvideos.com.br/comments/feed/" />
-<style>
-img.wp-smiley,
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 0.07em !important;
-  vertical-align: -0.1em !important;
-  background: none !important;
-  padding: 0 !important;
-}
-</style>
-<style id='wp-block-library-theme-inline-css'>
-.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
-</style>
-<style id='global-styles-inline-css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--green: #D1E4DD;--wp--preset--color--blue: #D1DFE4;--wp--preset--color--purple: #D1D1E4;--wp--preset--color--red: #E4D1D1;--wp--preset--color--orange: #E4DAD1;--wp--preset--color--yellow: #EEEADD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--purple-to-yellow: linear-gradient(160deg, #D1D1E4 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-purple: linear-gradient(160deg, #EEEADD 0%, #D1D1E4 100%);--wp--preset--gradient--green-to-yellow: linear-gradient(160deg, #D1E4DD 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(160deg, #EEEADD 0%, #D1E4DD 100%);--wp--preset--gradient--red-to-yellow: linear-gradient(160deg, #E4D1D1 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-red: linear-gradient(160deg, #EEEADD 0%, #E4D1D1 100%);--wp--preset--gradient--purple-to-red: linear-gradient(160deg, #D1D1E4 0%, #E4D1D1 100%);--wp--preset--gradient--red-to-purple: linear-gradient(160deg, #E4D1D1 0%, #D1D1E4 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-</style>
-<link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='https://rendacomvideos.com.br/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.5' media='print' />
-<link rel='stylesheet' id='elementor-post-6-css' href='https://rendacomvideos.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1649127457' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://rendacomvideos.com.br/wp-content/uploads/elementor/css/global.css?ver=1649127457' media='all' />
-<link rel='stylesheet' id='elementor-post-8-css' href='https://rendacomvideos.com.br/wp-content/uploads/elementor/css/post-8.css?ver=1649127458' media='all' />
-<link rel="https://api.w.org/" href="https://rendacomvideos.com.br/wp-json/" /><link rel="alternate" type="application/json" href="https://rendacomvideos.com.br/wp-json/wp/v2/pages/8" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://rendacomvideos.com.br/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://rendacomvideos.com.br/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.9.2" />
-<link rel="canonical" href="https://rendacomvideos.com.br/" />
-<link rel='shortlink' href='https://rendacomvideos.com.br/' />
-<link rel="alternate" type="application/json+oembed" href="https://rendacomvideos.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frendacomvideos.com.br%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://rendacomvideos.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frendacomvideos.com.br%2F&#038;format=xml" />
-<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png">
-<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest">
-<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXNSNNBQ9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="pt-br">
 
-  gtag('config', 'G-WZXNSNNBQ9');
-</script>
+    <head>
+                 <title>Lotofácil Instantânea &#8211; R7 Hoje</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<script type='text/javascript'>
-  window._tfa = window._tfa || [];
-  window._tfa.push({notify: 'event', name: 'page_view', id: 1444094});
-  !function (t, f, a, x) {
-         if (!document.getElementById(x)) {
-            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
-         }
-  }(document.createElement('script'),
-  document.getElementsByTagName('script')[0],
-  '//cdn.taboola.com/libtrc/unip/1444094/tfa.js',
-  'tb_tfa_script');
-</script>
- <style id="wp-custom-css">
-      /* Remover espaço em brando lateral no mobile
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
- */
-html, body{
-    overflow-x: hidden !important; 
-}   </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="home page-template page-template-elementor_canvas page page-id-8 wp-custom-logo wp-embed-responsive is-light-theme no-js singular elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-8">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg> <div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8" data-elementor-settings="[]">
-<div class="elementor-section-wrap">
-<section class="elementor-section elementor-top-section elementor-element elementor-element-461367c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="461367c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da830a7" data-id="da830a7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3f970c8 elementor-widget elementor-widget-spacer" data-id="3f970c8" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-5293e2c elementor-widget elementor-widget-image" data-id="5293e2c" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.5.5 - 03-02-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img width="400" height="73" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/02.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/02.png 400w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/02-300x55.png 300w" sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:18.25%;max-width:400px" /> </div>
-</div>
-<div class="elementor-element elementor-element-379699f elementor-widget elementor-widget-spacer" data-id="379699f" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-fd6a878 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-text-editor" data-id="fd6a878" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.5.5 - 03-02-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p><strong><span style="color: #ff9900;">DESCUBRA AGORA</span> COMO PESSOAS COMUNS ESTÃO <br /></strong><strong>MUDANDO DE VIDA <span style="color: #ff9900;">ASSISTINDO VÍDEOS NA INTERNET </span></strong></p><p><strong><span style="color: #ff9900;"><span style="color: #ffffff;">DURANTE POUCOS MINUTOS POR DIA!</span></span></strong></p> </div>
-</div>
-<div class="elementor-element elementor-element-7f8c99d elementor-hidden-desktop elementor-widget elementor-widget-text-editor" data-id="7f8c99d" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><strong><span style="color: #ff9900;">DESCUBRA AGORA</span> COMO PESSOAS COMUNS ESTÃO </strong><strong>MUDANDO DE VIDA <span style="color: #ff9900;">ASSISTINDO VÍDEOS NA INTERNET </span></strong></p><p><strong><span style="color: #ff9900;"><span style="color: #ffffff;">DURANTE POUCOS MINUTOS POR DIA!</span></span></strong></p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-4c7f899 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c7f899" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3e87045" data-id="3e87045" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-834568b elementor-widget elementor-widget-html" data-id="834568b" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script type="text/javascript" id="scr_62266c651e4de60008763cb4">var s=document.createElement("script");s.src="https://cdn.converteai.net/4ca3c934-f413-4603-9b05-bbfa812db871/players/62266c651e4de60008763cb4/player.js",s.async=!0,document.head.appendChild(s);</script> </div>
-</div>
-<div class="elementor-element elementor-element-ea5db52 elementor-widget elementor-widget-text-editor" data-id="ea5db52" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<div class="elementor-element elementor-element-df770de elementor-widget elementor-widget-text-editor" data-id="df770de" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p><span style="color: #ffffff;"> 🔈 Por favor, verifique se o seu som está ligado</span><span style="color: #ffffff; font-family: Exo, sans-serif;"> </span></p></div></div> </div>
-</div>
-<div class="elementor-element elementor-element-3715f59 elementor-widget elementor-widget-spacer" data-id="3715f59" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-fc9b351 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc9b351" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c016640" data-id="c016640" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-bdaddf2 elementor-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="bdaddf2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;,&quot;_animation_delay&quot;:720000}" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a href="https://pay.kiwify.com.br/B8kCVZC?utm_source=paginicial&#038;utm_medium=paginicial" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-right">
-<i aria-hidden="true" class="fas fa-arrow-circle-right"></i> </span>
-<span class="elementor-button-text">QUERO LUCRAR ASSISTINDO VÍDEO</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-255269c elementor-invisible elementor-widget elementor-widget-text-editor" data-id="255269c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;,&quot;_animation_delay&quot;:720000}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><strong><span style="color: #ffffff;">Pagamento 100% seguro 🔒</span></strong></p> </div>
-</div>
-<div class="elementor-element elementor-element-fae716c elementor-invisible elementor-widget elementor-widget-image" data-id="fae716c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;,&quot;_animation_delay&quot;:720000}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="52" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/cartoes-1024x71.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/cartoes-1024x71.png 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/cartoes-300x21.png 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/cartoes-768x53.png 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/cartoes.png 1120w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:6.96%;max-width:1120px" /> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-772541b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="772541b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-background-overlay"></div>
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4bab5ffe" data-id="4bab5ffe" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-325d65bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="325d65bc" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-15d5990f" data-id="15d5990f" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4e3f5c15 elementor-widget elementor-widget-heading" data-id="4e3f5c15" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.5.5 - 03-02-2022 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">24 Comentários</h2> </div>
-</div>
-<div class="elementor-element elementor-element-7ffb36b0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="7ffb36b0" data-element_type="widget" data-widget_type="divider.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.5.5 - 03-02-2022 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style> <div class="elementor-divider">
-<span class="elementor-divider-separator">
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
- </div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-40161165 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="40161165" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-40d70b94" data-id="40d70b94" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-15d29df2 elementor-widget elementor-widget-image" data-id="15d29df2" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="720" height="720" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/57333507_2479059915460406_3917137914869317632_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/57333507_2479059915460406_3917137914869317632_n.jpeg 720w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/57333507_2479059915460406_3917137914869317632_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/57333507_2479059915460406_3917137914869317632_n-150x150.jpeg 150w" sizes="(max-width: 720px) 100vw, 720px" style="width:100%;height:100%;max-width:720px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-478e69f9" data-id="478e69f9" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-44e712c2 elementor-widget elementor-widget-heading" data-id="44e712c2" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Carla Silva disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-77eccdfb elementor-widget elementor-widget-text-editor" data-id="77eccdfb" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Ainda bem que eu vi ate o ultimo minuto!</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-2090d1c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2090d1c" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-697d40b8" data-id="697d40b8" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-521b1a0d elementor-widget elementor-widget-text-editor" data-id="521b1a0d" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 3 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5a5ac298 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a5ac298" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-17d6dac4" data-id="17d6dac4" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2e1d1207 elementor-widget elementor-widget-image" data-id="2e1d1207" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272858775_109971004929493_7885145088574430445_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272858775_109971004929493_7885145088574430445_n.jpeg 774w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272858775_109971004929493_7885145088574430445_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272858775_109971004929493_7885145088574430445_n-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272858775_109971004929493_7885145088574430445_n-768x768.jpeg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:774px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7fcce685" data-id="7fcce685" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1d9444c3 elementor-widget elementor-widget-heading" data-id="1d9444c3" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Mario César disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-506931db elementor-widget elementor-widget-text-editor" data-id="506931db" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Graças a Deus encontrei algo que realmente funciona&#8230;</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5affef17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5affef17" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3eacc223" data-id="3eacc223" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-5b44dee elementor-widget elementor-widget-text-editor" data-id="5b44dee" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 4 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-26d5d23e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="26d5d23e" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-33970678" data-id="33970678" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7581f916 elementor-widget elementor-widget-image" data-id="7581f916" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n-1024x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n-1024x1024.jpeg 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n-768x768.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/61689088_1438945572913715_619285441715109888_n.jpeg 1080w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1080px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6da11bd" data-id="6da11bd" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-c45c902 elementor-widget elementor-widget-heading" data-id="c45c902" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Camila Marreto disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-31dc4f84 elementor-widget elementor-widget-text-editor" data-id="31dc4f84" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Tem gente que está me perguntando se realmente tem alguma fórmula mágica. Não é nada disso! Você vê vídeos quando tiver tempo livre, Eu acordei cedi hoje consegui ver 13 vídeos e já rendeu mais de R$ 234,76&#8230; depois que eu comecei a colocar em prática as primeiras dicas eu to amando o resultado!!</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-47fa320d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="47fa320d" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5f11ba3c" data-id="5f11ba3c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-70d2d311 elementor-widget elementor-widget-text-editor" data-id="70d2d311" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 5 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-6a026513 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6a026513" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-768f034d" data-id="768f034d" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-a18975e elementor-widget elementor-widget-image" data-id="a18975e" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="570" height="583" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272535587_125416266660501_7779359998182433881_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272535587_125416266660501_7779359998182433881_n.jpeg 570w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272535587_125416266660501_7779359998182433881_n-293x300.jpeg 293w" sizes="(max-width: 570px) 100vw, 570px" style="width:100%;height:102.28%;max-width:570px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5c68b5d5" data-id="5c68b5d5" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1b6def39 elementor-widget elementor-widget-heading" data-id="1b6def39" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Sérgio Pacheco disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-2ff64640 elementor-widget elementor-widget-text-editor" data-id="2ff64640" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Só digo uma coisa, podem ir sem medo!!! realmente funciona e muito.</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-2cda5cb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2cda5cb6" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7d999665" data-id="7d999665" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6eebb354 elementor-widget elementor-widget-text-editor" data-id="6eebb354" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 10 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-6201a8bd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6201a8bd" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6af1b7e" data-id="6af1b7e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-43a20f39 elementor-widget elementor-widget-image" data-id="43a20f39" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="720" height="720" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/265935115_2585024668308374_1560260656025416811_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/265935115_2585024668308374_1560260656025416811_n.jpeg 720w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/265935115_2585024668308374_1560260656025416811_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/265935115_2585024668308374_1560260656025416811_n-150x150.jpeg 150w" sizes="(max-width: 720px) 100vw, 720px" style="width:100%;height:100%;max-width:720px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-775d7198" data-id="775d7198" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-191321ab elementor-widget elementor-widget-heading" data-id="191321ab" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Maíra Laura disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-485507ad elementor-widget elementor-widget-text-editor" data-id="485507ad" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Estou voltando aqui só pra agradecer, depois de um mês com o sistema já tenho mais de 35 mil na conta, ainda não acredito kk</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-58d71869 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="58d71869" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-64e7675c" data-id="64e7675c" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1cc8bfa0 elementor-widget elementor-widget-text-editor" data-id="1cc8bfa0" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 16 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-79ceee1e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="79ceee1e" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7e9689eb" data-id="7e9689eb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2e1f2681" data-id="2e1f2681" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-65194f41 elementor-widget elementor-widget-image" data-id="65194f41" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/image-5-1024x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/image-5.jpeg 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/image-5-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/image-5-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/image-5-768x768.jpeg 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1024px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-11ca125f" data-id="11ca125f" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-5244958f elementor-widget elementor-widget-heading" data-id="5244958f" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Amanda Lima <b>disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-543b73d5 elementor-widget elementor-widget-text-editor" data-id="543b73d5" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><span style="color: #3366ff;">Maíra Laura <span style="color: #000000;">Eu também, consegui pagar todas as minhas dívidas so com isso</span></span></p> </div>
-</div>
-<div class="elementor-element elementor-element-7e0739a7 elementor-widget elementor-widget-text-editor" data-id="7e0739a7" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 14 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-609d3986 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="609d3986" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-55717122" data-id="55717122" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7ac9d0de elementor-widget elementor-widget-image" data-id="7ac9d0de" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n-1024x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n-1024x1024.jpeg 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n-768x768.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271955275_134271472398461_8737651955876025533_n.jpeg 1200w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1200px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6fb7f94d" data-id="6fb7f94d" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1df0886f elementor-widget elementor-widget-heading" data-id="1df0886f" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Betina Carvalho disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-7c467ac elementor-widget elementor-widget-text-editor" data-id="7c467ac" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Assistindo haha to gostando muito!!</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3723518d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3723518d" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-29a506ff" data-id="29a506ff" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-347abb65 elementor-widget elementor-widget-text-editor" data-id="347abb65" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 35 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5af3b735 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5af3b735" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-29264648" data-id="29264648" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1b8cc68e elementor-widget elementor-widget-image" data-id="1b8cc68e" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="720" height="726" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272669229_468754327981675_679657792850734884_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/272669229_468754327981675_679657792850734884_n.jpeg 720w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272669229_468754327981675_679657792850734884_n-298x300.jpeg 298w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/272669229_468754327981675_679657792850734884_n-150x150.jpeg 150w" sizes="(max-width: 720px) 100vw, 720px" style="width:100%;height:100.83%;max-width:720px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-619d0dc8" data-id="619d0dc8" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-659fb957 elementor-widget elementor-widget-heading" data-id="659fb957" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Luciola Amaral dos Santos disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-6b88bd92 elementor-widget elementor-widget-text-editor" data-id="6b88bd92" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>to seguindo o que voce falou faz 17 dias André, deus te abencoe e ilumine eu acabei de fazer meu sexto saque de r$520&#8230;FELZI DEMAIS!!!!!!</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e43f3c4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e43f3c4" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-189a3a93" data-id="189a3a93" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-63e42695 elementor-widget elementor-widget-text-editor" data-id="63e42695" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-4f1d0420 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4f1d0420" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-531ac9b2" data-id="531ac9b2" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4aa55324 elementor-widget elementor-widget-text-editor" data-id="4aa55324" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-197eb3b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="197eb3b3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6ab17481" data-id="6ab17481" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-125e27de elementor-widget elementor-widget-image" data-id="125e27de" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1024x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1024x1024.jpeg 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-768x768.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1536x1536.jpeg 1536w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1568x1568.jpeg 1568w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n.jpeg 1840w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1840px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-170244df" data-id="170244df" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6fa99b6f elementor-widget elementor-widget-heading" data-id="6fa99b6f" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Laura Rossi disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-5dec4918 elementor-widget elementor-widget-text-editor" data-id="5dec4918" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Nossa, ainda bem que eu vi até o final</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-47b46479 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="47b46479" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2ddd8089" data-id="2ddd8089" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-16bf4e93 elementor-widget elementor-widget-text-editor" data-id="16bf4e93" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 46 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5d020c4d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d020c4d" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-31a98419" data-id="31a98419" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-535f55f7" data-id="535f55f7" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1c289981 elementor-widget elementor-widget-image" data-id="1c289981" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="576" height="1024" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-576x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-576x1024.jpeg 576w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-169x300.jpeg 169w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-768x1365.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-864x1536.jpeg 864w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n.jpeg 1080w" sizes="(max-width: 576px) 100vw, 576px" style="width:100%;height:177.78%;max-width:1080px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-13f3bdcc" data-id="13f3bdcc" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4f0a7f1b elementor-widget elementor-widget-heading" data-id="4f0a7f1b" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Wesley Costa Silva disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-a39299f elementor-widget elementor-widget-text-editor" data-id="a39299f" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p><span style="color: #3366ff;">Laura Rossi</span> Né, eu me surpreendi</p> </div>
-</div>
-<div class="elementor-element elementor-element-5cbd3c31 elementor-widget elementor-widget-text-editor" data-id="5cbd3c31" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 45 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-1ffda99c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1ffda99c" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5496a634" data-id="5496a634" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-156665f9" data-id="156665f9" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-44f9c0d3 elementor-widget elementor-widget-image" data-id="44f9c0d3" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="750" height="750" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1024x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1024x1024.jpeg 1024w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-150x150.jpeg 150w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-768x768.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1536x1536.jpeg 1536w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n-1568x1568.jpeg 1568w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/229067745_109012251411328_1239266596824438066_n.jpeg 1840w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:100%;max-width:1840px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-236757f" data-id="236757f" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-2c53560d elementor-widget elementor-widget-heading" data-id="2c53560d" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Laura Rossi disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-718a177e elementor-widget elementor-widget-text-editor" data-id="718a177e" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Sim kkkk e sem aquelas baboseiras de marketing e venda de cursos</p> </div>
-</div>
-<div class="elementor-element elementor-element-10b54866 elementor-widget elementor-widget-text-editor" data-id="10b54866" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 44 min </p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-2f579a67 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2f579a67" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4927d6e9" data-id="4927d6e9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-28f64292" data-id="28f64292" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-80b5e9a elementor-widget elementor-widget-image" data-id="80b5e9a" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="576" height="1024" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-576x1024.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-576x1024.jpeg 576w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-169x300.jpeg 169w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-768x1365.jpeg 768w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n-864x1536.jpeg 864w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/42096570_1531444910290598_31705843716063232_n.jpeg 1080w" sizes="(max-width: 576px) 100vw, 576px" style="width:100%;height:177.78%;max-width:1080px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5e8e3738" data-id="5e8e3738" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-26d0768e elementor-widget elementor-widget-heading" data-id="26d0768e" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Wesley Costa Silva disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-2c1cf9c3 elementor-widget elementor-widget-text-editor" data-id="2c1cf9c3" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Sim&#8230; ainda bem que no final esclarece tudo</p> </div>
-</div>
-<div class="elementor-element elementor-element-1637781f elementor-widget elementor-widget-text-editor" data-id="1637781f" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 44 min </p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-16aa7930 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16aa7930" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a8547bc" data-id="a8547bc" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6157c972 elementor-widget elementor-widget-text-editor" data-id="6157c972" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 52 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-51b0fb50 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="51b0fb50" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7e60a53d" data-id="7e60a53d" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-57166106 elementor-widget elementor-widget-image" data-id="57166106" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="200" height="199" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n.jpeg 200w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" style="width:100%;height:99.5%;max-width:200px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2bb52c60" data-id="2bb52c60" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1fe41c31 elementor-widget elementor-widget-heading" data-id="1fe41c31" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Vilma Luciana disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-456f654b elementor-widget elementor-widget-text-editor" data-id="456f654b" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p class="MsoNormal">Sei nao, acho que isso pode ser uma cilada… e se não dar certo?</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-482b7b12 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="482b7b12" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1a3d95d4" data-id="1a3d95d4" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-71790e46 elementor-widget elementor-widget-text-editor" data-id="71790e46" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 56 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-6f72b5d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f72b5d2" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-113f7dc" data-id="113f7dc" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7e453bcf" data-id="7e453bcf" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1fcd9f23 elementor-widget elementor-widget-image" data-id="1fcd9f23" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="720" height="720" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/271748959_5033634363347096_7005133976510601126_n.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/271748959_5033634363347096_7005133976510601126_n.jpeg 720w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271748959_5033634363347096_7005133976510601126_n-300x300.jpeg 300w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/271748959_5033634363347096_7005133976510601126_n-150x150.jpeg 150w" sizes="(max-width: 720px) 100vw, 720px" style="width:100%;height:100%;max-width:720px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-703a1e93" data-id="703a1e93" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1d68e39c elementor-widget elementor-widget-heading" data-id="1d68e39c" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Luciana Silva disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-5404a4c elementor-widget elementor-widget-text-editor" data-id="5404a4c" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Eu pensava a mesma coisa, mas funciona. Faz 8 dias q to aplicando e já bati a meta de saque de todas as aulas, to quase chegando nos 1.500 reais gloria a deus</p> </div>
-</div>
-<div class="elementor-element elementor-element-32051b79 elementor-widget elementor-widget-text-editor" data-id="32051b79" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 43 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-5e954de9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5e954de9" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7a7947db" data-id="7a7947db" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-widget-wrap elementor-element-populated">
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-37ae25b" data-id="37ae25b" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-60afe5f3 elementor-widget elementor-widget-image" data-id="60afe5f3" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img width="200" height="199" src="https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n-1.jpeg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n-1.jpeg 200w, https://rendacomvideos.com.br/wp-content/uploads/2022/02/252078628_1481259512248053_5723949181511931620_n-1-150x150.jpeg 150w" sizes="(max-width: 200px) 100vw, 200px" style="width:100%;height:99.5%;max-width:200px" /> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-106c983a" data-id="106c983a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3313da79 elementor-widget elementor-widget-heading" data-id="3313da79" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><b>Vilma Luciana disse:</b></h2> </div>
-</div>
-<div class="elementor-element elementor-element-78b43630 elementor-widget elementor-widget-text-editor" data-id="78b43630" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Muito obrigada pelo comentário, vou assistir inteiro agora mesmo 😀</p> </div>
-</div>
-<div class="elementor-element elementor-element-16e5b38c elementor-widget elementor-widget-text-editor" data-id="16e5b38c" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 43 min</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-7440414f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7440414f" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-265d7f07" data-id="265d7f07" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-693440bb elementor-widget elementor-widget-text-editor" data-id="693440bb" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Responder · Curtir · Seguir · 1 h</p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-42c3a471 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="42c3a471" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-38be66da" data-id="38be66da" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-218e20a1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="218e20a1" data-element_type="widget" data-widget_type="divider.default">
-<div class="elementor-widget-container">
-<div class="elementor-divider">
-<span class="elementor-divider-separator">
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-1356fdf5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1356fdf5" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7c9075d5" data-id="7c9075d5" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-66cb6b76 elementor-view-default elementor-widget elementor-widget-icon" data-id="66cb6b76" data-element_type="widget" data-widget_type="icon.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-wrapper">
-<div class="elementor-icon">
-<i aria-hidden="true" class="fab fa-facebook-square"></i> </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-321958c1" data-id="321958c1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3cca1a12 elementor-widget elementor-widget-text-editor" data-id="3cca1a12" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p>Plug-in social do Facebook</p> </div>
-</div>
-<div class="elementor-element elementor-element-351194f0 elementor-widget elementor-widget-html" data-id="351194f0" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/reseter.css">
+        <link rel="stylesheet" href="./assets/css/fonts.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+               
+        <script type="text/javascript">var back_link = 'https://pay.kiwify.com.br/iUIt3dK/chek9px7/?src=backdirect1';history.pushState({},"",location.href);history.pushState({},"",location.href);window.onpopstate = function(){ setTimeout(function () { location.href = back_link;},1); };</script>
+
+
+<!-- Meta Pixel Code -->
 <script>
-$('body > div.elementor.elementor-265 > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-347fb489.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.elementor-container.elementor-column-gap-default').hide();
-setTimeout(function() {
-$('body > div.elementor.elementor-265 > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-347fb489.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.elementor-container.elementor-column-gap-default').show();
-}, 180000);
-</script> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-b78bf98 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b78bf98" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4966450" data-id="4966450" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-505e0a9 elementor-widget elementor-widget-text-editor" data-id="505e0a9" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p style="text-align: center;"><span style="color: #808080;"><a style="color: #808080;" href="https://rendacomvideos.com.br/politica-de-privacidade-e-cookies/">Política de Privacidade e Cookies</a></span></p><p style="text-align: center;"><span style="color: #808080;"><a style="color: #808080;" href="https://rendacomvideos.com.br/politica-de-devolucao/">Política de Devolução</a></span></p><p style="text-align: center;"><span style="color: #808080;"><a style="color: #808080;" href="https://rendacomvideos.com.br/aviso-legal/">Aviso Legal</a><br />Email de contato: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b080e0b14090f1e55091e151f1a1814160d121f1e14083b1c161a121755181416">[email&#160;protected]</a></span></p> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.body.classList.remove("no-js");</script> <script>
-  if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
-    document.body.classList.add( 'is-IE' );
-  }
-  </script>
-<script id='rocket-browser-checker-js-after'>
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '5397474873610698');
+  fbq('track', 'PageView');
 </script>
-<script id='rocket-preload-links-js-extra'>
-var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/rendacomvideos.com.br","onHoverDelay":"100","rateThrottle":"3"};
-</script>
-<script id='rocket-preload-links-js-after'>
-(function() {
-"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
-}());
-</script>
-<script id='twenty-twenty-one-ie11-polyfills-js-after'>
-( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://rendacomvideos.com.br/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.5"></scr' + 'ipt>' );
-</script>
-<script src='https://rendacomvideos.com.br/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.5' id='twenty-twenty-one-responsive-embeds-script-js'></script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.6.0' id='elementor-pro-webpack-runtime-js'></script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.5' id='elementor-webpack-runtime-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.5' id='elementor-frontend-modules-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/dist/hooks.min.js?ver=1e58c8c5a32b2e97491080c5b10dc71c' id='wp-hooks-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/dist/i18n.min.js?ver=30fcecb428a0e8383d3776bcdd3a7834' id='wp-i18n-js'></script>
-<script id='wp-i18n-js-after'>
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script id='elementor-pro-frontend-js-translations'>
-( function( domain, translations ) {
-  var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-  localeData[""].domain = domain;
-  wp.i18n.setLocaleData( localeData, domain );
-} )( "elementor-pro", { "locale_data": { "messages": { "": {} } } } );
-</script>
-<script id='elementor-pro-frontend-js-before'>
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/rendacomvideos.com.br\/wp-admin\/admin-ajax.php","nonce":"7240882514","urls":{"assets":"https:\/\/rendacomvideos.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/rendacomvideos.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/rendacomvideos.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-</script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.6.0' id='elementor-pro-frontend-js'></script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script src='https://rendacomvideos.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
-<script id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/rendacomvideos.com.br\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":8,"title":"Renda%20Com%20V%C3%ADdeos","excerpt":"","featuredImage":false}};
-</script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.5' id='elementor-frontend-js'></script>
-<script src='https://rendacomvideos.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.6.0' id='pro-elements-handlers-js'></script>
-<script>
-    /(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
-    </script>
-</body>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=5397474873610698&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+
+
+    </head>
+
+    <body>
+
+        <header>
+            
+            <div class="container">
+                <h1>
+                    <span class="background-pink">Revelado</span> O Segredo Para Realizar
+                    <span class="background-pink block">14 P0nt0s Quase Toda Semana!</span>
+                </h1>
+                
+
+
+
+                <div style="padding:56.111111111111114% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://cdn.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/players/62002a6ad7ed840008b69457/embed.html" id="ifr_62002a6ad7ed840008b69457" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
+
+                <div class="payment">
+                    <a href="https://pay.kiwify.com.br/iUIt3dK/plaxejog/chek9px7" class="btn btn-green">
+                        <img src="./assets/img/hand-icon.png" alt="">
+                        QUERO OS JOGOS PRONTOS!
+                    </a>
+                    <img src="./assets/img/payment-info.png" alt="Métodos de pagamento">
+                </div>
+            </div>
+        </header>
+
+
+        <section id="comments">
+            <div class="container">
+                <h2>24 comentários</h2>
+
+                <div class="comments-container">
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/1.jpg">
+                            <div class="text">
+                                <h3 class="name">Fernanda Almeida</h3>
+                                <p class="comment">Ainda bem que assisti até o final do vídeo. Eu tava desempregada, tirei de onde n tinha pra compra, e graças a Deus ta dando certo. No primeiro mês já consegui 2360. To muito satisfeita mesmo, pois estava com muitas dificuldades financeiras</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>4 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/2.jpg">
+                            <div class="text">
+                                <h3 class="name">Antonio Rocha</h3>
+                                <p class="comment">Comprei Outros e joguei dinheiro fora. Este foi o único que realmente fun cinou, não tem como dar errado se fizer o que eles dizem. Os jogos vem pronto</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>7 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/3.jpg">
+                            <div class="text">
+                                <h3 class="name">Juliana Rodrigues</h3>
+                                <p class="comment">Isto salvou minha familia, estou a mais de um ano desempregada e com 2 filhos pequenos. To só copiando e estou conseguindo de 2 a 3 mil reais no mes</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>12 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/4.jpg">
+                            <div class="text">
+                                <h3 class="name">Vanderson Fagundes</h3>
+                                <p class="comment">Isso funciona mesmo?</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>14 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/5.jpg">
+                            <div class="text">
+                                <h3 class="name">Gisela Pontes</h3>
+                                <p class="comment">Compensa demais gente, consegui fazer 14 pts duas vezes em Dezembro já</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>7 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/4.jpg">
+                            <div class="text">
+                                <h3 class="name">Vanderson Fagundes</h3>
+                                <p class="comment">Voltando aqui para dar meu feedback! Realmente foi o único que já vi funcionar até hoje. Confesso que na primeira semana não tive muito resultado, fiz um jogo de 12 pontos só. Mas na segunda seman já fiz 13 e 14 pontos! Muito feliz!</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>5 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/6.jpg">
+                            <div class="text">
+                                <h3 class="name">Rodrigo Maffini</h3>
+                                <p class="comment">Aleluia um que funciona! Consegui fazer R$ 2351 esse mês, estava desempregado com as contas atrasadas e com meu cachorrinho doente. Foi minha salvação!</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>19 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/7.jpg">
+                            <div class="text">
+                                <h3 class="name">Cirineu Tolleto</h3>
+                                <p class="comment">achei qui era dificil, mas foi facil depois de 10 anos jogando gracas a vocês finalmente consegui um premio de 14</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>24 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/8.jpg">
+                            <div class="text">
+                                <h3 class="name">Juliano Cunha</h3>
+                                <p class="comment">Perdi o emprego, sem direitos e nada, nem carteira assinavam, estou comprando pra ver se consigo pelo menos me sustentar</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>14 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/9.jpg">
+                            <div class="text">
+                                <h3 class="name">Ronaldo Guilla</h3>
+                                <p class="comment">Funcionou?</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>13 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/10.jpg">
+                            <div class="text">
+                                <h3 class="name">Werley Teixeira</h3>
+                                <p class="comment">Deu certo mano? To esperando sua resposta pra comprar.</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>7 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/8.jpg">
+                            <div class="text">
+                                <h3 class="name">Juliano Cunha</h3>
+                                <p class="comment">Então... eles ficam mandando os jogos pra gente jogar. Confesso que achei que não ia dar certo, mas gastei 20 reais em jogos e voltou 2mil</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>29 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/11.jpg">
+                            <div class="text">
+                                <h3 class="name">Felipe Martins</h3>
+                                <p class="comment">Cara, esse negócio é doido mesmo viu, o pior é que funciona. Primeira vez na vida que faço 14 pontos</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>55 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/12.jpg">
+                            <div class="text">
+                                <h3 class="name">Fiorela Tretto</h3>
+                                <p class="comment">Segui passo a passo e está dando super certo</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>58 min</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/13.jpg">
+                            <div class="text">
+                                <h3 class="name">Giullia Gabriele</h3>
+                                <p class="comment">Isso funciona?</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/14.jpg">
+                            <div class="text">
+                                <h3 class="name">Paula Hortes</h3>
+                                <p class="comment">Menina, pode entrar, funciona mesmo. Eu duvidava, mas paguei pra ver e me surpreendi positivamente. Não gastei nem 100 reais e já voltou 2400</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/15.jpg">
+                            <div class="text">
+                                <h3 class="name">Kuky Flores</h3>
+                                <p class="comment">eu comprei e n posso reclamar, ta pagando as contas e sobra ainda</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/16.jpg">
+                            <div class="text">
+                                <h3 class="name">Uilton Fortes</h3>
+                                <p class="comment">Dúvido que a Caixa deixe esse anúncio no ar</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/17.jpg">
+                            <div class="text">
+                                <h3 class="name">Luisa Valmori</h3>
+                                <p class="comment">Quase tive q tirar minha filha da escolhinha por falta de dinheiro. Obrigado, agora posso continuar trabalhando e saber que ela ta sendo bem cuidada na creche</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/18.jpg">
+                            <div class="text">
+                                <h3 class="name">Mauren Rocha</h3>
+                                <p class="comment">Tô c um pouco de medo. Algúem ja usou?</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item answer">
+                        <div class="content">
+                            <img src="./assets/img/comments/19.jpg">
+                            <div class="text">
+                                <h3 class="name">Aline Rochedo</h3>
+                                <p class="comment">Amiga, pode ir sem medo, eu acertei 14 pontos noúltimo jogo</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/20.jpg">
+                            <div class="text">
+                                <h3 class="name">Rosane Kreb</h3>
+                                <p class="comment">Consegui pagar meu aluguel que estava atrasado. Obrigadaa de coração</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/21.jpg">
+                            <div class="text">
+                                <h3 class="name">Heitor Machado</h3>
+                                <p class="comment">Parabéns por serem os únicos a entregarem números que realmente saem no resultado! Já é o 5º que compro e o único que funcionou</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="content">
+                            <img src="./assets/img/comments/22.jpg">
+                            <div class="text">
+                                <h3 class="name">Maria Fernada</h3>
+                                <p class="comment">Eu gostei de fazer pelo PlX, o acesso chegou na hora. No mesma semana consegui fazer e acertar os 14! Deu 1.890 no concurso 2387, eu agradeço pela vida de vcs por ajudar tanto! Obrigada</p>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <p>Responder ·</p>
+                            <p>Curtir ·</p>
+                            <p>Seguir ·</p>
+                            <p>1h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="facebook-plugin"><img src="./assets/img/facebook.png"> Plug-in social do Facebook</p>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="payment">
+                    <a href="https://pay.kiwify.com.br/iUIt3dK" class="btn btn-green">
+                        <img src="./assets/img/hand-icon.png" alt="">
+                        QUERO OS JOGOS PRONTOS!</a>
+                    <img src="./assets/img/payment-info.png" alt="Métodos de pagamento">
+                </div>
+
+
+                <div class="row">
+                    <div class="col-left">
+                        <h4>Pirataria é <span class="pink">crime</span></h4>
+                        <p>A venda do “<span class="pink uppercase">L0to Instantânea</span>” só pode ser realizada através deste site, registrado em nome da <span class="pink">Insider</span>, qualquer outro site onde você encontre este programa é uma (<span class="pink uppercase">falsificação</span>) e vai contra as leis, evite falsificações e recuse conteúdos ilegais ou pirateados, não adquira programas parecidos e que não são baseados em anos de estudos da, não nos responsabilizamos por compras realizadas em outros sites.</p>
+                    </div>
+
+                    <div class="col-right">
+                        <img class="logo" src="./assets/img/logo.png" alt="Lototipo Lotofácil Instantânea">
+                        <p>Copyright 2021 – Insider ® <br>
+                            Todos os direitos reservados. <br>
+                            <a href="#">Política de Privacidade</a> – <a href="#">Termos de uso</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h5><b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook</b>. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o e-mail de contato contato@milionarionaloto.com e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</h5>
+
+                <h6>
+                    Insider Ltda. · CNPJ 28.894.834/0001-07 <br>
+                    Relacionamento com o cliente: 99964-2613 <br>
+                    Av. Brigadeiro Faria Lima, 3.562 · Torre A · 2º Andar · 04538-133 São Paulo, SP <br>
+                    Copyright © Insider Digital
+                </h6>
+            </div>
+        </footer>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+
 </html>
-
