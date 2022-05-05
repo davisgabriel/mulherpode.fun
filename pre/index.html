@@ -1,63 +1,238 @@
 
 
 <!DOCTYPE html>
-<html lang="en-US">
-<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),this._loadEverythingNow()}async _loadEverythingNow(){this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{var n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){const n=e[t];Object.defineProperty(e,t,{get:n||function(){},set:n=>{e["rocket"+t]=n}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e?"rocket-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mouseover","touchmove","touchstart","wheel"]);e._delayEventListeners(),e._delayJQueryReady(e),e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
-</script>
+<html lang="pt-BR">
+<head>
 <meta charset="UTF-8">
-<title>Pressel &#8211; Lei da Atração</title>
+<title>VSL-VIDEOS-RENTABLES</title>
 <meta name='robots' content='max-image-preview:large' />
-<script type="rocketlazyloadscript" data-rocket-type='application/javascript'>console.log('PixelYourSite Free version 8.2.5');</script>
-<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
-<link rel="alternate" type="application/rss+xml" title="Lei da Atração &raquo; Feed" href="https://oficialstore.online/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Lei da Atração &raquo; Comments Feed" href="https://oficialstore.online/comments/feed/" />
-<style>
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
+<link rel='dns-prefetch' href='//grupoltz.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://grupoltz.com/wp-includes/css/dist/block-library/style.min.css?ver=2425ce675b52fc28852d878f1aa31e7f' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 </style>
-<link rel='stylesheet' id='wp-block-library-css' href='https://oficialstore.online/wp-includes/css/dist/block-library/style.min.css?ver=5.7.6' media='all' />
-<link rel='stylesheet' id='wp-block-library-theme-css' href='https://oficialstore.online/wp-includes/css/dist/block-library/theme.min.css?ver=5.7.6' media='all' />
-<link rel='stylesheet' id='d8ad0609f-css' href='https://oficialstore.online/wp-content/uploads/essential-addons-elementor/d8ad0609f.min.css?ver=1649319083' media='all' />
-<link rel='stylesheet' id='twenty-twenty-one-style-css' href='https://oficialstore.online/wp-content/themes/twentytwentyone/style.css?ver=1.3' media='all' />
-<link rel='stylesheet' id='twenty-twenty-one-print-style-css' href='https://oficialstore.online/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.3' media='print' />
-<link rel='stylesheet' id='elementor-icons-css' href='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0' media='all' />
-<style id='elementor-icons-inline-css'>
+<link rel='stylesheet' id='hello-elementor-css' href='https://grupoltz.com/wp-content/themes/hello-elementor/style.min.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://grupoltz.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://grupoltz.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://grupoltz.com/wp-content/uploads/elementor/css/post-7.css?ver=1644625985' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://grupoltz.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://grupoltz.com/wp-content/uploads/elementor/css/global.css?ver=1644625986' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-9544-css' href='https://grupoltz.com/wp-content/uploads/elementor/css/post-9544.css?ver=1649337568' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=2425ce675b52fc28852d878f1aa31e7f' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://grupoltz.com/wp-json/" /><link rel="alternate" type="application/json" href="https://grupoltz.com/wp-json/wp/v2/pages/9544" />
+<link rel="canonical" href="https://grupoltz.com/vsl-vr/" />
+<link rel='shortlink' href='https://grupoltz.com/?p=9544' />
+<link rel="alternate" type="application/json+oembed" href="https://grupoltz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgrupoltz.com%2Fvsl-vr%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://grupoltz.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgrupoltz.com%2Fvsl-vr%2F&#038;format=xml" />
+<script type="text/javascript">
+(function(n,v,g){o='Navegg';if(!n[o]){
+a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
+b.parentNode.insertBefore(a,b);n[o]=n[o]||function(parms){
+n[o].q=n[o].q||[];n[o].q.push([this, parms])};} })
+(window, document, 'https://tag.navdmp.com/universal.min.js');
+window.naveggReady = window.naveggReady||[];
+window.nvg78901 = new Navegg({
+acc: 78901
+});
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-9544 elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-9544">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg> <div data-elementor-type="wp-page" data-elementor-id="9544" class="elementor elementor-9544" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-8c09bc3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c09bc3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-background-overlay"></div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4c46b0f" data-id="4c46b0f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7772f92 elementor-widget elementor-widget-spacer" data-id="7772f92" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-feef1e2 elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="feef1e2" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<img width="1920" height="200" src="https://grupoltz.com/wp-content/uploads/2022/03/title_pc-dolares.svg" class="attachment-full size-full" alt="" loading="lazy" /> </div>
+</div>
+<div class="elementor-element elementor-element-d108027 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="d108027" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<img width="1080" height="240" src="https://grupoltz.com/wp-content/uploads/2022/03/title_mobile-dolares.svg" class="attachment-full size-full" alt="" loading="lazy" /> </div>
+</div>
+<div class="elementor-element elementor-element-eee904e elementor-widget elementor-widget-spacer" data-id="eee904e" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-ab9c770 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ab9c770" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-07a7a75" data-id="07a7a75" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-ffbd707 elementor-widget elementor-widget-html" data-id="ffbd707" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<script type="text/javascript" id="scr_6269b7c06760b600098b44cd">var s=document.createElement("script");s.src="https://scripts.converteai.net/074f1e7c-7846-4472-a200-4acff9824c23/players/6269b7c06760b600098b44cd/player.js",s.async=!0,document.head.appendChild(s);</script> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="elementor-element elementor-element-919937f elementor-widget elementor-widget-spacer" data-id="919937f" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-768f909 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="768f909" data-element_type="widget" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-icon">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 122.9 95" style="enable-background:new 0 0 122.9 95;" xml:space="preserve"><style type="text/css">	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><g> <path class="st0" d="M5.1,20.8h20.7c0.4,0,0.8,0.4,0.8,0.8v44.7c0,0.4-0.4,0.8-0.8,0.8H5.1C2.3,67.1,0,64.8,0,62V25.9  C0,23.1,2.3,20.8,5.1,20.8L5.1,20.8z M109.1,1.1c5,7.1,8.8,15,11.1,23.6c2.2,8.2,3.1,17,2.3,25.9c-0.7,8.2-2.7,16-5.8,23.2  c-2.6,6-5.9,11.6-9.9,16.7c-0.6,0.8-1.2,1.6-1.9,2.4l-0.1-0.1c-0.3,0.4-0.6,0.7-0.9,1.1l-0.9,1.1l-0.9-1.1l-3.7-4.4l-0.7-0.8  l0.7-0.8c4.5-5.2,8.3-11.2,11.1-17.7c2.7-6.3,4.4-13.1,5-20.3c0.7-8-0.1-15.8-2.1-23c-1.8-6.8-4.7-13.1-8.4-18.9l0,0  c-0.7-1-1.4-2-2.1-2.9l0.1-0.1l-0.1-0.1l1-0.7l0.7-0.5l2.7-2.2l0.1,0.1l1.1-0.8l1-0.8L109.1,1.1L109.1,1.1z M108.6,4.7  c-0.2-0.4-0.5-0.8-0.8-1.1l0,0C108.1,3.9,108.3,4.3,108.6,4.7L108.6,4.7z M92.8,12.2c3.7,5.3,6.5,11.2,8.2,17.5  c1.6,6.1,2.3,12.6,1.7,19.3c-0.5,5.7-1.8,11.1-3.8,16.2c-2.1,5.2-4.9,10.1-8.4,14.3l-0.9,1.2l-1-1.1l-4.7-3.3l-0.7-0.8l0.6-0.8  c2.9-3.7,6-7.9,7.8-12.3c1.7-4.3,2.1-9,2.5-13.9c0.5-5.9,0-11.5-1.5-16.9c-1.3-5-3.5-9.8-6.3-14.1c-0.4-0.5-0.8-1.1-1.2-1.6l0.1,0  l-0.5-0.7l1-0.7l5.3-2.5l1-0.8L92.8,12.2L92.8,12.2z M89.8,15.1l-0.3-0.5l0,0L89.8,15.1L89.8,15.1z M31,20  C43,13.4,55.1,6.7,67.1,0.1c1.2-0.6,2.4,1.1,2.4,2.4v82c0,1.4-1.3,3.2-2.5,2.5L31,66.8c-0.2-0.1-0.5-0.2-0.5-0.5V20.4  C30.5,20.2,30.8,20.1,31,20L31,20z"></path></g></svg> </span>
+<span class="elementor-icon-list-text">¡ASEGÚRATE DE QUE TU SONIDO ESTÉ ENCENDIDO!</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-b3e5d6c elementor-widget elementor-widget-spacer" data-id="b3e5d6c" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-6172b14 elementor-align-center esconder elementor-widget elementor-widget-button" data-id="6172b14" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="https://pay.hotmart.com/J70112151H?checkoutMode=10" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Quiero comprar ahora</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-e4083af elementor-widget elementor-widget-spacer" data-id="e4083af" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-591eb25 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="591eb25" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-353aa4b" data-id="353aa4b" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-70d8115 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="70d8115" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3fd8914" data-id="3fd8914" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4873040 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="4873040" data-element_type="widget" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-edf1eb3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="edf1eb3" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ebe4969" data-id="ebe4969" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5332a4a elementor-widget elementor-widget-heading" data-id="5332a4a" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default"><a href="/termos-de-uso/">Termos de uso</a></h2> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4ea559e" data-id="4ea559e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-58fad28 elementor-widget elementor-widget-heading" data-id="58fad28" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default"><a href="/politica-de-privacidade/">Politicas de privacidade</a></h2> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="elementor-element elementor-element-b19b1b4 elementor-widget elementor-widget-text-editor" data-id="b19b1b4" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Este sitio web no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que dejas Facebook, no es su responsabilidad, es responsabilidad de nuestro sitio web. Hacemos todo lo posible para indicar y mostrar claramente todas las pruebas del producto y utilizar resultados reales. No vendemos su correo electrónico ni ninguna información a terceros. Nunca hacemos ningún tipo de spam.</p> </div>
+</div>
+<div class="elementor-element elementor-element-409cb31 elementor-widget elementor-widget-spacer" data-id="409cb31" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-039a7c1 elementor-widget elementor-widget-text-editor" data-id="039a7c1" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p><span style="color: rgb(227, 227, 227);">Este producto se comercializa a través de Hotmart. La plataforma no realiza un control editorial previo de los productos vendidos, ni evalúa la tecnicidad y experiencia de quienes los producen. La existencia de un producto y su adquisición, a través de la plataforma, no puede considerarse una garantia de calidad de contenido y resultado, en ningún caso. Al comprarlo, el comprador declara conocer esta información. Se puede acceder a las condiciones y políticas de Hotmart <a href="https://www.hotmart.com/legal/es">aqui</a>, incluso antes de concluir la compra.</span><br></p> </div>
+</div>
+<div class="elementor-element elementor-element-ce3b324 elementor-widget elementor-widget-spacer" data-id="ce3b324" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-c8639e3 elementor-widget elementor-widget-text-editor" data-id="c8639e3" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+Copyright © 2022 </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4734a9a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4734a9a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-318a905" data-id="318a905" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-d573314 elementor-widget elementor-widget-html" data-id="d573314" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '534411418030903');
+fbq('track', 'PageView');
 
-		.elementor-add-new-section .elementor-add-templately-promo-button{
-            background-color: #5d4fff;
-            background-image: url(https://oficialstore.online/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            margin-left: 5px;
-            position: relative;
-            bottom: 5px;
-        }
-</style>
-<link rel='stylesheet' id='elementor-animations-css' href='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.2.3' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://oficialstore.online/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.2.3' media='all' />
-<style id='elementor-frontend-inline-css'>
-@font-face{font-family:eicons;src:url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://oficialstore.online/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
-</style>
-<link rel='stylesheet' id='elementor-post-5-css' href='https://oficialstore.online/wp-content/uploads/elementor/css/post-5.css?ver=1647554434' media='all' />
-<link rel='stylesheet' id='elementor-pro-css' href='https://oficialstore.online/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.2.2' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://oficialstore.online/wp-content/uploads/elementor/css/global.css?ver=1647554559' media='all' />
-<link rel='stylesheet' id='elementor-post-901-css' href='https://oficialstore.online/wp-content/uploads/elementor/css/post-901.css?ver=1647565477' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=5.7.6' media='all' />
-<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.1' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.1' media='all' />
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=5.7.6' id='jquery-bind-first-js'></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4997015227012562');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4997015227012562&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <!-- Meta Pixel Code -->
 <script>
@@ -77,103 +252,23 @@ src="https://www.facebook.com/tr?id=555503745911063&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '4997015227012562');
-  fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=4997015227012562&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=534411418030903&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3' id='js-cookie-js'></script>
-<script id='pys-js-extra'>
-var pysOptions = {"staticEvents":{"facebook":{"PageView":[{"delay":0,"type":"static","name":"PageView","pixelIds":["285748946615477"],"eventID":"a915682f-9bb0-45d6-a2d1-33589bb28858","params":{"page_title":"Pressel","post_type":"page","post_id":901,"plugin":"PixelYourSite","user_role":"guest","event_url":"oficialstore.online\/pressel\/"},"ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":{"signal_form":{"facebook":{"delay":0,"type":"dyn","name":"Signal","pixelIds":["285748946615477"],"eventID":"6bd73188-e061-4ce0-87eb-e8a471bbb522","params":{"event_action":"Form","page_title":"Pressel","post_type":"page","post_id":901,"plugin":"PixelYourSite","user_role":"guest","event_url":"oficialstore.online\/pressel\/"},"ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"signal_download":{"facebook":{"delay":0,"type":"dyn","name":"Signal","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"pixelIds":["285748946615477"],"eventID":"54454233-6d80-4a27-b6a8-941f6c64ef29","params":{"event_action":"Download","page_title":"Pressel","post_type":"page","post_id":901,"plugin":"PixelYourSite","user_role":"guest","event_url":"oficialstore.online\/pressel\/"},"ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"signal_comment":{"facebook":{"delay":0,"type":"dyn","name":"Signal","pixelIds":["285748946615477"],"eventID":"c073de91-f8bb-4452-8e47-585afdfd6efc","params":{"event_action":"Comment","page_title":"Pressel","post_type":"page","post_id":901,"plugin":"PixelYourSite","user_role":"guest","event_url":"oficialstore.online\/pressel\/"},"ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["285748946615477"],"advancedMatching":[],"removeMetadata":false,"contentParams":{"post_type":"page","post_id":901,"content_name":"Pressel"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"ajaxForServerEvent":true,"serverApiEnabled":true,"wooCRSendFromServer":false},"debug":"","siteUrl":"https:\/\/oficialstore.online","ajaxUrl":"https:\/\/oficialstore.online\/wp-admin\/admin-ajax.php","enable_remove_download_url_param":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"edd":{"enabled":false},"woo":{"enabled":false}};
+<style>
+    .esconder {
+        display: none;
+    }
+</style>
+<script>
+        $(document).ready(function() {
+        setTimeout(() => {
+            $('.esconder').fadeIn('slow');
+        }, 644  * 1 * 1000) // 0 é a quantidade em segundos do delay
+    })
 </script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=8.2.5' id='pys-js'></script>
-<link rel="https://api.w.org/" href="https://oficialstore.online/wp-json/" /><link rel="alternate" type="application/json" href="https://oficialstore.online/wp-json/wp/v2/pages/901" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://oficialstore.online/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://oficialstore.online/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.7.6" />
-<link rel="canonical" href="https://oficialstore.online/pressel/" />
-<link rel='shortlink' href='https://oficialstore.online/?p=901' />
-<link rel="alternate" type="application/json+oembed" href="https://oficialstore.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foficialstore.online%2Fpressel%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://oficialstore.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Foficialstore.online%2Fpressel%2F&#038;format=xml" />
-<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://oficialstore.online/wp-content/uploads/2021/06/cropped-PNG-Baloes-azuis-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://oficialstore.online/wp-content/uploads/2021/06/cropped-PNG-Baloes-azuis-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://oficialstore.online/wp-content/uploads/2021/06/cropped-PNG-Baloes-azuis-180x180.png" />
-<meta name="msapplication-TileImage" content="https://oficialstore.online/wp-content/uploads/2021/06/cropped-PNG-Baloes-azuis-270x270.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="page-template page-template-elementor_canvas page page-id-901 wp-embed-responsive is-light-theme no-js singular elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-901">
-<div data-elementor-type="wp-page" data-elementor-id="901" class="elementor elementor-901" data-elementor-settings="[]">
-<div class="elementor-section-wrap">
-<section class="elementor-section elementor-top-section elementor-element elementor-element-b245e99 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b245e99" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-605b35b1" data-id="605b35b1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-28515e85 elementor-countdown--label-block elementor-widget elementor-widget-countdown" data-id="28515e85" data-element_type="widget" data-widget_type="countdown.default">
-<div class="elementor-widget-container">
-<div data-evergreen-interval="3000" class="elementor-countdown-wrapper" data-date="">
-<div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-seconds"></span></div> </div>
 </div>
-</div>
-<div class="elementor-element elementor-element-29525445 elementor-widget elementor-widget-heading" data-id="29525445" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-medium">Segundos</h2> </div>
-</div>
-<div class="elementor-element elementor-element-5307767 elementor-widget elementor-widget-spacer" data-id="5307767" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-761512bc elementor-widget elementor-widget-heading" data-id="761512bc" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-large">ASSISTA ANTES QUE SAIA DO AR…</h2> </div>
-</div>
-<div class="elementor-element elementor-element-1f59e835 elementor-widget elementor-widget-image" data-id="1f59e835" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<a href="https://mulherpode.fun/vid/">
-<img width="750" height="422" src="https://oficialstore.online/wp-content/uploads/2022/03/thumb-2-1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://oficialstore.online/wp-content/uploads/2022/03/thumb-2-1.png 960w, https://oficialstore.online/wp-content/uploads/2022/03/thumb-2-1-300x169.png 300w, https://oficialstore.online/wp-content/uploads/2022/03/thumb-2-1-768x432.png 768w" sizes="(max-width: 750px) 100vw, 750px" style="width:100%;height:56.25%;max-width:960px;" /> </a>
-</div>
-</div>
-<div class="elementor-element elementor-element-53a2f1f7 elementor-align-center elementor-widget elementor-widget-button" data-id="53a2f1f7" data-element_type="widget" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a href="https://mulherpode.fun/vid/" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-right">
-<i aria-hidden="true" class="fas fa-mouse-pointer"></i> </span>
-<span class="elementor-button-text">CLIQUE PARA ASSISTIR AGORA!</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-48841e32 elementor-widget elementor-widget-spacer" data-id="48841e32" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-670242cb elementor-widget elementor-widget-text-editor" data-id="670242cb" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p style="text-align: center;"><span style="color: #999999;">© 2021 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</span></p> </div>
-</div>
-<div class="elementor-element elementor-element-669af24b elementor-widget elementor-widget-text-editor" data-id="669af24b" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<p style="text-align: center;"><span style="color: #999999;"><a style="color: #999999;" href="https://robodepix.com/politica-de-privacidade/">Políticas de Privacidade</a> / <a class="" style="color: #999999;" href="https://robodepix.com/termos-de-uso/">Termos de uso</a> / <a style="color: #999999;" href="https://robodepix.com/aviso-legal">Aviso Legal</a></span></p> </div>
 </div>
 </div>
 </div>
@@ -181,54 +276,27 @@ var pysOptions = {"staticEvents":{"facebook":{"PageView":[{"delay":0,"type":"sta
 </section>
 </div>
 </div>
-<script type="rocketlazyloadscript">document.body.classList.remove("no-js");</script> <script type="rocketlazyloadscript">
-	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
-		document.body.classList.add( 'is-IE' );
-	}
-	</script>
-<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=285748946615477&ev=PageView&noscript=1&cd[page_title]=Pressel&cd[post_type]=page&cd[post_id]=901&cd[plugin]=PixelYourSite&cd[user_role]=guest&cd[event_url]=oficialstore.online%2Fpressel%2F" alt="facebook_pixel"></noscript>
-<script id='d8ad0609f-js-extra'>
-var localize = {"ajaxurl":"https:\/\/oficialstore.online\/wp-admin\/admin-ajax.php","nonce":"50eb8d52fc","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"https:\/\/oficialstore.online\/pressel\/"};
+<link rel='stylesheet' id='e-animations-css' href='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.5.1' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.4' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.4' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/grupoltz.com\/wp-admin\/admin-ajax.php","nonce":"bfc87373b3","urls":{"assets":"https:\/\/grupoltz.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/grupoltz.com\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/grupoltz.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/uploads/essential-addons-elementor/d8ad0609f.min.js?ver=1649319083' id='d8ad0609f-js'></script>
-<script type="rocketlazyloadscript" id='rocket-browser-checker-js-after'>
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.5.1' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.5.4' id='share-link-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0' id='elementor-dialog-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true},"urls":{"assets":"https:\/\/grupoltz.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":9544,"title":"VSL-VIDEOS-RENTABLES","excerpt":"","featuredImage":false}};
 </script>
-<script id='rocket-preload-links-js-extra'>
-var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/oficialstore.online","onHoverDelay":"100","rateThrottle":"3"};
-</script>
-<script type="rocketlazyloadscript" id='rocket-preload-links-js-after'>
-(function() {
-"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
-}());
-</script>
-<script type="rocketlazyloadscript" id='twenty-twenty-one-ie11-polyfills-js-after'>
-( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://oficialstore.online/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.3"></scr' + 'ipt>' );
-</script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.3' id='twenty-twenty-one-responsive-embeds-script-js'></script>
-<script src='https://oficialstore.online/wp-includes/js/wp-embed.min.js?ver=5.7.6' id='wp-embed-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.2' id='elementor-pro-webpack-runtime-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.3' id='elementor-webpack-runtime-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.3' id='elementor-frontend-modules-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.2' id='elementor-sticky-js'></script>
-<script type="rocketlazyloadscript" id='elementor-pro-frontend-js-before'>
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/oficialstore.online\/wp-admin\/admin-ajax.php","nonce":"bfe1282236","urls":{"assets":"https:\/\/oficialstore.online\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/oficialstore.online\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-</script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.2' id='elementor-pro-frontend-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.3' id='share-link-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
-<script type="rocketlazyloadscript" id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true,"form-submissions":true},"urls":{"assets":"https:\/\/oficialstore.online\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":901,"title":"Pressel%20%E2%80%93%20Lei%20da%20Atra%C3%A7%C3%A3o","excerpt":"","featuredImage":false}};
-</script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.3' id='elementor-frontend-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.2' id='pro-preloaded-elements-handlers-js'></script>
-<script type="rocketlazyloadscript" src='https://oficialstore.online/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.3' id='preloaded-modules-js'></script>
-<script type="rocketlazyloadscript">
-	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
-	</script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.4' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.5.1' id='pro-preloaded-elements-handlers-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.5.4' id='preloaded-modules-js'></script>
+<script type='text/javascript' src='https://grupoltz.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.5.1' id='e-sticky-js'></script>
 </body>
 </html>
-
