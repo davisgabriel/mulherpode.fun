@@ -1,1587 +1,514 @@
 
-<!doctype html>
-<html class="no-js" lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
-    <link rel="canonical" href="https://kdsa-4e67.myshopify.com/">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
-      kdsa-4e67
-</title>
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+		<title>DESPW &#8211; Despertar Sin Diabetes 198 &#8211; Blog Salud 10</title><link rel="stylesheet" href="https://blogsalud10.online/wp-content/cache/min/1/de021af6cadc5ffd251359e6c4605071.css" media="all" data-minify="1" />
+<meta name='robots' content='noindex, nofollow' />
 
-    
+<link rel='dns-prefetch' href='//​' />
+<link rel='dns-prefetch' href='//maps.gstatic.com' />
 
-    
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//apis.google.com' />
+<link rel='dns-prefetch' href='//google-analytics.com' />
+<link rel='dns-prefetch' href='//www.google-analytics.com' />
+<link rel='dns-prefetch' href='//ssl.google-analytics.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel='dns-prefetch' href='//googleads.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//adservice.google.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel='dns-prefetch' href='//tpc.googlesyndication.com' />
+<link rel='dns-prefetch' href='//youtube.com' />
+<link rel='dns-prefetch' href='//i.ytimg.com' />
+<link rel='dns-prefetch' href='//player.vimeo.com' />
+<link rel='dns-prefetch' href='//api.pinterest.com' />
+<link rel='dns-prefetch' href='//assets.pinterest.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//syndication.twitter.com' />
+<link rel='dns-prefetch' href='//platform.instagram.com' />
+<link rel='dns-prefetch' href='//referrer.disqus.com' />
+<link rel='dns-prefetch' href='//c.disquscdn.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//cdn.ampproject.org' />
+<link rel='dns-prefetch' href='//pixel.wp.com' />
+<link rel='dns-prefetch' href='//disqus.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//sitename.disqus.com' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//platform.linkedin.com' />
+<link rel='dns-prefetch' href='//w.sharethis.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//ajax.microsoft.com' />
+<link rel='dns-prefetch' href='//ajax.aspnetcdn.com' />
+<link rel='dns-prefetch' href='//s3.amazonaws.com' />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//stackpath.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//github.githubassets.com' />
+<link rel='dns-prefetch' href='//ad.doubleclick.net' />
+<link rel='dns-prefetch' href='//stats.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//cm.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//stats.buysellads.com' />
+<link rel='dns-prefetch' href='//s3.buysellads.com' />
+<link rel='dns-prefetch' href='//cdn.converte.ai' />
 
-<meta property="og:site_name" content="kdsa-4e67">
-<meta property="og:url" content="https://kdsa-4e67.myshopify.com/">
-<meta property="og:title" content="kdsa-4e67">
-<meta property="og:type" content="website">
-<meta property="og:description" content="kdsa-4e67"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="kdsa-4e67">
-<meta name="twitter:description" content="kdsa-4e67">
-
-
-    <script src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/global.js?v=24850326154503943211654131583" defer="defer"></script>
-    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/57453117513/digital_wallets/dialog">
-<meta name="shopify-checkout-api-token" content="f77672967284103424940819f693f7dd">
-<meta id="in-context-paypal-metadata" data-shop-id="57453117513" data-venmo-supported="false" data-environment="production" data-locale="pt_BR" data-paypal-v4="true" data-currency="BRL">
-<script id="shopify-features" type="application/json">{"accessToken":"f77672967284103424940819f693f7dd","betas":["rich-media-storefront-analytics"],"domain":"kdsa-4e67.myshopify.com","predictiveSearch":true,"shopId":57453117513,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.pt-br.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.pt-br.js","locale":"pt-br"}</script>
-<script>var Shopify = Shopify || {};
-Shopify.shop = "kdsa-4e67.myshopify.com";
-Shopify.locale = "pt-BR";
-Shopify.currency = {"active":"BRL","rate":"1.0"};
-Shopify.country = "BR";
-Shopify.theme = {"name":"Craft","id":123469922377,"theme_store_id":1368,"role":"main"};
-Shopify.theme.handle = "null";
-Shopify.theme.style = {"id":null,"handle":null};
-Shopify.cdnHost = "cdn.shopify.com";
-Shopify.routes = Shopify.routes || {};
-Shopify.routes.root = "/";</script>
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script id="__st">var __st={"a":57453117513,"offset":-10800,"reqid":"3b47fb86-dc6d-410a-aff6-90f3660c8bf6","pageurl":"kdsa-4e67.myshopify.com\/","u":"246b2be8f255","p":"home"};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
-<script>document.addEventListener('DOMContentLoaded', function() {
-  const adminBarInjector = new Shopify.AdminBarInjector({
-    targetNode: document.body,
-    iframeSrc: 'https://kdsa-4e67.myshopify.com/admin/bar?action_name=index&path=%2F&storefront_country=BR&storefront_locale=pt-BR',
-    permanentDomain: 'kdsa-4e67.myshopify.com',
-  });
-
-  adminBarInjector.init();
-});</script>
-<script integrity="sha256-N6F6ZjvOAMPhcD0kfZWNQQgx6eXaxFfh6aqfN0geLrU=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-37a17a663bce00c3e1703d247d958d410831e9e5dac457e1e9aa9f37481e2eb5.js" crossorigin="anonymous"></script>
-<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
-<script integrity="sha256-mFsMF5p3C6pbkiGoQtrvCeEzpSO3M81fa7S9Kuz6aU4=" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/bars/admin_bar_injector-985b0c179a770baa5b9221a842daef09e133a523b733cd5f6bb4bd2aecfa694e.js" crossorigin="anonymous"></script>
-<script id="sections-script" data-sections="header,footer" defer="defer" src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/compiled_assets/scripts.js?7"></script>
-
-<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
-  #dynamic-checkout-cart {
-    min-height: 50px;
-  }
+<link rel="alternate" type="application/rss+xml" title="Blog Salud 10 &raquo; Feed" href="https://blogsalud10.online/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Blog Salud 10 &raquo; Feed de comentários" href="https://blogsalud10.online/comments/feed/" />
+<link id='omgf-preload-0' rel='preload' href='https://blogsalud10.online/wp-content/uploads/omgf/google-fonts-1-mod-bekql/montserrat-normal-600.woff2' as='font' type='font/woff2' crossorigin />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
+</style>
+	
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--neve-link-color: var(--nv-primary-accent);--wp--preset--color--neve-link-hover-color: var(--nv-secondary-accent);--wp--preset--color--nv-site-bg: var(--nv-site-bg);--wp--preset--color--nv-light-bg: var(--nv-light-bg);--wp--preset--color--nv-dark-bg: var(--nv-dark-bg);--wp--preset--color--neve-text-color: var(--nv-text-color);--wp--preset--color--nv-text-dark-bg: var(--nv-text-dark-bg);--wp--preset--color--nv-c-1: var(--nv-c-1);--wp--preset--color--nv-c-2: var(--nv-c-2);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
 
-@media screen and (max-width: 750px) {
-  #dynamic-checkout-cart {
-    min-height: 60px;
-  }
-}
-</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
-
-
-    <style data-shopify>
-      @font-face {
-  font-family: "Quattrocento Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_n4.b43a78e6b8b9780ef5893d83cd043417f12e0d99.woff2?&hmac=fd5b1ea0b3cca6f6f938b9ee0b274940484108906d05f3bba9705074ea74a949") format("woff2"),
-       url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_n4.19c4a084d66bf65371b1784dad52aa1acf657cdd.woff?&hmac=7ddd3c2582ecde49bfa2b783e140fbcb1f8e496f0edc04e3124c979ec2ecbdcc") format("woff");
-}
-
-      @font-face {
-  font-family: "Quattrocento Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_n7.3aa8bd40fbad0fb4d493af9ef60d80c7dc39d34e.woff2?&hmac=d988a0bdd8fdfc5e1d936434cd64d1e4bdee8bb86639cda061febcdbd166b91b") format("woff2"),
-       url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_n7.e5214af0eb400455ab60a0d1b9aee6be554f16be.woff?&hmac=fddf6f207e824c823b13ddeeece370815e2667a96bcde4b44e23053b63cbffb1") format("woff");
-}
-
-      @font-face {
-  font-family: "Quattrocento Sans";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_i4.05e513d210c064197634a6efb30ba9f47e76338d.woff2?&hmac=9990887bcf9496c6a3b1240794f8e04498664e30c13d58278502f79c491f360c") format("woff2"),
-       url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_i4.ff64670d7818e5cbd12e36eda543508a83010303.woff?&hmac=2ec1633c5ff7337fa37d778e70a1a2053160521641b2bcb5b6c068623fcc0cbe") format("woff");
-}
-
-      @font-face {
-  font-family: "Quattrocento Sans";
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-  src: url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_i7.564e5b9e0e697bff7dfaf701660d797279f17606.woff2?&hmac=477f3bbd093d38b948fadc350823e741741e5244f43dcc9577d82433583194dc") format("woff2"),
-       url("https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_i7.426503744cfa0a672b1956d7e2bc9a76947c65e2.woff?&hmac=2b04c1722132e3a1b0e9aac9f1ef4543841213610030ce8b7c6a312995da0d1d") format("woff");
-}
-
-      @font-face {
-  font-family: Americana;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("https://fonts.shopifycdn.com/americana/americana_n4.e48f0c04dfcd15cf0297d6a79006cabda02b0d13.woff2?&hmac=f39c280533311ec61fe3f68606937a2614ff8786e2ba9365ffdab6747c490931") format("woff2"),
-       url("https://fonts.shopifycdn.com/americana/americana_n4.82fd6d36971133e9a39ac8d8783e24cfd710a2de.woff?&hmac=6dbc5fe960e8f3ad77ad53cfc3bec57aadc3d70e691b2b2e1189da884c5ac851") format("woff");
-}
-
-
-      :root {
-        --font-body-family: "Quattrocento Sans", sans-serif;
-        --font-body-style: normal;
-        --font-body-weight: 400;
-        --font-body-weight-bold: 700;
-
-        --font-heading-family: Americana, serif;
-        --font-heading-style: normal;
-        --font-heading-weight: 400;
-
-        --font-body-scale: 1.0;
-        --font-heading-scale: 1.0;
-
-        --color-base-text: 37, 37, 37;
-        --color-shadow: 37, 37, 37;
-        --color-base-background-1: 239, 236, 236;
-        --color-base-background-2: 255, 255, 255;
-        --color-base-solid-button-labels: 239, 236, 236;
-        --color-base-outline-button-labels: 80, 86, 85;
-        --color-base-accent-1: 44, 51, 47;
-        --color-base-accent-2: 63, 81, 71;
-        --payment-terms-background-color: #EFECEC;
-
-        --gradient-base-background-1: #EFECEC;
-        --gradient-base-background-2: #FFFFFF;
-        --gradient-base-accent-1: #2C332F;
-        --gradient-base-accent-2: #3F5147;
-
-        --media-padding: px;
-        --media-border-opacity: 0.1;
-        --media-border-width: 0px;
-        --media-radius: 6px;
-        --media-shadow-opacity: 0.0;
-        --media-shadow-horizontal-offset: 0px;
-        --media-shadow-vertical-offset: 4px;
-        --media-shadow-blur-radius: 5px;
-
-        --page-width: 120rem;
-        --page-width-margin: 0rem;
-
-        --card-image-padding: 0.0rem;
-        --card-corner-radius: 0.6rem;
-        --card-text-alignment: left;
-        --card-border-width: 0.1rem;
-        --card-border-opacity: 0.1;
-        --card-shadow-opacity: 0.0;
-        --card-shadow-horizontal-offset: 0.0rem;
-        --card-shadow-vertical-offset: 0.4rem;
-        --card-shadow-blur-radius: 0.5rem;
-
-        --badge-corner-radius: 0.6rem;
-
-        --popup-border-width: 1px;
-        --popup-border-opacity: 0.5;
-        --popup-corner-radius: 6px;
-        --popup-shadow-opacity: 0.0;
-        --popup-shadow-horizontal-offset: 0px;
-        --popup-shadow-vertical-offset: 4px;
-        --popup-shadow-blur-radius: 5px;
-
-        --drawer-border-width: 1px;
-        --drawer-border-opacity: 0.1;
-        --drawer-shadow-opacity: 0.0;
-        --drawer-shadow-horizontal-offset: 0px;
-        --drawer-shadow-vertical-offset: 4px;
-        --drawer-shadow-blur-radius: 5px;
-
-        --spacing-sections-desktop: 0px;
-        --spacing-sections-mobile: 0px;
-
-        --grid-desktop-vertical-spacing: 20px;
-        --grid-desktop-horizontal-spacing: 20px;
-        --grid-mobile-vertical-spacing: 10px;
-        --grid-mobile-horizontal-spacing: 10px;
-
-        --text-boxes-border-opacity: 0.1;
-        --text-boxes-border-width: 0px;
-        --text-boxes-radius: 6px;
-        --text-boxes-shadow-opacity: 0.0;
-        --text-boxes-shadow-horizontal-offset: 0px;
-        --text-boxes-shadow-vertical-offset: 4px;
-        --text-boxes-shadow-blur-radius: 5px;
-
-        --buttons-radius: 6px;
-        --buttons-radius-outset: 7px;
-        --buttons-border-width: 1px;
-        --buttons-border-opacity: 1.0;
-        --buttons-shadow-opacity: 0.0;
-        --buttons-shadow-horizontal-offset: 0px;
-        --buttons-shadow-vertical-offset: 4px;
-        --buttons-shadow-blur-radius: 5px;
-        --buttons-border-offset: 0.3px;
-
-        --inputs-radius: 6px;
-        --inputs-border-width: 1px;
-        --inputs-border-opacity: 0.55;
-        --inputs-shadow-opacity: 0.0;
-        --inputs-shadow-horizontal-offset: 0px;
-        --inputs-margin-offset: 0px;
-        --inputs-shadow-vertical-offset: 4px;
-        --inputs-shadow-blur-radius: 5px;
-        --inputs-radius-outset: 7px;
-
-        --variant-pills-radius: 40px;
-        --variant-pills-border-width: 1px;
-        --variant-pills-border-opacity: 0.55;
-        --variant-pills-shadow-opacity: 0.0;
-        --variant-pills-shadow-horizontal-offset: 0px;
-        --variant-pills-shadow-vertical-offset: 4px;
-        --variant-pills-shadow-blur-radius: 5px;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-
-      html {
-        box-sizing: border-box;
-        font-size: calc(var(--font-body-scale) * 62.5%);
-        height: 100%;
-      }
-
-      body {
-        display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-columns: 100%;
-        min-height: 100%;
-        margin: 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.06rem;
-        line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: var(--font-body-family);
-        font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
-      }
-
-      @media screen and (min-width: 750px) {
-        body {
-          font-size: 1.6rem;
-        }
-      }
-    </style>
-
-    <link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/base.css?v=33648442733440060821654131600" rel="stylesheet" type="text/css" media="all" />
-<link rel="preload" as="font" href="https://fonts.shopifycdn.com/quattrocento_sans/quattrocentosans_n4.b43a78e6b8b9780ef5893d83cd043417f12e0d99.woff2?&hmac=fd5b1ea0b3cca6f6f938b9ee0b274940484108906d05f3bba9705074ea74a949" type="font/woff2" crossorigin><link rel="preload" as="font" href="https://fonts.shopifycdn.com/americana/americana_n4.e48f0c04dfcd15cf0297d6a79006cabda02b0d13.woff2?&hmac=f39c280533311ec61fe3f68606937a2614ff8786e2ba9365ffdab6747c490931" type="font/woff2" crossorigin><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-predictive-search.css?v=165644661289088488651654131578" media="print" onload="this.media='all'"><script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    if (Shopify.designMode) {
-      document.documentElement.classList.add('shopify-design-mode');
-    }
-    </script>
-  <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 57453117513,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-window.ShopifyAnalytics.meta.currency = 'BRL';
-var meta = {"page":{"pageType":"home"}};
-for (var attr in meta) {
-  window.ShopifyAnalytics.meta[attr] = meta[attr];
-}</script>
-<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-  
-};
-</script>
-<script class="analytics">(function () {
-  var customDocumentWrite = function(content) {
-    var jquery = null;
-
-    if (window.jQuery) {
-      jquery = window.jQuery;
-    } else if (window.Checkout && window.Checkout.$) {
-      jquery = window.Checkout.$;
-    }
-
-    if (jquery) {
-      jquery('body').append(content);
-    }
-  };
-
-  var hasLoggedConversion = function(token) {
-    if (token) {
-      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-    }
-    return false;
-  }
-
-  var setCookieIfConversion = function(token) {
-    if (token) {
-      var twoMonthsFromNow = new Date(Date.now());
-      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
-
-      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-    }
-  }
-
-  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-  if (trekkie.integrations) {
-    return;
-  }
-  trekkie.methods = [
-    'identify',
-    'page',
-    'ready',
-    'track',
-    'trackForm',
-    'trackLink'
-  ];
-  trekkie.factory = function(method) {
-    return function() {
-      var args = Array.prototype.slice.call(arguments);
-      args.unshift(method);
-      trekkie.push(args);
-      return trekkie;
-    };
-  };
-  for (var i = 0; i < trekkie.methods.length; i++) {
-    var key = trekkie.methods[i];
-    trekkie[key] = trekkie.factory(key);
-  }
-  trekkie.load = function(config) {
-    trekkie.config = config || {};
-    trekkie.config.initialDocumentCookie = document.cookie;
-    var first = document.getElementsByTagName('script')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.onerror = function(e) {
-      var scriptFallback = document.createElement('script');
-      scriptFallback.type = 'text/javascript';
-      scriptFallback.onerror = function(error) {
-              var Monorail = {
-      produce: function produce(monorailDomain, schemaId, payload) {
-        var currentMs = new Date().getTime();
-        var event = {
-          schema_id: schemaId,
-          payload: payload,
-          metadata: {
-            event_created_at_ms: currentMs,
-            event_sent_at_ms: currentMs
-          }
-        };
-        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
-      },
-      sendRequest: function sendRequest(endpointUrl, payload) {
-        // Try the sendBeacon API
-        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
-          var blobData = new window.Blob([payload], {
-            type: 'text/plain'
-          });
-    
-          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
-            return true;
-          } // sendBeacon was not successful
-    
-        } // XHR beacon   
-    
-        var xhr = new XMLHttpRequest();
-    
-        try {
-          xhr.open('POST', endpointUrl);
-          xhr.setRequestHeader('Content-Type', 'text/plain');
-          xhr.send(payload);
-        } catch (e) {
-          console.log(e);
-        }
-    
-        return false;
-      },
-      isIos12: function isIos12() {
-        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
-      }
-    };
-    Monorail.produce('monorail-edge.shopifysvc.com',
-      'trekkie_storefront_load_errors/1.1',
-      {shop_id: 57453117513,
-      theme_id: 123469922377,
-      app_name: "storefront",
-      context_url: window.location.href,
-      source_url: "https://cdn.shopify.com/s/trekkie.storefront.9808f461ba330c75be6d9f9a258d7e208b18f128.min.js"});
-
-      };
-      scriptFallback.async = true;
-      scriptFallback.src = 'https://cdn.shopify.com/s/trekkie.storefront.9808f461ba330c75be6d9f9a258d7e208b18f128.min.js';
-      first.parentNode.insertBefore(scriptFallback, first);
-    };
-    script.async = true;
-    script.src = 'https://cdn.shopify.com/s/trekkie.storefront.9808f461ba330c75be6d9f9a258d7e208b18f128.min.js';
-    first.parentNode.insertBefore(script, first);
-  };
-  trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":57453117513,"isMerchantRequest":true,"themeId":123469922377,"themeCityHash":"14081842318590092655","contentLanguage":"pt-BR","currency":"BRL"},"isServerSideCookieWritingEnabled":true},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
-  );
-
-  var loaded = false;
-  trekkie.ready(function() {
-    if (loaded) return;
-    loaded = true;
-
-    window.ShopifyAnalytics.lib = window.trekkie;
-    
-
-    var originalDocumentWrite = document.write;
-    document.write = customDocumentWrite;
-    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-    document.write = originalDocumentWrite;
-
-    window.ShopifyAnalytics.lib.page(null,{"pageType":"home"});
-
-    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-    var token = match? match[1]: undefined;
-    if (!hasLoggedConversion(token)) {
-      setCookieIfConversion(token);
-      
-    }
-  });
-
-  
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "//cdn.shopify.com/shopifycloud/shopify/assets/shop_events_listener-fa61fd11817b231631d2fe43dc869d0b1d14a06332792d42f1a1d94bda5aa31e.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-    
-})();</script>
-<script class="boomerang">
-(function () {
-  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
-    return;
-  }
-  window.BOOMR = window.BOOMR || {};
-  window.BOOMR.snippetStart = new Date().getTime();
-  window.BOOMR.snippetExecuted = true;
-  window.BOOMR.snippetVersion = 12;
-  window.BOOMR.application = "storefront-renderer";
-  window.BOOMR.themeName = "Craft";
-  window.BOOMR.themeVersion = "3.0.0";
-  window.BOOMR.shopId = 57453117513;
-  window.BOOMR.themeId = 123469922377;
-  window.BOOMR.url =
-    "https://cdn.shopify.com/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
-  var where = document.currentScript || document.getElementsByTagName("script")[0];
-  var parentNode = where.parentNode;
-  var promoted = false;
-  var LOADER_TIMEOUT = 3000;
-  function promote() {
-    if (promoted) {
-      return;
-    }
-    var script = document.createElement("script");
-    script.id = "boomr-scr-as";
-    script.src = window.BOOMR.url;
-    script.async = true;
-    parentNode.appendChild(script);
-    promoted = true;
-  }
-  function iframeLoader(wasFallback) {
-    promoted = true;
-    var dom, bootstrap, iframe, iframeStyle;
-    var doc = document;
-    var win = window;
-    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
-    bootstrap = function(parent, scriptId) {
-      var script = doc.createElement("script");
-      script.id = scriptId || "boomr-if-as";
-      script.src = window.BOOMR.url;
-      BOOMR_lstart = new Date().getTime();
-      parent = parent || doc.body;
-      parent.appendChild(script);
-    };
-    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
-      window.BOOMR.snippetMethod = "s";
-      bootstrap(parentNode, "boomr-async");
-      return;
-    }
-    iframe = document.createElement("IFRAME");
-    iframe.src = "about:blank";
-    iframe.title = "";
-    iframe.role = "presentation";
-    iframe.loading = "eager";
-    iframeStyle = (iframe.frameElement || iframe).style;
-    iframeStyle.width = 0;
-    iframeStyle.height = 0;
-    iframeStyle.border = 0;
-    iframeStyle.display = "none";
-    parentNode.appendChild(iframe);
-    try {
-      win = iframe.contentWindow;
-      doc = win.document.open();
-    } catch (e) {
-      dom = document.domain;
-      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
-      win = iframe.contentWindow;
-      doc = win.document.open();
-    }
-    if (dom) {
-      doc._boomrl = function() {
-        this.domain = dom;
-        bootstrap();
-      };
-      doc.write("<body onload='document._boomrl();'>");
-    } else {
-      win._boomrl = function() {
-        bootstrap();
-      };
-      if (win.addEventListener) {
-        win.addEventListener("load", win._boomrl, false);
-      } else if (win.attachEvent) {
-        win.attachEvent("onload", win._boomrl);
-      }
-    }
-    doc.close();
-  }
-  var link = document.createElement("link");
-  if (link.relList &&
-    typeof link.relList.supports === "function" &&
-    link.relList.supports("preload") &&
-    ("as" in link)) {
-    window.BOOMR.snippetMethod = "p";
-    link.href = window.BOOMR.url;
-    link.rel = "preload";
-    link.as = "script";
-    link.addEventListener("load", promote);
-    link.addEventListener("error", function() {
-      iframeLoader(true);
-    });
-    setTimeout(function() {
-      if (!promoted) {
-        iframeLoader(true);
-      }
-    }, LOADER_TIMEOUT);
-    BOOMR_lstart = new Date().getTime();
-    parentNode.appendChild(link);
-  } else {
-    iframeLoader(false);
-  }
-  function boomerangSaveLoadTime(e) {
-    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
-  }
-  if (window.addEventListener) {
-    window.addEventListener("load", boomerangSaveLoadTime, false);
-  } else if (window.attachEvent) {
-    window.attachEvent("onload", boomerangSaveLoadTime);
-  }
-  if (document.addEventListener) {
-    document.addEventListener("onBoomerangLoaded", function(e) {
-      e.detail.BOOMR.init({
-        producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
-        ResourceTiming: {
-          enabled: true,
-          trackedResourceTypes: ["script", "img", "css"]
-        },
-      });
-      e.detail.BOOMR.t_end = new Date().getTime();
-    });
-  } else if (document.attachEvent) {
-    document.attachEvent("onpropertychange", function(e) {
-      if (!e) e=event;
-      if (e.propertyName === "onBoomerangLoaded") {
-        e.detail.BOOMR.init({
-          producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
-          ResourceTiming: {
-            enabled: true,
-            trackedResourceTypes: ["script", "img", "css"]
-          },
-        });
-        e.detail.BOOMR.t_end = new Date().getTime();
-      }
-    });
-  }
-})();</script>
-</head>
-
-  <body class="gradient">
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      Pular para o conteúdo
-    </a>
-
-    <div id="shopify-section-announcement-bar" class="shopify-section"><div class="announcement-bar color-accent-1 gradient" role="region" aria-label="Comunicado" ><p class="announcement-bar__message h5">
-                Welcome to our store
-</p></div>
-</div>
-    <div id="shopify-section-header" class="shopify-section section-header"><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-menu.css?v=151968516119678728991654131586" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-search.css?v=96455689198851321781654131568" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-menu-drawer.css?v=182311192829367774911654131573" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-cart-notification.css?v=119852831333870967341654131565" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-cart-items.css?v=23917223812499722491654131601" media="print" onload="this.media='all'"><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-price.css?v=112673864592427438181654131572" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-loading-overlay.css?v=167310470843593579841654131604" media="print" onload="this.media='all'"><noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-menu.css?v=151968516119678728991654131586" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-search.css?v=96455689198851321781654131568" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-menu-drawer.css?v=182311192829367774911654131573" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-cart-notification.css?v=119852831333870967341654131565" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-cart-items.css?v=23917223812499722491654131601" rel="stylesheet" type="text/css" media="all" /></noscript>
-
-<style>
-  header-drawer {
-    justify-self: start;
-    margin-left: -1.2rem;
-  }
-
-  @media screen and (min-width: 990px) {
-    header-drawer {
-      display: none;
-    }
-  }
-
-  .menu-drawer-container {
-    display: flex;
-  }
-
-  .list-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-
-  summary.list-menu__item {
-    padding-right: 2.7rem;
-  }
-
-  .list-menu__item {
-    display: flex;
-    align-items: center;
-    line-height: calc(1 + 0.3 / var(--font-body-scale));
-  }
-
-  .list-menu__item--link {
-    text-decoration: none;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    line-height: calc(1 + 0.8 / var(--font-body-scale));
-  }
-
-  @media screen and (min-width: 750px) {
-    .list-menu__item--link {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-    }
-  }
-</style><style data-shopify>.section-header {
-    margin-bottom: 0px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: 0px;
-    }
-  }</style><script src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/details-disclosure.js?v=153497636716254413831654131596" defer="defer"></script>
-<script src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/details-modal.js?v=4511761896672669691654131595" defer="defer"></script>
-<script src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/cart-notification.js?v=146771965050272264641654131571" defer="defer"></script>
-
-<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
-  </symbol>
-
-  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
-  </symbol>
-</svg>
-<div class="header-wrapper color-background-1 gradient">
-  <header class="header header--top-center page-width header--has-menu"><header-drawer data-breakpoint="tablet">
-        <details id="Details-menu-drawer-container" class="menu-drawer-container">
-          <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="Menu">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
-  <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor">
-</svg>
-
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-  <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
-</svg>
-
-            </span>
-          </summary>
-          <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
-            <div class="menu-drawer__inner-container">
-              <div class="menu-drawer__navigation-container">
-                <nav class="menu-drawer__navigation">
-                  <ul class="menu-drawer__menu has-submenu list-menu" role="list"><li><a href="/" class="menu-drawer__menu-item list-menu__item link link--text focus-inset menu-drawer__menu-item--active" aria-current="page">
-                            Início
-                          </a></li><li><a href="/collections/all" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
-                            Catálogo
-                          </a></li><li><a href="/pages/contact" class="menu-drawer__menu-item list-menu__item link link--text focus-inset">
-                            Entrar em contato
-                          </a></li></ul>
-                </nav>
-                <div class="menu-drawer__utility-links"><ul class="list list-social list-unstyled" role="list"></ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </details>
-      </header-drawer><details-modal class="header__search">
-        <details>
-          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="Pesquisar">
-            <span>
-              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-search">
-              </svg>
-              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-close">
-              </svg>
-            </span>
-          </summary>
-          <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="Pesquisar">
-            <div class="modal-overlay"></div>
-            <div class="search-modal__content search-modal__content-bottom" tabindex="-1"><predictive-search class="search-modal__form" data-loading-text="Carregando..."><form action="/search" method="get" role="search" class="search search-modal__form">
-                  <div class="field">
-                    <input class="search__input field__input"
-                      id="Search-In-Modal-1"
-                      type="search"
-                      name="q"
-                      value=""
-                      placeholder="Pesquisar"role="combobox"
-                        aria-expanded="false"
-                        aria-owns="predictive-search-results-list"
-                        aria-controls="predictive-search-results-list"
-                        aria-haspopup="listbox"
-                        aria-autocomplete="list"
-                        autocorrect="off"
-                        autocomplete="off"
-                        autocapitalize="off"
-                        spellcheck="false">
-                    <label class="field__label" for="Search-In-Modal-1">Pesquisar</label>
-                    <input type="hidden" name="options[prefix]" value="last">
-                    <button class="search__button field__button" aria-label="Pesquisar">
-                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                        <use href="#icon-search">
-                      </svg>
-                    </button>
-                  </div><div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                      <div class="predictive-search__loading-state">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span></form></predictive-search><button type="button" class="modal__close-button link link--text focus-inset" aria-label="Fechar">
-                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
-                </svg>
-              </button>
-            </div>
-          </div>
-        </details>
-      </details-modal><h1 class="header__heading"><a href="/" class="header__heading-link link link--text focus-inset"><span class="h2">kdsa-4e67</span></a></h1><nav class="header__inline-menu">
-          <ul class="list-menu list-menu--inline" role="list"><li><a href="/" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset" aria-current="page">
-                    <span class="header__active-menu-item">Início</span>
-                  </a></li><li><a href="/collections/all" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
-                    <span>Catálogo</span>
-                  </a></li><li><a href="/pages/contact" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
-                    <span>Entrar em contato</span>
-                  </a></li></ul>
-        </nav><div class="header__icons">
-      <details-modal class="header__search">
-        <details>
-          <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="Pesquisar">
-            <span>
-              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-search">
-              </svg>
-              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                <use href="#icon-close">
-              </svg>
-            </span>
-          </summary>
-          <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="Pesquisar">
-            <div class="modal-overlay"></div>
-            <div class="search-modal__content search-modal__content-bottom" tabindex="-1"><predictive-search class="search-modal__form" data-loading-text="Carregando..."><form action="/search" method="get" role="search" class="search search-modal__form">
-                  <div class="field">
-                    <input class="search__input field__input"
-                      id="Search-In-Modal"
-                      type="search"
-                      name="q"
-                      value=""
-                      placeholder="Pesquisar"role="combobox"
-                        aria-expanded="false"
-                        aria-owns="predictive-search-results-list"
-                        aria-controls="predictive-search-results-list"
-                        aria-haspopup="listbox"
-                        aria-autocomplete="list"
-                        autocorrect="off"
-                        autocomplete="off"
-                        autocapitalize="off"
-                        spellcheck="false">
-                    <label class="field__label" for="Search-In-Modal">Pesquisar</label>
-                    <input type="hidden" name="options[prefix]" value="last">
-                    <button class="search__button field__button" aria-label="Pesquisar">
-                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                        <use href="#icon-search">
-                      </svg>
-                    </button>
-                  </div><div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                      <div class="predictive-search__loading-state">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span></form></predictive-search><button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="Fechar">
-                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
-                </svg>
-              </button>
-            </div>
-          </div>
-        </details>
-      </details-modal><a href="/cart" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble"><svg class="icon icon-cart-empty" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-  <path d="m15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33l-.78-11.61zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1 -9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z" fill="currentColor" fill-rule="evenodd"/>
-</svg>
-<span class="visually-hidden">Carrinho</span></a>
-    </div>
-  </header>
-</div>
-
-<cart-notification>
-  <div class="cart-notification-wrapper page-width">
-    <div id="cart-notification" class="cart-notification focus-inset color-background-1 gradient" aria-modal="true" aria-label="Item adicionado ao carrinho" role="dialog" tabindex="-1">
-      <div class="cart-notification__header">
-        <h2 class="cart-notification__heading caption-large text-body"><svg class="icon icon-checkmark color-foreground-text" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9" fill="none">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.35.643a.5.5 0 01.006.707l-6.77 6.886a.5.5 0 01-.719-.006L.638 4.845a.5.5 0 11.724-.69l2.872 3.011 6.41-6.517a.5.5 0 01.707-.006h-.001z" fill="currentColor"/>
-</svg>
-Item adicionado ao carrinho</h2>
-        <button type="button" class="cart-notification__close modal__close-button link link--text focus-inset" aria-label="Fechar">
-          <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#icon-close"></svg>
-        </button>
-      </div>
-      <div id="cart-notification-product" class="cart-notification-product"></div>
-      <div class="cart-notification__links">
-        <a href="/cart" id="cart-notification-button" class="button button--secondary button--full-width"></a>
-        <form action="/cart" method="post" id="cart-notification-form">
-          <button class="button button--primary button--full-width" name="checkout">Finalizar a compra</button>
-        </form>
-        <button type="button" class="link button-label">Voltar à loja</button>
-      </div>
-    </div>
-  </div>
-</cart-notification>
-<style data-shopify>
-  .cart-notification {
-     display: none;
-  }
+<style id='neve-style-inline-css' type='text/css'>
+.nv-meta-list li.meta:not(:last-child):after { content:"/" }
+ :root{ --container: 748px;--postWidth:100%; --primaryBtnBg: var(--nv-secondary-accent); --secondaryBtnBg: var(--nv-primary-accent); --primaryBtnHoverBg: var(--nv-secondary-accent); --secondaryBtnHoverBg: var(--nv-primary-accent); --primaryBtnColor: var(--nv-text-color); --secondaryBtnColor: var(--nv-text-dark-bg); --primaryBtnHoverColor: var(--nv-text-color); --secondaryBtnHoverColor: var(--nv-text-dark-bg);--primaryBtnBorderRadius:0;--secondaryBtnBorderRadius:0;--btnPadding:16px 35px;--primaryBtnPadding:16px 35px;--secondaryBtnPadding:16px 35px; --btnFs: 14px; --btnLineHeight: 1.6em; --bodyFontFamily: Poppins; --bodyFontSize: 15px; --bodyLineHeight: 1.6em; --bodyLetterSpacing: 0px; --bodyFontWeight: 400; --bodyTextTransform: none; --headingsFontFamily: Poppins; --h1FontSize: 39px; --h1FontWeight: 600; --h1LineHeight: 1.2em; --h1LetterSpacing: 0; --h1TextTransform: none; --h2FontSize: 30px; --h2FontWeight: 600; --h2LineHeight: 1.3em; --h2LetterSpacing: 0; --h2TextTransform: none; --h3FontSize: 20px; --h3FontWeight: 600; --h3LineHeight: 1.3em; --h3LetterSpacing: 0; --h3TextTransform: none; --h4FontSize: 16px; --h4FontWeight: 600; --h4LineHeight: 1.3em; --h4LetterSpacing: 0; --h4TextTransform: none; --h5FontSize: 14px; --h5FontWeight: 600; --h5LineHeight: 1.3em; --h5LetterSpacing: 0; --h5TextTransform: none; --h6FontSize: 14px; --h6FontWeight: 600; --h6LineHeight: 1.3em; --h6LetterSpacing: 0; --h6TextTransform: none;--formFieldBorderWidth:2px;--formFieldBorderRadius:3px; --formFieldBgColor: var(--nv-site-bg); --formFieldBorderColor: #dddddd; --formFieldColor: var(--nv-text-color);--formFieldPadding:10px 12px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .nv-meta-list{ --avatarSize: 20px; } .single .nv-meta-list{ --avatarSize: 20px; } .nv-post-cover{ --height: 400px;--padding:40px 15px; } .nv-is-boxed.nv-title-meta-wrap{ --padding:40px 15px; --bgColor: var(--nv-dark-bg); } .nv-overlay{ --opacity: 50; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .header-top{ --color: var(--nv-text-color); --bgColor: var(--nv-site-bg); } .header-main{ --color: var(--nv-text-color); --bgColor: var(--nv-site-bg); } .header-bottom{ --color: var(--nv-text-color); --bgColor: var(--nv-site-bg); } .header-menu-sidebar-bg{ --color: var(--nv-text-color); --bgColor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxWidth: 32px;--padding:10px 0;--margin:0; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --color: var(--nv-text-color);--borderRadius:3px;--borderWidth:0; } .builder-item--nav-icon{ --padding:10px 15px 10px 15px;;--margin:0; } .builder-item--primary-menu{ --color: var(--nv-text-color); --hoverColor: var(--nv-secondary-accent); --activeColor: var(--nv-text-color); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontSize: 1em; --lineHeight: 1.6em; --letterSpacing: 0px; --fontWeight: 600; --textTransform: uppercase; --iconSize: 1em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedFW: 600; } .builder-item--button_base{ --padding:8px 12px;--margin:0; } .builder-item--header_search{ --height: 45px;--formFieldBorderWidth:2px;--formFieldBorderRadius:2px; --formFieldBorderColor: var(--nv-primary-accent); --formFieldColor: var(--nv-primary-accent);--padding:0;--margin:0; } .builder-item--header_search_responsive{ --iconSize: 15px; --color: var(--nv-primary-accent); --hoverColor: var(--nv-dark-bg); --formFieldFontSize: 14px;--formFieldBorderWidth:1px;--formFieldBorderRadius:2px; --formFieldBorderColor: var(--nv-primary-accent); --formFieldColor: var(--nv-primary-accent); --height: 40px;--padding:0 10px;--margin:0; } .footer-top-inner .row{ grid-template-columns:1fr 1fr 1fr; } .footer-top{ --color: var(--nv-text-color); --bgColor: var(--nv-site-bg); } .footer-bottom-inner .row{ grid-template-columns:1fr 1fr 1fr; } .footer-bottom{ --color: var(--nv-primary-accent); --bgColor: var(--nv-site-bg); } .item--inner.builder-item--footer_copyright{ --color: var(--nv-primary-accent); } .builder-item--footer_copyright{ --padding:0;--margin:0; --fontSize: 1em; --lineHeight: 1.6; --letterSpacing: 0px; --fontWeight: 500; --textTransform: none; --iconSize: 1em; } @media(min-width: 576px){ :root{ --container: 992px;--postWidth:100%;--btnPadding:16px 35px;--primaryBtnPadding:16px 35px;--secondaryBtnPadding:16px 35px; --btnFs: 14px; --btnLineHeight: 1.6em; --bodyFontSize: 16px; --bodyLineHeight: 1.6em; --bodyLetterSpacing: 0px; --h1FontSize: 55px; --h1LineHeight: 1.3em; --h1LetterSpacing: 0; --h2FontSize: 35px; --h2LineHeight: 1.3em; --h2LetterSpacing: 0; --h3FontSize: 20px; --h3LineHeight: 1.3em; --h3LetterSpacing: 0; --h4FontSize: 16px; --h4LineHeight: 1.3em; --h4LetterSpacing: 0; --h5FontSize: 14px; --h5LineHeight: 1.3em; --h5LetterSpacing: 0; --h6FontSize: 14px; --h6LineHeight: 1.3em; --h6LetterSpacing: 0; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarSize: 20px; } .single .nv-meta-list{ --avatarSize: 20px; } .nv-post-cover{ --height: 400px;--padding:60px 30px; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 30px; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxWidth: 32px;--padding:10px 0;--margin:0; } .builder-item--nav-icon{ --padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontSize: 1em; --lineHeight: 1.6em; --letterSpacing: 0px; --iconSize: 1em; } .builder-item--button_base{ --padding:8px 12px;--margin:0; } .builder-item--header_search{ --height: 40px;--formFieldBorderWidth:1px;--formFieldBorderRadius:2px;--padding:0;--margin:0; } .builder-item--header_search_responsive{ --formFieldFontSize: 14px;--formFieldBorderWidth:1px;--formFieldBorderRadius:2px; --height: 40px;--padding:0 10px;--margin:0; } .builder-item--footer_copyright{ --padding:0;--margin:0; --fontSize: 1em; --lineHeight: 1.6; --letterSpacing: 0px; --iconSize: 1em; } }@media(min-width: 960px){ :root{ --container: 1170px;--postWidth:100%;--btnPadding:16px 35px;--primaryBtnPadding:16px 35px;--secondaryBtnPadding:16px 35px; --btnFs: 16px; --btnLineHeight: 1.6em; --bodyFontSize: 17px; --bodyLineHeight: 1.7em; --bodyLetterSpacing: 0px; --h1FontSize: 70px; --h1LineHeight: 1.3em; --h1LetterSpacing: 0; --h2FontSize: 50px; --h2LineHeight: 1.3em; --h2LetterSpacing: 0; --h3FontSize: 24px; --h3LineHeight: 1.3em; --h3LetterSpacing: 0; --h4FontSize: 20px; --h4LineHeight: 1.3em; --h4LetterSpacing: 0; --h5FontSize: 16px; --h5LineHeight: 1.3em; --h5LetterSpacing: 0; --h6FontSize: 16px; --h6LineHeight: 1.3em; --h6LetterSpacing: 0; } body:not(.single):not(.archive):not(.blog):not(.search) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 100%; } body:not(.single):not(.archive):not(.blog):not(.search) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 100%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 0%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarSize: 20px; } .single .nv-meta-list{ --avatarSize: 20px; } .nv-post-cover{ --height: 400px;--padding:60px 40px; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 40px; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxWidth: 32px;--padding:10px 0;--margin:0; } .builder-item--nav-icon{ --padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontSize: 0.8em; --lineHeight: 1.6em; --letterSpacing: 0px; --iconSize: 0.8em; } .builder-item--button_base{ --padding:8px 16px;--margin:0; } .builder-item--header_search{ --height: 40px;--formFieldBorderWidth:1px;--formFieldBorderRadius:2px;--padding:0;--margin:0; } .builder-item--header_search_responsive{ --formFieldFontSize: 27px;--formFieldBorderWidth:4px;--formFieldBorderRadius:2px; --height: 58px;--padding:0 10px;--margin:0; } .builder-item--footer_copyright{ --padding:0;--margin:0; --fontSize: 1em; --lineHeight: 1.6; --letterSpacing: 0px; --iconSize: 1em; } }.nv-content-wrap .elementor a:not(.button):not(.wp-block-file__button){ text-decoration: none; }:root{--nv-primary-accent:#2b2b2b;--nv-secondary-accent:#fcaf3b;--nv-site-bg:#ffffff;--nv-light-bg:#ededed;--nv-dark-bg:#14171c;--nv-text-color:#14171c;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}
+:root{--e-global-color-nvprimaryaccent:#2b2b2b;--e-global-color-nvsecondaryaccent:#fcaf3b;--e-global-color-nvsitebg:#ffffff;--e-global-color-nvlightbg:#ededed;--e-global-color-nvdarkbg:#14171c;--e-global-color-nvtextcolor:#14171c;--e-global-color-nvtextdarkbg:#ffffff;--e-global-color-nvc1:#77b978;--e-global-color-nvc2:#f37262;}
 </style>
 
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "kdsa-4e67",
-    
-    "sameAs": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "url": "https:\/\/kdsa-4e67.myshopify.com"
-  }
+
+
+
+
+<link rel='stylesheet' id='neve-google-font-poppins-css'  href='' type='text/css' media='all' />
+
+<link rel="https://api.w.org/" href="https://blogsalud10.online/wp-json/" /><link rel="alternate" type="application/json" href="https://blogsalud10.online/wp-json/wp/v2/pages/2084" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogsalud10.online/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blogsalud10.online/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0" />
+<link rel="canonical" href="https://blogsalud10.online/despw-despertar-sin-diabetes-198/" />
+<link rel='shortlink' href='https://blogsalud10.online/?p=2084' />
+<link rel="alternate" type="application/json+oembed" href="https://blogsalud10.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogsalud10.online%2Fdespw-despertar-sin-diabetes-198%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blogsalud10.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogsalud10.online%2Fdespw-despertar-sin-diabetes-198%2F&#038;format=xml" />
+<!-- HFCM by 99 Robots - Snippet # 3: UTM Hotmart -->
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('pay.hotmart.com') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
 </script>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "kdsa-4e67",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https:\/\/kdsa-4e67.myshopify.com\/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "url": "https:\/\/kdsa-4e67.myshopify.com"
-    }
-  </script>
-</div>
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      <section id="shopify-section-template--14664356790345__rich_text" class="shopify-section section"><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-rich-text.css?v=134879675850203994041654131589" media="print" onload="this.media='all'">
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: Hotmart Analytics -->
+		<script id="hotmart_launcher_script">
+			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+			hot('account','16bf2375-e63f-3b77-8a49-e4090faa15db');
+		</script>
 
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-rich-text.css?v=134879675850203994041654131589" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.section-template--14664356790345__rich_text-padding {
-    padding-top: 48px;
-    padding-bottom: 30px;
-  }
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 6: Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-213430643-2"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__rich_text-padding {
-      padding-top: 64px;
-      padding-bottom: 40px;
-    }
-  }</style><div class="isolate">
-  <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width section-template--14664356790345__rich_text-padding">
-    <div class="rich-text__blocks"><h2 class="h1" >Talk about your brand</h2><div class="rich-text__text rte" ><p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p></div></div>
-  </div>
-</div>
-
-
-</section><section id="shopify-section-template--14664356790345__collage-0" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/collage.css?v=100876985760011144301654131601" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-card.css?v=72805245582035824971654131595" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-price.css?v=112673864592427438181654131572" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-modal-video.css?v=48762958730556882751654131602" rel="stylesheet" type="text/css" media="all" />
-<style data-shopify>.section-template--14664356790345__collage-0-padding {
-    padding-top: 27px;
-    padding-bottom: 0px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__collage-0-padding {
-      padding-top: 36px;
-      padding-bottom: 0px;
-    }
-  }</style><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-deferred-media.css?v=105211437941697141201654131592" media="print" onload="this.media='all'">
-
-<div class="color-background-1 gradient isolate">
-  <div class="page-width no-heading section-template--14664356790345__collage-0-padding">
-    <h2 class="collage-wrapper-title h2"></h2>
-    <div class="collage collage--mobile"><div class="collage__item collage__item--collection collage__item--right" >
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
-     card--extend-height
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
+  gtag('config', 'UA-213430643-2');
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 7: G Optimize -->
+<script type="rocketlazyloadscript" src="https://www.googleoptimize.com/optimize.js?id=OPT-MGS3WBG" defer></script>
+<!-- /end HFCM by 99 Robots -->
+<link rel="icon" href="https://blogsalud10.online/wp-content/uploads/2021/10/cropped-logo-IPL-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://blogsalud10.online/wp-content/uploads/2021/10/cropped-logo-IPL-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://blogsalud10.online/wp-content/uploads/2021/10/cropped-logo-IPL-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://blogsalud10.online/wp-content/uploads/2021/10/cropped-logo-IPL-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			#comentarios_face {
+font-family: Arial;
+background-color: #F6F7F9;
+font-size: 14px;
+padding: 20px;
+}
+.titulo_comentario {
+font-weight: bold;
+border-bottom: 1px solid #E9EBEE;
+display: block;
+padding-bottom: 6px;
+}
+.perfil {
+display: block;
+padding-top: 10px;
+padding-bottom: 10px;
+line-height: 20px;
+}
+.perfil .nome {
+color: #365899;
+font-weight: bold;
+}
+.nome img {
+float: left;
+padding-right: 10px;
+}
+.perfil img {
+width: 60px !important;
+height: 50px;
+}
+.perfil p {
+margin: 0;
+margin-left: 60px;
+margin-bottom: 0px;
+}
+.infos {
+font-size: 11px;
+color: #90949c;
+}
+.perfil2 {
+padding-left: 9px;
+border-left: 1px solid #E9EBEE;
+margin-left: 50px;
+padding-bottom: 0;
+}
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-2084  nv-blog-default nv-sidebar-full-width menu_sidebar_slide_left elementor-default elementor-template-canvas elementor-kit-32 elementor-page elementor-page-2084">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="2084" class="elementor elementor-2084">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-557037c3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="557037c3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-650d865e" data-id="650d865e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-3dd3396e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3dd3396e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-344cfb8a" data-id="344cfb8a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-38c73040 elementor-widget elementor-widget-heading" data-id="38c73040" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.5 - 27-04-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"><font color="#E71345">IMPACTANTE:  </font>Médico revela el secreto del desayuno tailandés que ataca la tipo 2</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1dfa4243 elementor-widget elementor-widget-heading" data-id="1dfa4243" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Es increíble que se nos haya ocultado durante tanto tiempo la verdadera razón de la tipo 2</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3a418088 elementor-widget elementor-widget-html" data-id="3a418088" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" frameborder="0" allowfullscreen src="about:blank" id="ifr_629eb877a91a4400099e1be6" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://scripts.converteai.net/9b80697d-095d-4555-a480-4ab26ae20bfc/players/629eb877a91a4400099e1be6/embed.html"></iframe><noscript><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/9b80697d-095d-4555-a480-4ab26ae20bfc/players/629eb877a91a4400099e1be6/embed.html" id="ifr_629eb877a91a4400099e1be6" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></noscript></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2710034e elementor-widget elementor-widget-heading" data-id="2710034e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">🔊¡Por favor espere, este video puede tardar hasta 10 segundos en cargarse!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3bfca304 elementor-align-center delay elementor-invisible elementor-widget elementor-widget-button" data-id="3bfca304" data-element_type="widget" id="delay" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1530000}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://pay.hotmart.com/D66924457C?off=xdy7g0ot&#038;src=PJB198&#038;checkoutMode=10&#038;bid=1652320739953" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">!Quiero acabar con mi diabetes en 30 días!</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5cbd8c12 elementor-widget elementor-widget-html" data-id="5cbd8c12" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="comentarios_face">
+    <span class="titulo_comentario">22 comentarios</span>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/1-2.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/1-2.png"></noscript>Martha Lopez Barbosa 
 </span>
-            </a>
-          </h3></div>   
-      </div>
+        <p>¡Estoy en shock! ¡Tenía que volver para comentar! SÍ FUNCIONA, finalmente estoy libre.</p>
+        <span class="infos">Responder · Me gusta · 2 min</span>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/2-2.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/2-2.png"></noscript>Roxana Rodríguez
 </span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-</div><div class="collage__item collage__item--collection collage__item--right" >
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
-     card--extend-height
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>   
-      </div>
+        <p>Llegué aquí por casualidad... y lo voy a probar porque estoy cansada de hacer dieta y tomar medicinas... No puedo más... ¡Gracias por compartir este video!🌸🌸🌸👍</p><span class="infos">Responder · Me gusta · 2 min</span>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-</div></div>
-  </div>
-</div>
-
-</section><section id="shopify-section-template--14664356790345__collection-list" class="shopify-section section section-collection-list"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-collection-list.css?v=70863279319435850561654131585" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-card.css?v=72805245582035824971654131595" rel="stylesheet" type="text/css" media="all" />
-
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" media="print" onload="this.media='all'">
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.section-template--14664356790345__collection-list-padding {
-    padding-top: 18px;
-    padding-bottom: 27px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__collection-list-padding {
-      padding-top: 24px;
-      padding-bottom: 36px;
-    }
-  }</style><div class="color-background-1 gradient">
-  <div class="collection-list-wrapper page-width isolate no-heading no-mobile-link section-template--14664356790345__collection-list-padding"><slider-component class="slider-mobile-gutter">
-      <ul class="collection-list contains-card grid grid--3-col-desktop grid--1-col-tablet-down collection-list--3-items"
-        id="Slider-template--14664356790345__collection-list"
-        role="list"
-      ><li id="Slide-template--14664356790345__collection-list-1" class="collection-list__item grid__item collection-list__item--no-media" >
-            
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/3-2.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/3-2.png"></noscript>Ana Maria</span>
+        <p>Hoy puedo decir que soy libre, sentí hambre como nunca, y no podía comer nada de eso, y hoy puedo comer lo que quiera!!!</p>
+        <span class="infos">Responder · Me gusta · 12 min </span>
+    </div>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/6.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/6.png"></noscript>Elizabeth Diaz</span>
+        <p>¡¡¡Esto es servicio público!!! Gracias por los consejos 😍😍😘</p>
+        <span class="infos">Responder · Me gusta · 19 min </span>
+    </div>
     
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/9.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/9.png"></noscript>Sonia Hernández</span>
+        <p>Volví para darte las gracias, ya no aguantaba más las medicinas... ¡Muchas gracias! Estos consejos fueron perfectos!!! Cuatro años luchando contra la diabetes, nada funcionó, pero fuiste mi luz. 😍 ¡Eternamente agradecida! En 30 días he bajado mucho de peso. voy a compartirlo con todos!!! ¡Besos!</p>
+        <span class="infos">Responder · Me gusta · 31 min</span>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/10.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/10.png"></noscript>
+Juana Fernández Pérez</span>
+            <p> Lo amé!!! yo también me uno!</p>
+            <span class="infos">Responder · Me gusta · 3 min </span>
+        </div>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/11.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/11.png"></noscript>
+Patricia Moreno</span>
+            <p>Ya no soporto ser así!! Incluso haciendo dieta, yendo al gimnasio 5 días a la semana, no puedo bajar mi glucosa, y los medicamentos  son caros, ¡buscamos todo! ¡Es desesperante! Voy a seguir estos consejos, porque ya no soporto atascarme con medicinas, dietas y gimnasio! ¡Solo los que pasan por esto lo entienden! Muchas gracias por compartir.</p>
+            <span class="infos">Responder · Me gusta · 3 min </span>
+        </div>
+        <div class="perfil perfil2"><span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/12.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/12.png"></noscript>
+Lidia Rivera
 </span>
-            </a>
-          </h3></div>   
-      </div>
+            <p>Gente maravillosa... ¡Comenzaré hoy! 😍👏👏👏</p><span class="infos">Responder · Me gusta · 3 min </span>
+        </div>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-          </li><li id="Slide-template--14664356790345__collection-list-2" class="collection-list__item grid__item collection-list__item--no-media" >
-            
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/7.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/7.png"></noscript>Rosmery Aquino</span>
+        <p>¡¡Dios mío! Empezaré a usarlo hoy. Yo lo tengo en casa y no sabía que tenía este efecto, lo estoy sufriendo mucho, este tip fue lo mejor del año, gracias.</p>
+        <span class="infos">Responder · Me gusta · 24 min</span>
+    </div>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/8.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/8.png"></noscript>Carmen Ávila Lacerda</span>
+        <p>Necesito deshacerme de la diabetes, pero desde hace 5 años sufro con esta enfermedad.</p>
+        <span class="infos">Responder · Me gusta · 26 min </span>
+    </div>
     
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/5.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/5.png"></noscript>Lorena Mendez Ortiz
 </span>
-            </a>
-          </h3></div>   
-      </div>
+        <p>Volviendo solo para decir que realmente funciona, perdí 4 KG y me bajó mucho la glucosa en 30 días, fue una bendición haber encontrado este video!!</p>
+        <span class="infos">Responder · Me gusta · 1h </span>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/15.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/15.png"></noscript>Martina Pacheco</span>
+            <p>Tenía miedo de hacerlo, pero tu comentario me dio el empujón que necesitaba. ¡Gracias!</p>
+            <span class="infos">Responder · Me gusta · 1h </span>
+        </div>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/5.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/5.png"></noscript>Lorena Mendez Ortiz
+ </span>
+            <p>¡Que bien! Esto salvó mi autoestima, no aguanté más este sufrimiento, esta agonía, no se la deseo a nadie. Tu puedes hacerlo, vale la pena!!</p>
+            <span class="infos">Responder · Me gusta · 1h </span>
+        </div>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-          </li><li id="Slide-template--14664356790345__collection-list-3" class="collection-list__item grid__item collection-list__item--no-media" >
-            
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-1.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-1.png"></noscript>Carlos Muniz</span>
+        <p>Encontrar este video no fue casualidad, fue un regalo de Dios para mí para bajar de peso 🙏</p>
+        <span class="infos">Responder · Me gusta · 1h </span>
+    </div>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-2.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-2.png"></noscript>Antonio Crespo Bueno</span>
+        <p>¿Alguien lo ha aplicado, realmente funciona?</p>
+        <span class="infos">Responder · Me gusta · 1h</span>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/20.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/20.png"></noscript>Alicia Ferraz</span>
+            <p>Sí funciona, yo lo apliqué y en la primera semana bajé mucho de peso, ha sido maravilloso!!🙌🙌🙌</p>
+            <span class="infos">Responder · Me gusta · 46 min </span>
+        </div>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-2.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/05/download-2.png"></noscript>Antonio Crespo Bueno</span>
+            <p>Que maravilla Alicia, yo también lo voy a hacer, quiero mejorar urgentemente.</p>
+            <span class="infos">Responder · Me gusta · 46 min </span>
+        </div>
+    </div>
     
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>   
-      </div>
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/23.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/23.png"></noscript>
+Paloma García</span>
+        <p>Desde que era una niña, nunca he sido capaz de bajar la glucosa. Siempre probé la dieta, el ejercicio, medicina, pero se me hizo aún más difícil debido al estrés y la ansiedad de la Pandemia y la oficina en casa. Empecé a aplicarlo hoy, vuelvo en una semana para contarles el resultado. ¡Felicitaciones por el contenido, Dr. Diego! ¡Eres maravilloso!</p>
+        <span class="infos">Responder · Me gusta · 1h </span>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-          </li></ul></slider-component></div>
-</div>
-
-
-
-</section><section id="shopify-section-template--14664356790345__video" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/video-section.css?v=85459975000229754761654131579" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-deferred-media.css?v=105211437941697141201654131592" rel="stylesheet" type="text/css" media="all" />
-<style data-shopify>.section-template--14664356790345__video-padding {
-    padding-top: 21px;
-    padding-bottom: 30px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__video-padding {
-      padding-top: 28px;
-      padding-bottom: 40px;
-    }
-  }</style><div class="color-background-1 gradient">
-  <div class="video-section isolate page-width section-template--14664356790345__video-padding">
-    <div><div class="title-wrapper title-wrapper--no-top-margin">
-          <h2 class="title h2">Video</h2>
-        </div></div>
-    <noscript>
-      <div class="video-section__media"
-         style="padding-bottom: 66.67480468750001%;"
-      >
-        <a href="https://www.youtube.com/watch?v=_9VUPq3SxOc" class="video-section__poster media media--transparent media--landscape"><img
-              srcset="//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=375 375w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=750 750w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1100 1100w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1500 1500w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1780 1780w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=2000 2000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=3000 3000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=3840 3840w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770 4096w"
-              src="//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1920"
-              sizes="(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-              alt="Carregar vídeo: "
-              loading="lazy"
-              width="4096"
-              height="2731"
-            ></a>
-      </div>
-    </noscript>
-    <deferred-media class="video-section__media deferred-media no-js-hidden gradient global-media-settings" data-media-id="_9VUPq3SxOc"
-       style="padding-bottom: 66.67480468750001%;"
-    >
-      <button
-        id="Deferred-Poster-Modal-_9VUPq3SxOc"
-        class="video-section__poster media deferred-media__poster media--landscape"
-        type="button"
-      ><img
-            srcset="//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=375 375w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=750 750w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1100 1100w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1500 1500w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1780 1780w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=2000 2000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=3000 3000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=3840 3840w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770 4096w"
-            src="//cdn.shopify.com/s/files/1/0574/5311/7513/files/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg?v=1654131770&width=1920"
-            sizes="(min-width: 1200px) 1100px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-            alt="Carregar vídeo: "
-            loading="lazy"
-            width="4096"
-            height="2731"
-          ><span class="deferred-media__poster-button motion-reduce"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" fill="none" viewBox="0 0 10 14"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.48177 0.814643C0.81532 0.448245 0 0.930414 0 1.69094V12.2081C0 12.991 0.858787 13.4702 1.52503 13.0592L10.5398 7.49813C11.1918 7.09588 11.1679 6.13985 10.4965 5.77075L1.48177 0.814643Z" fill="currentColor"/></svg>
-</span>
-      </button>
-      <template><iframe src="https://www.youtube.com/embed/_9VUPq3SxOc?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title=""></iframe></template>
-    </deferred-media>
-  </div>
-</div>
-
-
-</section><section id="shopify-section-template--14664356790345__rich-text-1" class="shopify-section section"><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-rich-text.css?v=134879675850203994041654131589" media="print" onload="this.media='all'">
-
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-rich-text.css?v=134879675850203994041654131589" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.section-template--14664356790345__rich-text-1-padding {
-    padding-top: 30px;
-    padding-bottom: 33px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__rich-text-1-padding {
-      padding-top: 40px;
-      padding-bottom: 44px;
-    }
-  }</style><div class="isolate">
-  <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width section-template--14664356790345__rich-text-1-padding">
-    <div class="rich-text__blocks"><h2 class="h2" >Talk about your brand</h2><div class="rich-text__text rte" ><p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p></div></div>
-  </div>
-</div>
-
-
-</section><section id="shopify-section-template--14664356790345__multicolumn" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-multicolumn.css?v=138363567467112740511654131565" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" media="print" onload="this.media='all'">
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.section-template--14664356790345__multicolumn-padding {
-    padding-top: 24px;
-    padding-bottom: 30px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__multicolumn-padding {
-      padding-top: 32px;
-      padding-bottom: 40px;
-    }
-  }</style><div class="multicolumn color-background-1 gradient background-none no-heading">
-  <div class="page-width section-template--14664356790345__multicolumn-padding isolate"><slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--3-col-desktop slider slider--mobile grid--peek"
-        id="Slider-template--14664356790345__multicolumn"
-        role="list"
-      ><li id="Slide-template--14664356790345__multicolumn-1" class="multicolumn-list__item grid__item slider__slide center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li><li id="Slide-template--14664356790345__multicolumn-2" class="multicolumn-list__item grid__item slider__slide center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li><li id="Slide-template--14664356790345__multicolumn-3" class="multicolumn-list__item grid__item slider__slide center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li></ul><div class="slider-buttons no-js-hidden medium-hide">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="Deslizar para a esquerda"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">de</span>
-            <span class="slider-counter--total">3</span>
-          </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="Deslizar para a direita"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
-</svg>
-</button>
-        </div></slider-component>
-    <div class="center small-hide medium-hide"></div>
-  </div>
-</div>
-
-
-</section><section id="shopify-section-template--14664356790345__collage" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/collage.css?v=100876985760011144301654131601" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-card.css?v=72805245582035824971654131595" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-price.css?v=112673864592427438181654131572" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-modal-video.css?v=48762958730556882751654131602" rel="stylesheet" type="text/css" media="all" />
-<style data-shopify>.section-template--14664356790345__collage-padding {
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__collage-padding {
-      padding-top: 36px;
-      padding-bottom: 36px;
-    }
-  }</style><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-deferred-media.css?v=105211437941697141201654131592" media="print" onload="this.media='all'">
-
-<div class="color-background-1 gradient isolate">
-  <div class="page-width section-template--14664356790345__collage-padding">
-    <h2 class="collage-wrapper-title h2">Multimedia collage</h2>
-    <div class="collage collage--mobile"><div class="collage__item collage__item--collection collage__item--left" >
-<div class="card-wrapper animate-arrow">
-  <div class="card
-    card--card
-     card--text
-     color-background-1 gradient
-     card--extend-height
-     ratio"
-    style="--ratio-percent: 100%;"
-  >
-    <div class="card__inner " style="--ratio-percent: 100%;"><div class="card__content">        
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-</span>
-            </a>
-          </h3></div>   
-      </div>
+    
+    <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/22.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/22.png"></noscript>Paulo Tenório</span>
+        <p>he pasado por lo que ella ha pasado, y realmente es algo desesperante. Gracias a Dios y al Dr. Diego, todo eso quedó en el pasado. por fin logré acabar con mi diabetes</p>
+        <span class="infos">Responder · Me gusta · 1h </span>
     </div>
-     
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading">
-            <a href="" class="full-unstyled-link">Nome da coleção
-<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
+    
+
+        <div class="perfil">
+        <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/05/download.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/05/download.png"></noscript>
+Jose Diaz
 </span>
-            </a>
-          </h3></div>
-      </div>
-     
-  </div>
-</div>
-
-</div><div class="collage__item collage__item--image collage__item--left" ><div class="collage-card color-background-1">
-                <div class="media media--transparent ratio" style="--ratio-percent: 133.33333333333334%"><img
-                      srcset="//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=550 550w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=720 720w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=990 990w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1100 1100w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1500 1500w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=2200 2200w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=3000 3000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697 3024w"
-                      src="//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1500"
-                      sizes="(min-width: 1200px) 737px, (min-width: 750px) 500px, calc(100vw - 30px)"
-                      alt=""
-                      loading="lazy"
-                      width="3024"
-                      height="4032"
-                    ></div>
-              </div></div><div class="collage__item collage__item--image collage__item--left" ><div class="collage-card color-background-1">
-                <div class="media media--transparent ratio" style="--ratio-percent: 133.33333333333334%"><img
-                      srcset="//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=550 550w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=720 720w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=990 990w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1100 1100w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1500 1500w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=2200 2200w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=3000 3000w,//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697 3024w"
-                      src="//cdn.shopify.com/s/files/1/0574/5311/7513/files/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg?v=1654131697&width=1500"
-                      sizes="(min-width: 1200px) 737px, (min-width: 750px) 500px, calc(100vw - 30px)"
-                      alt=""
-                      loading="lazy"
-                      width="3024"
-                      height="4032"
-                    ></div>
-              </div></div></div>
-  </div>
-</div>
-
-</section><section id="shopify-section-template--14664356790345__multicolumn-1" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-multicolumn.css?v=138363567467112740511654131565" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" media="print" onload="this.media='all'">
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.section-template--14664356790345__multicolumn-1-padding {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__multicolumn-1-padding {
-      padding-top: 28px;
-      padding-bottom: 28px;
-    }
-  }</style><div class="multicolumn color-background-1 gradient background-none no-heading">
-  <div class="page-width section-template--14664356790345__multicolumn-1-padding isolate"><slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--4-col-desktop"
-        id="Slider-template--14664356790345__multicolumn-1"
-        role="list"
-      ><li id="Slide-template--14664356790345__multicolumn-1-1" class="multicolumn-list__item grid__item center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li><li id="Slide-template--14664356790345__multicolumn-1-2" class="multicolumn-list__item grid__item center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li><li id="Slide-template--14664356790345__multicolumn-1-3" class="multicolumn-list__item grid__item center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li><li id="Slide-template--14664356790345__multicolumn-1-4" class="multicolumn-list__item grid__item center" >            
-            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><h3>Column</h3><div class="rte"><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p></div></div>
-            </div>
-          </li></ul></slider-component>
-    <div class="center"></div>
-  </div>
-</div>
-
-
-</section><section id="shopify-section-template--14664356790345__featured-blog" class="shopify-section section"><link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-card.css?v=72805245582035824971654131595" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-article-card.css?v=40864579252276455821654131583" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-featured-blog.css?v=91096229938478081821654131571" media="print" onload="this.media='all'">
-
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-slider.css?v=120997663984027196991654131577" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-card.css?v=72805245582035824971654131595" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-article-card.css?v=40864579252276455821654131583" rel="stylesheet" type="text/css" media="all" /></noscript>
-
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-featured-blog.css?v=91096229938478081821654131571" rel="stylesheet" type="text/css" media="all" />
-<style data-shopify>.section-template--14664356790345__featured-blog-padding {
-    padding-top: 18px;
-    padding-bottom: 66px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__featured-blog-padding {
-      padding-top: 24px;
-      padding-bottom: 88px;
-    }
-  }</style><div class="blog color-inverse gradient">
-  <div class="page-width-desktop isolate section-template--14664356790345__featured-blog-padding"><div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
-        <h2 class="blog__title h2">From the blog</h2></div><div class="blog-placeholder">
-        <div class="placeholder media media--landscape">
-          <svg class="placeholder-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525.5 525.5"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"/><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"/><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"/></svg>
+        <p>Amigo, tu video me cambió la vida! He estado luchando durante meses y gasté mucho dinero en medicamentos y dietas. Estaba tan desanimado. vi tu video el mes pasado y comencé a aplicarlo. Y les cuento que hoy ya puedo ver la diferencia!!!!! parece magia!!! Lo seguiré haciendo Dios te bendiga</p>
+        <span class="infos">Responder · Me gusta · 2h</span>
         </div>
-        <div class="blog-placeholder__content">
-          <h2>
-            Post do blog
-          </h2>
-          <p class="rte-width">
-            Apresente aos clientes um resumo do post do blog
-          </p>
+        <div class="perfil perfil2">
+            <span class="nome"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://blogvidaleve.online/wp-content/uploads/2022/03/25.png"><noscript><img src="https://blogvidaleve.online/wp-content/uploads/2022/03/25.png"></noscript>
+Nina Villalobos
+</span>
+            <p>Me desanimé, pero tu comentario me animó, lo voy a hacer a ver si funciona!!</p>
+            <span class="infos">Responder · Me gusta · 3 min </span>
         </div>
-      </div></div>
-</div>
 
-
-</section><section id="shopify-section-template--14664356790345__newsletter" class="shopify-section section"><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-newsletter.css?v=103472482056003053551654131597" rel="stylesheet" type="text/css" media="all" />
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/newsletter-section.css?v=62410470717655853621654131588" rel="stylesheet" type="text/css" media="all" />
-<style data-shopify>.section-template--14664356790345__newsletter-padding {
-    padding-top: 48px;
-    padding-bottom: 39px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-template--14664356790345__newsletter-padding {
-      padding-top: 64px;
-      padding-bottom: 52px;
-    }
-  }</style><div class="newsletter center ">
-  <div class="newsletter__wrapper color-accent-1 gradient content-container isolate content-container--full-width section-template--14664356790345__newsletter-padding"><h2 class="h1" >Subscribe to our emails</h2><div class="newsletter__subheading rte" ><p>Subscribe to our mailing list for insider news, product launches, and more.</p></div><div >
-            <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="newsletter-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="newsletter-form__field-wrapper">
-                <div class="field">
-                  <input
-                    id="NewsletterForm--template--14664356790345__newsletter"
-                    type="email"
-                    name="contact[email]"
-                    class="field__input"
-                    value=""
-                    aria-required="true"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    autocomplete="email"
-                    
-                    placeholder="E-mail"
-                    required
-                  >
-                  <label class="field__label" for="NewsletterForm--template--14664356790345__newsletter">
-                    E-mail
-                  </label>
-                  <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="Assinar">
-                    <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</svg>
-
-                  </button>
-                </div></div></form>
-          </div></div>
-</div>
-
-
-</section>
-    </main>
-
-    <div id="shopify-section-footer" class="shopify-section">
-<link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/section-footer.css?v=83777583229853969691654131602" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-newsletter.css?v=103472482056003053551654131597" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-menu.css?v=151968516119678728991654131586" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-payment.css?v=69253961410771838501654131580" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-social.css?v=52211663153726659061654131568" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/disclosure.css?v=646595190999601341654131580" media="print" onload="this.media='all'">
-
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-newsletter.css?v=103472482056003053551654131597" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-menu.css?v=151968516119678728991654131586" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-payment.css?v=69253961410771838501654131580" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-list-social.css?v=52211663153726659061654131568" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/component-rte.css?v=69919436638515329781654131598" rel="stylesheet" type="text/css" media="all" /></noscript>
-<noscript><link href="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/disclosure.css?v=646595190999601341654131580" rel="stylesheet" type="text/css" media="all" /></noscript><style data-shopify>.footer {
-    margin-top: 0px;
-  }
-
-  .section-footer-padding {
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: 0px;
-    }
-
-    .section-footer-padding {
-      padding-top: 36px;
-      padding-bottom: 36px;
-    }
-  }</style><footer class="footer color-accent-1 gradient section-footer-padding"><div class="footer__content-top page-width"><div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet "><div class="footer-block grid__item footer-block--menu" ><h2 class="footer-block__heading">Quick links</h2><ul class="footer-block__details-content list-unstyled"><li>
-                          <a href="/search" class="link link--text list-menu__item list-menu__item--link">
-                            Pesquisar
-                          </a>
-                        </li></ul></div><div class="footer-block grid__item" ><div class="footer-block__details-content rte">
-                    <p><strong>SP LAVA LOUCAS</strong></p><p>GREICE SILVA DOS SANTOS 32020255898</p><p><strong>CNPJ: </strong>38.653.618/0001-23</p>
-                  </div></div></div><div class="footer-block--newsletter"></div>
-    </div><div class="footer__content-bottom">
-    <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__column footer__localization isolate"></div>
-      <div class="footer__column footer__column--info"><div class="footer__payment">
-            <span class="visually-hidden">Formas de pagamento</span>
-            <ul class="list list-payment" role="list"><li class="list-payment__item">
-                  <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal"><title id="pi-paypal">PayPal</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"/><path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"/><path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"/></svg>
-                </li></ul>
-          </div><div class="footer__copyright caption">
-          <small class="copyright__content">&copy; 2022, <a href="/" title="">kdsa-4e67</a></small>
-          <small class="copyright__content"><a target="_blank" rel="nofollow" href="https://pt.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Com tecnologia da Shopify</a></small>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
-</div>
-
-    <ul hidden>
-      <li id="a11y-refresh-page-message">Ao escolher uma seleção, a página inteira é atualizada.</li>
-    </ul>
-
-    <script>
-      window.shopUrl = 'https://kdsa-4e67.myshopify.com';
-      window.routes = {
-        cart_add_url: '/cart/add',
-        cart_change_url: '/cart/change',
-        cart_update_url: '/cart/update',
-        predictive_search_url: '/search/suggest'
-      };
-
-      window.cartStrings = {
-        error: `Ocorreu um erro ao atualizar o carrinho. Tente de novo.`,
-        quantityError: `É possível adicionar apenas [quantity] unidade(s) desse item ao carrinho.`
-      }
-
-      window.variantStrings = {
-        addToCart: `Adicionar ao carrinho`,
-        soldOut: `Esgotado`,
-        unavailable: `Indisponível`,
-      }
-
-      window.accessibilityStrings = {
-        imageAvailable: `A imagem [index] está disponível no visualizador da galeria`,
-        shareSuccess: `Link copiado para a área de transferência`,
-        pauseSlideshow: `Pausar apresentação de slides`,
-        playSlideshow: `Reproduzir apresentação de slides`,
-      }
-    </script><script src="//cdn.shopify.com/s/files/1/0574/5311/7513/t/2/assets/predictive-search.js?v=31278710863581584031654131585" defer="defer"></script></body>
+    </div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2e89a22e elementor-align-center delay elementor-invisible elementor-widget elementor-widget-button" data-id="2e89a22e" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:1530000}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://pay.hotmart.com/D66924457C?off=xdy7g0ot&#038;src=PJB198&#038;checkoutMode=10&#038;bid=1652320739953" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">!Quiero acabar con mi diabetes en 30 días!</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1eed3cde elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1eed3cde" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-298fe653" data-id="298fe653" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-473cacb5 elementor-widget elementor-widget-html" data-id="473cacb5" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			  <script type="text/javascript">
+        (function (b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function () {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },
+ 
+                hasChanged: function () {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://pay.hotmart.com/D66924457C?off=dwde96oe&src=BRJB&checkoutMode=10&bid=1651717851376";
+                    }
+                },
+ 
+                checkCompat: function () {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+ 
+                configure: function () {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://pay.hotmart.com/D66924457C?off=dwde96oe&src=BRJB&checkoutMode=10&bid=1651717851376";
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function () {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3447d0cd elementor-widget elementor-widget-text-editor" data-id="3447d0cd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.5 - 27-04-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Copyright 2021 &#8211; ®<br />Todos los derechos reservados.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-77573e33 elementor-widget elementor-widget-heading" data-id="77573e33" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Copyright 2021 - CPNJ&nbsp; 60.386.438/0001-81</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5ba640d7 elementor-widget elementor-widget-text-editor" data-id="5ba640d7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: center;"><span style="color: #cacaca; font-family: montserrat, sans-serif; font-size: 13px; text-align: right;"><span style="color: #999999;"><a style="color: #cacaca;" href="https://kvgbusiness.online/politica-privacidade/">Políticas de Privacidad</a> &#8211; </span><a href="https://kvgbusiness.online/termos-de-uso/"><span style="color: #cacaca;">Termos de Uso</span></a></span></p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-277aea50 elementor-widget elementor-widget-text-editor" data-id="277aea50" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: center;">Este site não é afiliado ao Facebook ou a qualquer entidade relacionada ao Facebook. Depois que você sair do Facebook, a responsabilidade sobre qualquer ocorrência indesejada ou desejada não é do Facebook, e sim do nosso site.</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/blogsalud10.online","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' id='neve-script-js-extra'>
+/* <![CDATA[ */
+var NeveProperties = {"ajaxurl":"https:\/\/blogsalud10.online\/wp-admin\/admin-ajax.php","nonce":"93430e5274","isRTL":"","isCustomize":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/cache/min/1/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=1654104552' id='neve-script-js' async></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-includes/js/comment-reply.min.js?ver=6.0' id='comment-reply-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.4.1' id='elementor-pro-webpack-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.5' id='elementor-webpack-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.5' id='elementor-frontend-modules-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/blogsalud10.online\/wp-admin\/admin-ajax.php","nonce":"bd1693df26","urls":{"assets":"https:\/\/blogsalud10.online\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/blogsalud10.online\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/blogsalud10.online\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.4.1' id='elementor-pro-frontend-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true},"urls":{"assets":"https:\/\/blogsalud10.online\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2084,"title":"DESPW%20%E2%80%93%20Despertar%20Sin%20Diabetes%20198%20%E2%80%93%20Blog%20Salud%2010","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.5' id='elementor-frontend-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://blogsalud10.online/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.4.1' id='pro-elements-handlers-js' defer></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://blogsalud10.online/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script>	<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
 </html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1654964119 -->
