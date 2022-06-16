@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Códigos da Renda
+	</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/47947ba139.js" crossorigin="anonymous">
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="styles/extra43a0.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+	</script>
+
+	<style>
+
+		.accordion .card {
+			background: none;
+			border: none;
+		}
+
+		.accordion .card .card-header {
+			background: none;
+			border: none;
+			padding: .4rem 1rem;
+			font-family: "Roboto", sans-serif;
+			border-bottom: 2px #324353 solid;
+		}
+
+		.accordion .card-header h2 span {
+			float: left;
+			margin-top: 10px;
+		}
+
+		.accordion .card-header .btn {
+			color: white;
+			font-size: 1.04rem;
+			text-align: left;
+			position: relative;
+			font-weight: 500;
+			padding-left: 2rem;
+
+		}
+
+		.accordion .card-header i {
+			font-size: 1.2rem;
+			font-weight: bold;
+			position: absolute;
+			left: 0;
+			top: 9px;
+		}
+
+		.accordion .card-header .btn:hover {
+			color: #ff8300;
+		}
+
+		.accordion .card-body {
+			color: white;
+			padding: 0.5rem 3rem;
+		}
+
+		.page-title {
+			margin: 3rem 0 3rem 1rem;
+			font-family: "Roboto", sans-serif;
+			position: relative;
+		}
+
+		.page-title::after {
+			content: "";
+			width: 80px;
+			position: absolute;
+			height: 3px;
+			border-radius: 1px;
+			background: #73bb2b;
+			left: 0;
+			bottom: -15px;
+		}
+
+		.accordion .highlight .btn {
+			color: #74bd30;
+		}
+
+		.accordion .highlight i {
+			transform: rotate(180deg);
+		}
+
+	</style>
+	<script>
+
+		$(document).ready(function(){
+			$(".collapse.show").each(function(){
+				$(this).prev(".card-header").addClass("highlight");
+			}); 
+			$(".card-header .btn").click(function(){
+				$(".card-header").not($(this).parents()).removeClass("highlight");
+				$(this).parents(".card-header").toggleClass("highlight");
+			});
+		});
+
+	</script>
+	<style type="text/css">
+
+		body{
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.flickity-page-dots{
+			display: none;
+		}
+
+		.sec{
+			background-color: black;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif; 
+			font-family: 'Ubuntu', sans-serif;
+			background-image: linear-gradient(#0a004cd4, #0a004cd4), url('imagens/back1.png?v=2'); 
+			background-size: cover;
+			padding-top: 30px;
+			display: flex; 
+			flex-direction: column; 
+			padding-bottom:50px;
+			height: fit-content;
+		}
+
+		.sec2{
+			text-align: center;
+			font-family: 'Montserrat', sans-serif; 
+			font-family: 'Ubuntu', sans-serif;
+			background-image: linear-gradient(#eee4c99c, #eee4c99c), url('imagens/back2.png?v=2'); 
+			background-size: cover ;
+			padding-top: 30px;
+			display: flex; 
+			flex-direction: column; 
+			padding-bottom:30px;
+		}
+
+		.sec3{
+			background-color: black;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif; 
+			font-family: 'Ubuntu', sans-serif;
+			background-image: linear-gradient(#000000e8, #000000ed), url(imagens/back2.png?v=2); 
+			background-size: cover ;
+			padding-top: 30px;
+			display: flex; 
+			flex-direction: column; 
+			padding-bottom:30px; 
+			color: white;
+		}
+
+		.logo{
+			width: 20%;
+			margin: auto;
+		}
+
+		.bloco{
+			display: flex; 
+			flex-direction: row; 
+			justify-content: space-around; 
+			margin-top: 30px;
+		}
+
+		.bloco2{
+			width: 50%; 
+			margin: auto;
+			color: #000958; 
+			display: flex; 
+			flex-direction:row;
+		}
+
+		.bloco3{
+			width: 100% !important; 
+			margin: auto;
+			color: #000958; 
+			display: flex; 
+			flex-direction:row;
+			justify-content: center;
+		}
+
+		.volu{
+			width: 30%; 
+			margin: auto; 
+			display: flex; 
+			flex-direction: row;
+			position: relative; 
+			margin-top: 20px;
+		}
+
+		.per1{
+			margin: auto; 
+			display: flex; 
+			flex-direction: row; 
+			width: fit-content;
+		}
+
+		.imagens{
+			position: relative;
+			width: 40%;
+		}
+
+		.img1{
+			position: absolute;
+			width:100%; 
+			z-index: 2; 
+			bottom: 0;
+			right: 0;
+			margin-bottom: -100px;
+			margin-left: -100px;
+		}
+
+		.cartao{
+			width: 25%; 
+			color: #000958;
+		}
+
+		.bola{
+			background-color: #3CF20F; 
+			width: 80px; 
+			height: 80px; 
+			border-radius: 100%; 
+			margin-top: 10%;
+		}
+
+		.imagem1{
+			width: 34%;
+			position: absolute;
+			left: -85px; 
+			bottom: -92px;
+		}
+
+		.vid{
+			width: 55% !important;
+			margin: auto;
+		}
+
+		.acord-img{
+			width: 80%; 
+			margin: auto;
+			margin-bottom: 50px;
+		}
+
+		.ce{
+			width: 25% !important;
+		}
+
+		.fot{
+			display: flex; 
+			flex-direction: row; 
+			width: 80%; 
+			margin: auto;
+		}
+
+		.fotit{
+			display: flex; 
+			flex-direction: row; 
+			width: 50%; 
+			justify-content: space-around;
+		}
+
+		.fotit0{
+			display: flex; 
+			flex-direction: column; 
+			width: 25%;
+		}
+
+		.perg{
+			text-align: center; 
+			color: #3CF20F; 
+			font-size: 1.3rem; 
+			margin-top: 60px
+		}
+
+		.flickity-prev-next-button{
+			border-radius: 0px !important;
+			background-color: #3CF20F;
+			z-index: 21 !important;
+		}
+
+		.tit{
+			color: #000958;
+			font-size: 2rem; 
+			margin-top: 20px;
+			font-weight: 700;
+		}
+
+		@media (max-width: 500px){
+
+			.sec h1{
+				font-size: 1.3rem !important;
+			}
+
+			.sec h1 br{
+				display: none;
+			}
+
+			.tit{
+				font-size: 1.5rem !important;
+			}
+
+			.tit br{
+				display: none;
+			}
+
+			.perg{
+				font-size: 2rem;
+				margin-bottom: 30px;
+			}
+
+			.perg br{
+				display: block !important;
+			}
+
+			.btpai{
+				margin: auto;
+			}
+
+			.fot{
+				display: flex; 
+				flex-direction: column; 
+				width: 95%; 
+				margin: auto;
+				text-align: center !important;
+			}
+
+			.fot div{
+
+				width: 100% !important; 
+				margin-bottom: 10px;
+			}
+
+			.fotit div{
+				width: 50% !important;
+			}
+
+			.fotit div img{
+				width: 100% !important;
+			}
+
+			.fotit0 img{
+				margin: auto;
+			}
+
+			.fotit0 p{
+				text-align: center !important;
+			}
+
+			.acord-img{
+				margin-bottom: 190px;
+			}
+
+			.per1{
+				width: 100% !important;
+			}
+
+			.per1 div{
+				padding: 10px !important;
+				text-align: center !important;
+				width: 90% !important;
+			}
+
+			.per1 div h1 br{
+				display: none;
+			}
+
+			.ce{
+				width: 100% !important;
+			}
+
+			.vid{
+				width: 95% !important;
+			}
+
+			.sec{
+				padding: 15px;
+			}
+
+			.logo{
+				width: 55% !important;
+				margin-top: 20px;
+			}
+	
+			.volu{
+				width: 85%;
+			}
+
+			.volu img{
+				display: none;
+			}
+
+			.volu p{
+				text-align: center !important;
+			}
+
+			.bloco{
+				display: flex; 
+				flex-direction: column !important; 
+				justify-content: center; 
+				margin-top: 30px;
+			}
+
+			.cartao{
+				width: 90% !important;
+				margin: auto; 
+				margin-bottom: 30px;
+			}
+
+			.bola{ 
+				display: none; 
+			}
+
+			.per1{
+				margin: auto; 
+				display: flex; 
+				flex-direction: column; 
+				width: fit-content;
+			}
+
+			.imagem1{
+				width: 100%;
+    			position: unset; 
+   	 			margin-bottom: -58px;
+    			margin-left: -159px;
+			}
+
+			.bloco2{
+				width: 90%; 
+			}
+
+			.bloco2 div img{
+				width: 100% !important;
+				height: fit-content !important;
+				margin: auto !important;
+			}
+
+			.bloco3{
+				width: 90% !important;
+				flex-direction: column-reverse; 
+			}
+
+			.bloco3 h1{
+				font-size: 3rem !important;
+			}
+
+			.bloco3 br{
+				display: none;
+			}
+
+			.bloco3 .euro{
+				margin: auto;
+				text-align: center;
+			}
+
+			.imagens{
+				position: inherit;
+				margin: auto;
+				width: 100%;
+				height: fit-content;
+			}
+
+			.img1{
+				position: inherit;
+				width:100%; 
+				z-index: 2;
+				margin-bottom: 30px !important;
+				margin-left: 0px !important;
+				margin-top: -170px;
+			}
+
+			.gallery-cell {
+  				width: 100% !important;
+			}
+
+		}
+
+        .btne{
+            text-decoration: none;
+    		background-color: #29AE08 !important;
+    		border: none !important;
+    		color: white !important;
+    		width: 100% !important;
+    		padding: 20px 30px 20px 30px !important;
+    		font-size: 0.9rem !important;
+    		border-radius: 10px !important;
+    		margin: auto !important;
+    		line-height: 21px !important;
+    		text-align: center;
+    		font-weight: bold;
+    		box-shadow: 0 0 1em #29AE08;
+        }
+        
+        .btne:hover{
+            background-color: #2f5b1c ;
+        }
+
+        .gallery {
+ 	 		background: #00f0;
+		}
+
+		.gallery-cell {
+  			width: 66%;
+  			height: fit-content;
+  			margin-right: 10px;
+  			background: #00f0;
+  			counter-increment: gallery-cell;
+		}
+
+		.gallery-cell:before {
+  			display: block;
+  			text-align: center;
+  			line-height: 200px;
+  			font-size: 80px;
+  			color: white;
+		}
+
+		.modal-content {
+	        background-color: #fefefe;
+	        background-image: url("imagens/fundo.jpg?v=2");
+	        margin: 0% auto;
+	        padding: 5px;
+	        width: 30% !important;
+	        background-size: cover;
+	    }
+
+        @media screen and (max-width: 800px) {
+
+            .modali-content{
+               width: 95% !important;
+               height: 100%;
+            }
+
+        }
+
+        .modali {
+            display: none; 
+            position: fixed; 
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: rgb(0,0,0); 
+       	    background-color: rgba(0,0,0,0.4);
+    	}
+
+	</style>
+</head>
+<body style="margin:0px">
+	<section class="sec">
+		<img src="imagens/logo.svg?v=2" class="logo">
+		<h1 style="color: white;font-size: 2rem; margin-top: 30px;">
+			A REVOLUCIONÁRIA TECNOLOGIA QUE PODE <br>PAGAR UM NOVO SALÁRIO INTEIRO DIRETO <br>NA SUA CONTA CORRENTE
+		</h1>
+		<div class="vid">
+			<div style="padding:56.25% 0 0 0;position:relative;">
+				<iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/569d43f1-e0e1-4b34-bf65-4c26398adfe8/players/62718837f824ec000a2d37d3/embed.html" id="ifr_62718837f824ec000a2d37d3" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin">
+				</iframe>
+			</div>
+    		<!-- <div class="responsive-video">                 
+				<div id="loadingVideo" style="display:none;"></div>
+	 			<div id="cfs" style="display:block;"></div>
+	 			<div class="cov"></div>
+	 			<div class="covall"></div>
+	 			<div id="player" style="border: #033558 solid 3px"></div>
+    		</div> -->
+		</div>
+		<div class="volu">
+			<img src="imagens/volume-high-solid.svg?v=2" style="width: 10%;filter:invert(1); margin-right: 5px;">
+			<p style="color: white; text-align: left;font-weight: 300; font-size: 1.2rem; margin-bottom: 0px">
+				Clique no Play e Assista Esse Video Antes que os <span style="font-weight: 700">"Poderosos"</span> Tirem do Ar
+			</p>
+		</div>
+		<div class="btpai" style="width: fit-content; margin: auto;">
+			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
+				QUERO RECEBER OS CÓDIGOS DA RENDA!
+			</a>
+			<div style="margin:auto; width: fit-content;">
+				<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
+			</div>
+		</div>
+		<div style="position: relative;">
+			<img src="imagens/mao.png?v=2" class="imagem1">
+		</div>
+
+	</section>
+	<section class="sec2">
+
+		<h1 class="tit">
+			Veja o passo a passo de como <br>funcionam os Códigos da Renda
+		</h1>
+		<div class="bloco">
+			<div class="cartao">
+				<img src="imagens/tel1.png?v=2" style="margin-bottom: -40px;width: 70%;">
+				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px; box-shadow: 0 0 1em #00000070;">
+					<p style="font-size: 1.2rem; text-align: left">
+						<span style="font-weight: 800;">1.</span> Receba seus <span style="font-weight: 800;">CÓDIGOS da RENDA.</span>
+					</p>
+				</div>			
+			</div>
+			<div class="bola">
+				<div style="width: 35px; height: 35px; margin: auto; border-right: black solid 7px; border-bottom: black solid 7px; transform: rotate(315deg) translateX(25%) translateY(-50%);position: relative;top: 50%;">	
+				</div>
+			</div>
+			<div class="cartao">
+				<img src="imagens/tel3.png?v=2" style="margin-bottom: -40px;width: 70%;">
+				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px;box-shadow: 0 0 1em #00000070;">
+					<p style="font-size: 1.2rem; text-align: left">
+						<span style="font-weight: 800;">2.</span> Ative seus <span style="font-weight: 800;">CÓDIGOS.</span>
+					</p>
+				</div>			
+			</div>
+			<div class="bola">
+				<div style="width: 35px; height: 35px; margin: auto; border-right: black solid 7px; border-bottom: black solid 7px; transform: rotate(315deg) translateX(25%) translateY(-50%);position: relative;top: 50%;">	
+				</div>
+			</div>
+			<div class="cartao">
+				<img src="imagens/tel2.png?v=2" style="margin-bottom: -40px;width: 70%;">
+				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px;box-shadow: 0 0 1em #00000070;">
+					<p style="font-size: 1.2rem; text-align: left">
+						<span style="font-weight: 800;">3.</span> <span style="font-weight: 800;">RECEBA</span> seus <span style="font-weight: 800;">PAGAMENTOS</span> direto na <span style="font-weight: 800;">SUA CONTA CORRENTE.</span>
+					</p>
+				</div>			
+			</div>
+		</div>	
+		<div class="btpai" style="width: fit-content; margin: auto;">
+			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
+				QUERO RECEBER OS CÓDIGOS DA RENDA!
+			</a>
+			<div style="margin:auto; width: fit-content;">
+				<img src="imagens/comprasegura.png?v=2" style="margin: auto; margin-top: 30px;">
+			</div>
+		</div>
+
+	</section>
+	<section class="sec" style="box-shadow: inset 0px 0px 30px 30px #000958bf;">
+
+		<h1 style="color: white;font-size: 2rem; margin-top: 30px; margin-bottom: 30px;">
+			Quem me escuta tem <br>RESULTADOS
+		</h1>
+		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9" style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/Qy8jDB_sCpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap ">
+  				<div class="ratio ratio-16x9" style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/FXEUzrueY-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/pLKq-UoazyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/NRMK3BS2lh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/KMdEDiJWWQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/nz_XVVMZw8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/ooJFmFqSZK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/UpyJgkdUvwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+  			<div class="gallery-cell video-wrap">
+  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
+    				<iframe width="640" height="480" src="https://www.youtube.com/embed/0C3hbWURJU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    				</iframe>
+    			</div>
+  			</div>
+		</div>
+		<div class="acord-img">
+			<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="margin-top: 60px">
+	  			<div class="gallery-cell ce">
+	  				<img src="imagens/cel1.png?v=2" style="width: 100%">
+	  			</div>
+	  			<div class="gallery-cell ce">
+	  				<img src="imagens/cel2.png?v=2" style="width: 100%">
+	  			</div>
+	  			<div class="gallery-cell ce">
+	  				<img src="imagens/cel3.png?v=2" style="width: 100%">
+	  			</div>
+	  			<div class="gallery-cell ce">
+	  				<img src="imagens/cel4.png?v=2" style="width: 100%">
+	  			</div>
+	  			<div class="gallery-cell ce">
+	  				<img src="imagens/cel5.png?v=2" style="width: 100%">
+	  			</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="sec2">
+
+		<div class="bloco3" style="">
+			<div style="text-align: left;">
+				<h1 style=";font-size: 2rem; margin-top: 20px;font-weight: 700;">
+					Como funcionam os Códigos da Renda?
+				</h1>
+				<p style="font-size: 1.3rem; margin-top: 30px">
+					Os Códigos da Renda usam o poder computacional <br>do seu dispositivo para assumir uma Profissão <br>de forma Semi-Autônoma na Internet.
+				</p>
+				<div class="euro">
+					<img src="imagens/eurosd.png?v=2" style="width: 60%;margin-top: 20px">
+				</div>
+				<p style="font-size: 1.3rem; margin-top: 20px; text-align: justify;">
+					Com as combinações matemáticas<br> avançadas geradas pelo app é <br>possível ter uma renda <br>recorrente caindo em conta <br>todos os dias no piloto automático.
+				</p>
+				<div class="btpai" style="width: fit-content;">
+					<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
+						QUERO RECEBER OS CÓDIGOS DA RENDA!
+					</a>
+					<div style="margin:auto; width: fit-content;">
+						<img src="imagens/comprasegura.png?v=2" style="margin: auto; margin-top: 30px;">
+					</div>
+				</div>	
+			</div>
+			<div class="imagens" style="">
+				<img class="img1" src="imagens/doiscel.png?v=2">
+			</div>
+		</div>
+
+	</section>
+	<section style="background-color: #000958; padding-bottom: 60px;">
+
+		<div class="per1">
+			<div style="position: relative; width: fit-content;margin-top: -20px;">
+				<img src="imagens/2cel.png?v=2" style="width:100%">
+				<img src="imagens/7dias.png?v=2" style="position: absolute; margin: auto; width: 45%; right: 40%;bottom: 0;">
+			</div>
+			<div style="padding-left: 100px; width: fit-content;margin: auto;">
+				<h1 style="color: white; margin-top: 60px;">
+					Ou você tem <br>resultado, ou eu <br><span style="color: #3CF20F;">devolvo todo seu <br>dinheiro</span>
+				</h1>
+				<div class="btpai" style="width: fit-content;">
+					<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
+						QUERO RECEBER OS CÓDIGOS DA RENDA!
+					</a>
+					<div style="margin:auto; width: fit-content;">
+						<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
+					</div>
+				</div>	
+			</div>
+		</div>
+		<h1 class="perg">
+			PERGUNTAS <br style="display: none">FREQUENTES
+		</h1>
+		<div class="container-lg">
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h2 class="clearfix mb-0">
+							<a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="fa fa-chevron-circle-down"></i> 
+								O que são os Códigos da Renda?
+							</a>									
+						</h2>
+					</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							Infelizmente não se pode explicar o que são os <strong>Códigos da Renda,</strong> você precisa ver por si próprio. Assista ao Vídeo no Topo da Página, esta é a <strong>ÚNICA</strong> forma de você entender como <strong>tudo funciona.</strong>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<i class="fa fa-chevron-circle-down"></i> 
+								O que preciso para receber os Códigos?
+							</a>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<ul>
+		        				<li>
+		        					De um Smartphone Android ou IOS fabricado <strong>após 2017.</strong>
+		        				</li>	        			
+								<li>
+									Uma <strong>Conta Corrente</strong> em seu Nome para Sacar os seus Ganhos.
+								</li>
+		        				<li>
+		        					Ao menos <strong>R$ 60,00</strong> para começar.
+		        				</li>
+		        				<li>
+		        					Ter <strong>VONTADE</strong> de participar e <strong>Receber Pagamentos</strong> em Conta.
+		        				</li>
+		        			</ul>
+		        		</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Quanto eu Posso Ganhar?
+							</a>                     
+						</h2>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+						<div class="card-body">
+							O resultado <strong>pode variar</strong> de pessoa para pessoa.
+		        			<br>
+							Só no <strong>último ano,</strong> o Grupo de Pessoas que acompanham o meu trabalho nos Códigos da Renda, sacou entre <strong>R$1.300,00 a R$7.000,00 EXTRAS por Semana.</strong>
+							<br>
+							Isso foi a fase de Testes. <strong>Agora</strong> a estratégia <strong>está otimizada</strong> com potencial nunca isto antes.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Como faço para receber os Códigos?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+						<div class="card-body">
+							A <strong>ÚNICA FORMA</strong> é através do <strong>Botão Abaixo:</strong> “Quero Receber os Códigos da Renda”.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFive">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Como vou ter Acesso?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+						<div class="card-body">
+							O seu acesso é enviado <strong>IMEDIATAMENTE</strong> após a confirmação da inscrição, através de <strong>e-mail e SMS.</strong>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSix">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Quanto tempo demora para chegar o meu acesso?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+						<div class="card-body">
+							PIX/Cartão de Crédito: Acesso <strong>IMEDIATO</strong>
+							<br>
+							Boleto Bancário: Acesso <strong>após Confirmação</strong> do Pagamento (1 a 3 dias úteis).
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingSeven">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Como vou Aprender a usar os Códigos da Renda?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+						<div class="card-body">
+							Através do <strong>aplicativo oficial</strong> da nossa comunidade. Já está <strong>tudo pronto</strong> e <strong>pré-configurado</strong> para você usar. Dentro do App você também tem acesso a vídeo aulas <strong>ensinando tudo,</strong> clique por clique.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingEight">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Por Quanto Tempo é o Acesso?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+						<div class="card-body">
+							O <strong>Acesso é Anual,</strong> por 12 Meses você tem acesso <strong>ILIMITADO</strong> aos códigos gerados de pagamentos em conta.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingNine">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Vou ter suporte se precisar?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+						<div class="card-body">
+							Sim, você contará com canal de <strong>suporte todos os dias da semana</strong> para te ajudar em tudo o que você precisar.
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTen">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Em quais dispositivos os Códigos da Renda funcionam?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+						<div class="card-body">
+							Em <strong>qualquer celular</strong> Android/IOS fabricado <strong>após 2017.</strong> Funciona também em <strong>Tablets/Desktops.</strong>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingEleven">
+						<h2 class="mb-0">
+							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+								<i class="fa fa-chevron-circle-down"></i> 
+								Tenho garantia? Posso pedir Reembolso?
+							</a>                               
+						</h2>
+					</div>
+					<div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+						<div class="card-body">
+							Te damos <strong>garantia de funcionamento da ferramenta.</strong> Você pode estar optando pelo cancelamento/reembolso da compra em um prazo de <strong>até sete dias.</strong> Para isso você deverá contatar nossa central de relacionamento e suporte.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btpai" style="width: fit-content;margin: auto;">
+			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
+				QUERO RECEBER OS CÓDIGOS DA RENDA!
+			</a>
+			<div style="margin:auto; width: fit-content;">
+				<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
+			</div>
+		</div>
+
+	</section>
+	<section class="sec3">
+
+		<div class="fot">
+			<div class="fotit0">
+				<img src="imagens/logo.svg?v=2" style="width: 80%">
+				<p style="text-align: left; margin-top: 25px;">
+					Aviso legal: Não existem garantias no Mercado de Renda Variável, nem Ganhos Fixos. Os resultados podem variar de pessoa para pessoa.
+				</p>
+			</div>
+			<div class="fotit">
+				<div>
+					<p>
+						Precisa de ajuda?
+					</p>
+					<div style=" border: 2px solid #3CF20F;border-radius: 20px; padding: 5px 15px 5px 15px;width: 95% !important;margin: auto;">
+						<a style="text-decoration: none; color: #3CF20F;font-weight: 700;" href="https://faqfacil.com/clubedarenda2/" target="_blank">
+							ACESSE <br>NOSSO FAQ
+						</a>
+					</div>
+				</div>
+				<div>
+					<p>
+						Compre com segurança
+					</p>
+					<img src="imagens/siteblindado.png?v=2">
+				</div>
+			</div>
+			<div style="width: 25%">
+				<p>
+					Formas de pagamento
+				</p>
+				<div style="width: fit-content; display: flex; flex-direction: column;">
+					<div>
+						<img src="imagens/master.png?v=2" style="width: 25%">
+						<img src="imagens/visa.png?v=2" style="width: 25%">
+						<img src="imagens/elo.png?v=2" style="width: 25%">
+					</div>
+					<div>
+						<img src="imagens/american.png?v=2" style="width: 25%">
+						<img src="imagens/diners.png?v=2" style="width: 25%">
+						<img src="imagens/boleto.png?v=2" style="width: 25%">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+	</script>
+	<script src="scripts/jquery-3.3.1.js?v=5">
+	</script>
+	<script src="scripts/youtube-mobilefb1b.js?v=9">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+    <script type="text/javascript">
+    
+        var query = location.search.slice(1);
+        var partes = query.split('&');
+        var data = {};
+        partes.forEach(function (parte) {
+            var chaveValor = parte.split('=');
+            var chave = chaveValor[0];
+            var valor = chaveValor[1];
+            data[chave] = valor;
+        });
+        var url = data['src'];
+        $(document).ready(function () {
+            $('.custom-url').attr('href', "https://codigosdarenda.com/codigos-red2/?" + query);
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+		var back_redirect_back_link = 'https://codigosdarenda.com/codigos-back1/?' + query;
+		history.pushState({},"",location.href);
+	    history.pushState({},"",location.href);
+	    window.onpopstate = function(){
+	        setTimeout(function () {
+	        	location.href = back_redirect_back_link;
+	        },1);
+	    };
+
+    </script>
+
+</body>
+</html>
