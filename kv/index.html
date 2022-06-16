@@ -1,1076 +1,342 @@
 
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US"
+	prefix="og: https://ogp.me/ns#" >
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		Códigos da Renda
-	</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/47947ba139.js" crossorigin="anonymous">
-	</script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="styles/extra43a0.css" rel="stylesheet" />
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
-	</script>
-
-	<style>
-
-		.accordion .card {
-			background: none;
-			border: none;
-		}
-
-		.accordion .card .card-header {
-			background: none;
-			border: none;
-			padding: .4rem 1rem;
-			font-family: "Roboto", sans-serif;
-			border-bottom: 2px #324353 solid;
-		}
-
-		.accordion .card-header h2 span {
-			float: left;
-			margin-top: 10px;
-		}
-
-		.accordion .card-header .btn {
-			color: white;
-			font-size: 1.04rem;
-			text-align: left;
-			position: relative;
-			font-weight: 500;
-			padding-left: 2rem;
-
-		}
-
-		.accordion .card-header i {
-			font-size: 1.2rem;
-			font-weight: bold;
-			position: absolute;
-			left: 0;
-			top: 9px;
-		}
-
-		.accordion .card-header .btn:hover {
-			color: #ff8300;
-		}
-
-		.accordion .card-body {
-			color: white;
-			padding: 0.5rem 3rem;
-		}
-
-		.page-title {
-			margin: 3rem 0 3rem 1rem;
-			font-family: "Roboto", sans-serif;
-			position: relative;
-		}
-
-		.page-title::after {
-			content: "";
-			width: 80px;
-			position: absolute;
-			height: 3px;
-			border-radius: 1px;
-			background: #73bb2b;
-			left: 0;
-			bottom: -15px;
-		}
-
-		.accordion .highlight .btn {
-			color: #74bd30;
-		}
-
-		.accordion .highlight i {
-			transform: rotate(180deg);
-		}
-
-	</style>
-	<script>
-
-		$(document).ready(function(){
-			$(".collapse.show").each(function(){
-				$(this).prev(".card-header").addClass("highlight");
-			}); 
-			$(".card-header .btn").click(function(){
-				$(".card-header").not($(this).parents()).removeClass("highlight");
-				$(this).parents(".card-header").toggleClass("highlight");
-			});
-		});
-
-	</script>
-	<style type="text/css">
-
-		body{
-			width: 100%;
-			padding: 0px;
-			margin: 0px;
-		}
-
-		.flickity-page-dots{
-			display: none;
-		}
-
-		.sec{
-			background-color: black;
-			text-align: center;
-			font-family: 'Montserrat', sans-serif; 
-			font-family: 'Ubuntu', sans-serif;
-			background-image: linear-gradient(#0a004cd4, #0a004cd4), url('imagens/back1.png?v=2'); 
-			background-size: cover;
-			padding-top: 30px;
-			display: flex; 
-			flex-direction: column; 
-			padding-bottom:50px;
-			height: fit-content;
-		}
-
-		.sec2{
-			text-align: center;
-			font-family: 'Montserrat', sans-serif; 
-			font-family: 'Ubuntu', sans-serif;
-			background-image: linear-gradient(#eee4c99c, #eee4c99c), url('imagens/back2.png?v=2'); 
-			background-size: cover ;
-			padding-top: 30px;
-			display: flex; 
-			flex-direction: column; 
-			padding-bottom:30px;
-		}
-
-		.sec3{
-			background-color: black;
-			text-align: center;
-			font-family: 'Montserrat', sans-serif; 
-			font-family: 'Ubuntu', sans-serif;
-			background-image: linear-gradient(#000000e8, #000000ed), url(imagens/back2.png?v=2); 
-			background-size: cover ;
-			padding-top: 30px;
-			display: flex; 
-			flex-direction: column; 
-			padding-bottom:30px; 
-			color: white;
-		}
-
-		.logo{
-			width: 20%;
-			margin: auto;
-		}
-
-		.bloco{
-			display: flex; 
-			flex-direction: row; 
-			justify-content: space-around; 
-			margin-top: 30px;
-		}
-
-		.bloco2{
-			width: 50%; 
-			margin: auto;
-			color: #000958; 
-			display: flex; 
-			flex-direction:row;
-		}
-
-		.bloco3{
-			width: 100% !important; 
-			margin: auto;
-			color: #000958; 
-			display: flex; 
-			flex-direction:row;
-			justify-content: center;
-		}
-
-		.volu{
-			width: 30%; 
-			margin: auto; 
-			display: flex; 
-			flex-direction: row;
-			position: relative; 
-			margin-top: 20px;
-		}
-
-		.per1{
-			margin: auto; 
-			display: flex; 
-			flex-direction: row; 
-			width: fit-content;
-		}
-
-		.imagens{
-			position: relative;
-			width: 40%;
-		}
-
-		.img1{
-			position: absolute;
-			width:100%; 
-			z-index: 2; 
-			bottom: 0;
-			right: 0;
-			margin-bottom: -100px;
-			margin-left: -100px;
-		}
-
-		.cartao{
-			width: 25%; 
-			color: #000958;
-		}
-
-		.bola{
-			background-color: #3CF20F; 
-			width: 80px; 
-			height: 80px; 
-			border-radius: 100%; 
-			margin-top: 10%;
-		}
-
-		.imagem1{
-			width: 34%;
-			position: absolute;
-			left: -85px; 
-			bottom: -92px;
-		}
-
-		.vid{
-			width: 55% !important;
-			margin: auto;
-		}
-
-		.acord-img{
-			width: 80%; 
-			margin: auto;
-			margin-bottom: 50px;
-		}
-
-		.ce{
-			width: 25% !important;
-		}
-
-		.fot{
-			display: flex; 
-			flex-direction: row; 
-			width: 80%; 
-			margin: auto;
-		}
-
-		.fotit{
-			display: flex; 
-			flex-direction: row; 
-			width: 50%; 
-			justify-content: space-around;
-		}
-
-		.fotit0{
-			display: flex; 
-			flex-direction: column; 
-			width: 25%;
-		}
-
-		.perg{
-			text-align: center; 
-			color: #3CF20F; 
-			font-size: 1.3rem; 
-			margin-top: 60px
-		}
-
-		.flickity-prev-next-button{
-			border-radius: 0px !important;
-			background-color: #3CF20F;
-			z-index: 21 !important;
-		}
-
-		.tit{
-			color: #000958;
-			font-size: 2rem; 
-			margin-top: 20px;
-			font-weight: 700;
-		}
-
-		@media (max-width: 500px){
-
-			.sec h1{
-				font-size: 1.3rem !important;
-			}
-
-			.sec h1 br{
-				display: none;
-			}
-
-			.tit{
-				font-size: 1.5rem !important;
-			}
-
-			.tit br{
-				display: none;
-			}
-
-			.perg{
-				font-size: 2rem;
-				margin-bottom: 30px;
-			}
-
-			.perg br{
-				display: block !important;
-			}
-
-			.btpai{
-				margin: auto;
-			}
-
-			.fot{
-				display: flex; 
-				flex-direction: column; 
-				width: 95%; 
-				margin: auto;
-				text-align: center !important;
-			}
-
-			.fot div{
-
-				width: 100% !important; 
-				margin-bottom: 10px;
-			}
-
-			.fotit div{
-				width: 50% !important;
-			}
-
-			.fotit div img{
-				width: 100% !important;
-			}
-
-			.fotit0 img{
-				margin: auto;
-			}
-
-			.fotit0 p{
-				text-align: center !important;
-			}
-
-			.acord-img{
-				margin-bottom: 190px;
-			}
-
-			.per1{
-				width: 100% !important;
-			}
-
-			.per1 div{
-				padding: 10px !important;
-				text-align: center !important;
-				width: 90% !important;
-			}
-
-			.per1 div h1 br{
-				display: none;
-			}
-
-			.ce{
-				width: 100% !important;
-			}
-
-			.vid{
-				width: 95% !important;
-			}
-
-			.sec{
-				padding: 15px;
-			}
-
-			.logo{
-				width: 55% !important;
-				margin-top: 20px;
-			}
-	
-			.volu{
-				width: 85%;
-			}
-
-			.volu img{
-				display: none;
-			}
-
-			.volu p{
-				text-align: center !important;
-			}
-
-			.bloco{
-				display: flex; 
-				flex-direction: column !important; 
-				justify-content: center; 
-				margin-top: 30px;
-			}
-
-			.cartao{
-				width: 90% !important;
-				margin: auto; 
-				margin-bottom: 30px;
-			}
-
-			.bola{ 
-				display: none; 
-			}
-
-			.per1{
-				margin: auto; 
-				display: flex; 
-				flex-direction: column; 
-				width: fit-content;
-			}
-
-			.imagem1{
-				width: 100%;
-    			position: unset; 
-   	 			margin-bottom: -58px;
-    			margin-left: -159px;
-			}
-
-			.bloco2{
-				width: 90%; 
-			}
-
-			.bloco2 div img{
-				width: 100% !important;
-				height: fit-content !important;
-				margin: auto !important;
-			}
-
-			.bloco3{
-				width: 90% !important;
-				flex-direction: column-reverse; 
-			}
-
-			.bloco3 h1{
-				font-size: 3rem !important;
-			}
-
-			.bloco3 br{
-				display: none;
-			}
-
-			.bloco3 .euro{
-				margin: auto;
-				text-align: center;
-			}
-
-			.imagens{
-				position: inherit;
-				margin: auto;
-				width: 100%;
-				height: fit-content;
-			}
-
-			.img1{
-				position: inherit;
-				width:100%; 
-				z-index: 2;
-				margin-bottom: 30px !important;
-				margin-left: 0px !important;
-				margin-top: -170px;
-			}
-
-			.gallery-cell {
-  				width: 100% !important;
-			}
-
-		}
-
-        .btne{
-            text-decoration: none;
-    		background-color: #29AE08 !important;
-    		border: none !important;
-    		color: white !important;
-    		width: 100% !important;
-    		padding: 20px 30px 20px 30px !important;
-    		font-size: 0.9rem !important;
-    		border-radius: 10px !important;
-    		margin: auto !important;
-    		line-height: 21px !important;
-    		text-align: center;
-    		font-weight: bold;
-    		box-shadow: 0 0 1em #29AE08;
-        }
-        
-        .btne:hover{
-            background-color: #2f5b1c ;
-        }
-
-        .gallery {
- 	 		background: #00f0;
-		}
-
-		.gallery-cell {
-  			width: 66%;
-  			height: fit-content;
-  			margin-right: 10px;
-  			background: #00f0;
-  			counter-increment: gallery-cell;
-		}
-
-		.gallery-cell:before {
-  			display: block;
-  			text-align: center;
-  			line-height: 200px;
-  			font-size: 80px;
-  			color: white;
-		}
-
-		.modal-content {
-	        background-color: #fefefe;
-	        background-image: url("imagens/fundo.jpg?v=2");
-	        margin: 0% auto;
-	        padding: 5px;
-	        width: 30% !important;
-	        background-size: cover;
-	    }
-
-        @media screen and (max-width: 800px) {
-
-            .modali-content{
-               width: 95% !important;
-               height: 100%;
-            }
-
-        }
-
-        .modali {
-            display: none; 
-            position: fixed; 
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: hidden; 
-            background-color: rgb(0,0,0); 
-       	    background-color: rgba(0,0,0,0.4);
-    	}
-
-	</style>
+	<meta charset="UTF-8">
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- All in One SEO 4.2.1.1 -->
+		<title>TICTO – Passos lucrativos – 97 – COM DELAY - passos lucrativo</title>
+		<meta name="description" content="método exclusivo que me fez ganhar R$ 738,00 em 14 min apenas andandoDe forma 100% legal e sem gambiarra Assista até o final para começar ainda hoje! QUERO COMEÇAR AGORA você ainda tem 7 dias de garantia ou seu dinheiro de voltaDiga adeus as frustações. Nosso compromisso é de 100% em seu resultado nesse mundo" />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="https://passoslucrativo.com/tipl97de/" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="passos lucrativo - Just another WordPress site" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="TICTO – Passos lucrativos – 97 – COM DELAY - passos lucrativo" />
+		<meta property="og:description" content="método exclusivo que me fez ganhar R$ 738,00 em 14 min apenas andandoDe forma 100% legal e sem gambiarra Assista até o final para começar ainda hoje! QUERO COMEÇAR AGORA você ainda tem 7 dias de garantia ou seu dinheiro de voltaDiga adeus as frustações. Nosso compromisso é de 100% em seu resultado nesse mundo" />
+		<meta property="og:url" content="https://passoslucrativo.com/tipl97de/" />
+		<meta property="article:published_time" content="2022-06-06T14:02:38+00:00" />
+		<meta property="article:modified_time" content="2022-06-14T02:46:40+00:00" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="TICTO – Passos lucrativos – 97 – COM DELAY - passos lucrativo" />
+		<meta name="twitter:description" content="método exclusivo que me fez ganhar R$ 738,00 em 14 min apenas andandoDe forma 100% legal e sem gambiarra Assista até o final para começar ainda hoje! QUERO COMEÇAR AGORA você ainda tem 7 dias de garantia ou seu dinheiro de voltaDiga adeus as frustações. Nosso compromisso é de 100% em seu resultado nesse mundo" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/passoslucrativo.com\/#website","url":"https:\/\/passoslucrativo.com\/","name":"passos lucrativo","description":"Just another WordPress site","inLanguage":"en-US","publisher":{"@id":"https:\/\/passoslucrativo.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/passoslucrativo.com\/#organization","name":"passos lucrativo","url":"https:\/\/passoslucrativo.com\/"},{"@type":"BreadcrumbList","@id":"https:\/\/passoslucrativo.com\/tipl97de\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/passoslucrativo.com\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/passoslucrativo.com\/","name":"Home","description":"Just another WordPress site","url":"https:\/\/passoslucrativo.com\/"},"nextItem":"https:\/\/passoslucrativo.com\/tipl97de\/#listItem"},{"@type":"ListItem","@id":"https:\/\/passoslucrativo.com\/tipl97de\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/passoslucrativo.com\/tipl97de\/","name":"TICTO - Passos lucrativos - 97 - COM DELAY","description":"m\u00e9todo exclusivo que me fez ganhar R$ 738,00 em 14 min apenas andandoDe forma 100% legal e sem gambiarra Assista at\u00e9 o final para come\u00e7ar ainda hoje! QUERO COME\u00c7AR AGORA voc\u00ea ainda tem 7 dias de garantia ou seu dinheiro de voltaDiga adeus as frusta\u00e7\u00f5es. Nosso compromisso \u00e9 de 100% em seu resultado nesse mundo","url":"https:\/\/passoslucrativo.com\/tipl97de\/"},"previousItem":"https:\/\/passoslucrativo.com\/#listItem"}]},{"@type":"WebPage","@id":"https:\/\/passoslucrativo.com\/tipl97de\/#webpage","url":"https:\/\/passoslucrativo.com\/tipl97de\/","name":"TICTO \u2013 Passos lucrativos \u2013 97 \u2013 COM DELAY - passos lucrativo","description":"m\u00e9todo exclusivo que me fez ganhar R$ 738,00 em 14 min apenas andandoDe forma 100% legal e sem gambiarra Assista at\u00e9 o final para come\u00e7ar ainda hoje! QUERO COME\u00c7AR AGORA voc\u00ea ainda tem 7 dias de garantia ou seu dinheiro de voltaDiga adeus as frusta\u00e7\u00f5es. Nosso compromisso \u00e9 de 100% em seu resultado nesse mundo","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/passoslucrativo.com\/#website"},"breadcrumb":{"@id":"https:\/\/passoslucrativo.com\/tipl97de\/#breadcrumblist"},"datePublished":"2022-06-06T14:02:38+00:00","dateModified":"2022-06-14T02:46:40+00:00"}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="passos lucrativo &raquo; Feed" href="https://passoslucrativo.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="passos lucrativo &raquo; Comments Feed" href="https://passoslucrativo.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.5.3 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/passoslucrativo.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color),html :where([style*=border-width]){border-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #1a4548;--wp--preset--color--secondary: #ffe2c7;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--duotone--foreground-and-background: url('#wp-duotone-foreground-and-background');--wp--preset--duotone--foreground-and-secondary: url('#wp-duotone-foreground-and-secondary');--wp--preset--duotone--foreground-and-tertiary: url('#wp-duotone-foreground-and-tertiary');--wp--preset--duotone--primary-and-background: url('#wp-duotone-primary-and-background');--wp--preset--duotone--primary-and-secondary: url('#wp-duotone-primary-and-secondary');--wp--preset--duotone--primary-and-tertiary: url('#wp-duotone-primary-and-tertiary');--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.125rem;--wp--preset--font-size--large: 1.75rem;--wp--preset--font-size--x-large: clamp(1.75rem, 3vw, 2.25rem);--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--custom--spacing--small: max(1.25rem, 5vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);--wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);--wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;}body { margin: 0; }body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: var(--wp--custom--typography--line-height--normal);--wp--style--block-gap: 1.5rem;}.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: var( --wp--style--block-gap ); }h1{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--colossal);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}h3{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--huge);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--preset--font-size--x-large);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 700;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}a{color: var(--wp--preset--color--foreground);}.wp-block-button__link{background-color: var(--wp--preset--color--primary);border-radius: 0;color: var(--wp--preset--color--background);font-size: var(--wp--preset--font-size--medium);}.wp-block-post-title{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}.wp-block-post-comments{padding-top: var(--wp--custom--spacing--small);}.wp-block-pullquote{border-width: 1px 0;}.wp-block-query-title{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}.wp-block-quote{border-width: 1px;}.wp-block-site-title{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-style: italic;font-weight: normal;line-height: var(--wp--custom--typography--line-height--normal);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}
+</style>
+<style id='wp-webfonts-inline-css'>
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel='stylesheet' id='twentytwentytwo-style-css'  href='https://passoslucrativo.com/wp-content/themes/twentytwentytwo/style.css?ver=1.2' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://passoslucrativo.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.15.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://passoslucrativo.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.6.5' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css'  href='https://passoslucrativo.com/wp-content/uploads/elementor/css/post-5.css?ver=1654873076' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='https://passoslucrativo.com/wp-content/uploads/elementor/css/global.css?ver=1654873077' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css'  href='https://passoslucrativo.com/wp-content/uploads/elementor/css/post-6.css?ver=1655174404' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBebas+Neue%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.0' media='all' />
+<link rel="https://api.w.org/" href="https://passoslucrativo.com/wp-json/" /><link rel="alternate" type="application/json" href="https://passoslucrativo.com/wp-json/wp/v2/pages/6" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://passoslucrativo.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://passoslucrativo.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0" />
+<link rel='shortlink' href='https://passoslucrativo.com/?p=6' />
+<link rel="alternate" type="application/json+oembed" href="https://passoslucrativo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpassoslucrativo.com%2Ftipl97de%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://passoslucrativo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpassoslucrativo.com%2Ftipl97de%2F&#038;format=xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-6 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-6">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-foreground-and-background"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-foreground-and-secondary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.88627450980392" /><feFuncB type="table" tableValues="0 0.78039215686275" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-foreground-and-tertiary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.96470588235294" /><feFuncG type="table" tableValues="0 0.96470588235294" /><feFuncB type="table" tableValues="0 0.96470588235294" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-primary-and-background"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.10196078431373 1" /><feFuncG type="table" tableValues="0.27058823529412 1" /><feFuncB type="table" tableValues="0.28235294117647 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-primary-and-secondary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.10196078431373 1" /><feFuncG type="table" tableValues="0.27058823529412 0.88627450980392" /><feFuncB type="table" tableValues="0.28235294117647 0.78039215686275" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-primary-and-tertiary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.10196078431373 0.96470588235294" /><feFuncG type="table" tableValues="0.27058823529412 0.96470588235294" /><feFuncB type="table" tableValues="0.28235294117647 0.96470588235294" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-e03d46c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e03d46c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c064531" data-id="c064531" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9ca19a6 elementor-widget elementor-widget-spacer" data-id="9ca19a6" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.5 - 27-04-2022 */
+.e-container.e-container--row .elementor-spacer-inner{width:var(--spacer-size)}.e-container.e-container--column .elementor-spacer-inner,.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-62abe12 elementor-widget elementor-widget-html" data-id="62abe12" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '752667005865900');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=752667005865900&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-8e87a51 elementor-widget elementor-widget-html" data-id="8e87a51" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '541269841005192');
+  fbq('track', 'PageView');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=541269841005192&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-f6030bc elementor-widget elementor-widget-text-editor" data-id="f6030bc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.5 - 27-04-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>método exclusivo que me fez ganhar <span style="color: #00ff00;">R$ 738,00 em 14 min</span> apenas andando</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-ee32d84 elementor-widget elementor-widget-text-editor" data-id="ee32d84" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>De forma 100% legal e sem gambiarra</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-fbdebe1 elementor-widget elementor-widget-html" data-id="fbdebe1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/c18971ff-162e-488d-98df-a4bf34cc5132/players/629becc4dff21b000a43da93/embed.html" id="ifr_629becc4dff21b000a43da93" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-36c066d elementor-widget elementor-widget-text-editor" data-id="36c066d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Assista até o final para começar ainda hoje!</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9f1f4f7 atrasado elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9f1f4f7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5794861" data-id="5794861" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-968b908 elementor-button-success elementor-align-center elementor-widget elementor-widget-button" data-id="968b908" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://payb.ticto.com.br/c/9FB8B475?" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">QUERO COMEÇAR AGORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d722ce4 elementor-widget elementor-widget-image" data-id="d722ce4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.6.5 - 27-04-2022 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="1024" height="116" src="https://passoslucrativo.com/wp-content/uploads/2022/06/bandeiras-cartoes-1024x116.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://passoslucrativo.com/wp-content/uploads/2022/06/bandeiras-cartoes-1024x116.png 1024w, https://passoslucrativo.com/wp-content/uploads/2022/06/bandeiras-cartoes-300x34.png 300w, https://passoslucrativo.com/wp-content/uploads/2022/06/bandeiras-cartoes-768x87.png 768w, https://passoslucrativo.com/wp-content/uploads/2022/06/bandeiras-cartoes.png 1250w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-d50827c elementor-widget elementor-widget-spacer" data-id="d50827c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-22cb00a elementor-widget elementor-widget-image" data-id="22cb00a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="350" height="303" src="https://passoslucrativo.com/wp-content/uploads/2022/06/Selo-Garantia-7-Dias_7ce3efe1-2fbb-4a73-a7ee-69a640d7d599_600x600-1-1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://passoslucrativo.com/wp-content/uploads/2022/06/Selo-Garantia-7-Dias_7ce3efe1-2fbb-4a73-a7ee-69a640d7d599_600x600-1-1.png 350w, https://passoslucrativo.com/wp-content/uploads/2022/06/Selo-Garantia-7-Dias_7ce3efe1-2fbb-4a73-a7ee-69a640d7d599_600x600-1-1-300x260.png 300w" sizes="(max-width: 350px) 100vw, 350px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f602073 elementor-widget elementor-widget-text-editor" data-id="f602073" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>você ainda tem 7 dias de garantia ou seu dinheiro de volta</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1e4b2e2 elementor-widget elementor-widget-text-editor" data-id="1e4b2e2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<div id="doEJTZWEOQZTdqOS1klbBUb937ryHf9W" class="widget widget-section digital-delay "><div class="row"><div class="container "><div id="EWQBq6XHTCzZWJngWx0TTSCIRAoLqgvO" class="widget widget-text"><p><b>Diga adeus as frustações. Nosso compromisso é de 100% em seu resultado nesse mundo de games milionários ou o seu dinheiro de volta , isso só é possível porque acreditamos no produto que está mudando a vida de muitas pessoas.</b></p></div></div></div></div><div id="IU0E8aBZSLGR1pgaCqh0SpTHfL3V8Tnk" class="widget widget-section "><div class="row"><div class="container "><div id="RGCLNDd5VKEIiFHqgynsuKT8eEXrLBnC" class="widget widget-text"> </div></div></div></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f17dadd elementor-widget elementor-widget-html" data-id="f17dadd" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '418493566954362');
+  fbq('track', 'PageView');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=418493566954362&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-08c5695 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08c5695" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a2f8858" data-id="a2f8858" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f0da44f elementor-widget elementor-widget-spacer" data-id="f0da44f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-268ba01 elementor-widget elementor-widget-text-editor" data-id="268ba01" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<div id="RGCLNDd5VKEIiFHqgynsuKT8eEXrLBnC" class="widget widget-text"><p><strong>PIRATARIA É CRIME</strong></p><p>A venda do Produto Ganhe Dinheiro Andando só pode ser realizado através deste site, registrado em nome de Negócios Digitais LTDA. Qualquer outro site onde você encontrou este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recursos ilegais ou pirateados. NÃO adquira programas semelhantes e que não sejam comportamentais em anos de estudo psicologia. Não nos responsabilizamos por compras realizadas em outros sites.</p></div><div id="QNZyXtJwC2kCcwHTTKxrN0paDFkg4SFh" class="widget widget-text"><p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Todos os exercícios para indicar claramente e mostrar todas as provas do produto e resultados reais.</p></div><div id="UdXBOxTEHePTSKQ8voN4ulRNDLxhRJT6" class="widget widget-text"><p>Termos de Uso</p></div><div id="Lp61tSxLvUgEHLqrk5Ozqym4qelElpIB" class="widget widget-text"><p>Políticas de Privacidade</p></div>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f91a0f2 atrasado elementor-widget elementor-widget-html" data-id="f91a0f2" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body style="margin:0px">
-	<section class="sec">
-		<img src="imagens/logo.svg?v=2" class="logo">
-		<h1 style="color: white;font-size: 2rem; margin-top: 30px;">
-			A REVOLUCIONÁRIA TECNOLOGIA QUE PODE <br>PAGAR UM NOVO SALÁRIO INTEIRO DIRETO <br>NA SUA CONTA CORRENTE
-		</h1>
-		<div class="vid">
-			<div style="padding:56.25% 0 0 0;position:relative;">
-				<iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/569d43f1-e0e1-4b34-bf65-4c26398adfe8/players/62718837f824ec000a2d37d3/embed.html" id="ifr_62718837f824ec000a2d37d3" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin">
-				</iframe>
-			</div>
-    		<!-- <div class="responsive-video">                 
-				<div id="loadingVideo" style="display:none;"></div>
-	 			<div id="cfs" style="display:block;"></div>
-	 			<div class="cov"></div>
-	 			<div class="covall"></div>
-	 			<div id="player" style="border: #033558 solid 3px"></div>
-    		</div> -->
-		</div>
-		<div class="volu">
-			<img src="imagens/volume-high-solid.svg?v=2" style="width: 10%;filter:invert(1); margin-right: 5px;">
-			<p style="color: white; text-align: left;font-weight: 300; font-size: 1.2rem; margin-bottom: 0px">
-				Clique no Play e Assista Esse Video Antes que os <span style="font-weight: 700">"Poderosos"</span> Tirem do Ar
-			</p>
-		</div>
-		<div class="btpai" style="width: fit-content; margin: auto;">
-			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
-				QUERO RECEBER OS CÓDIGOS DA RENDA!
-			</a>
-			<div style="margin:auto; width: fit-content;">
-				<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
-			</div>
-		</div>
-		<div style="position: relative;">
-			<img src="imagens/mao.png?v=2" class="imagem1">
-		</div>
 
-	</section>
-	<section class="sec2">
-
-		<h1 class="tit">
-			Veja o passo a passo de como <br>funcionam os Códigos da Renda
-		</h1>
-		<div class="bloco">
-			<div class="cartao">
-				<img src="imagens/tel1.png?v=2" style="margin-bottom: -40px;width: 70%;">
-				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px; box-shadow: 0 0 1em #00000070;">
-					<p style="font-size: 1.2rem; text-align: left">
-						<span style="font-weight: 800;">1.</span> Receba seus <span style="font-weight: 800;">CÓDIGOS da RENDA.</span>
-					</p>
-				</div>			
-			</div>
-			<div class="bola">
-				<div style="width: 35px; height: 35px; margin: auto; border-right: black solid 7px; border-bottom: black solid 7px; transform: rotate(315deg) translateX(25%) translateY(-50%);position: relative;top: 50%;">	
+<script>
+$('.atrasado').hide();
+setTimeout(function() {
+$('.atrasado').show();
+}, 438000);
+</script>		</div>
 				</div>
-			</div>
-			<div class="cartao">
-				<img src="imagens/tel3.png?v=2" style="margin-bottom: -40px;width: 70%;">
-				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px;box-shadow: 0 0 1em #00000070;">
-					<p style="font-size: 1.2rem; text-align: left">
-						<span style="font-weight: 800;">2.</span> Ative seus <span style="font-weight: 800;">CÓDIGOS.</span>
-					</p>
-				</div>			
-			</div>
-			<div class="bola">
-				<div style="width: 35px; height: 35px; margin: auto; border-right: black solid 7px; border-bottom: black solid 7px; transform: rotate(315deg) translateX(25%) translateY(-50%);position: relative;top: 50%;">	
-				</div>
-			</div>
-			<div class="cartao">
-				<img src="imagens/tel2.png?v=2" style="margin-bottom: -40px;width: 70%;">
-				<div style="background-color: white;padding: 70px 40px 10px 40px; border-radius: 10px;box-shadow: 0 0 1em #00000070;">
-					<p style="font-size: 1.2rem; text-align: left">
-						<span style="font-weight: 800;">3.</span> <span style="font-weight: 800;">RECEBA</span> seus <span style="font-weight: 800;">PAGAMENTOS</span> direto na <span style="font-weight: 800;">SUA CONTA CORRENTE.</span>
-					</p>
-				</div>			
-			</div>
-		</div>	
-		<div class="btpai" style="width: fit-content; margin: auto;">
-			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
-				QUERO RECEBER OS CÓDIGOS DA RENDA!
-			</a>
-			<div style="margin:auto; width: fit-content;">
-				<img src="imagens/comprasegura.png?v=2" style="margin: auto; margin-top: 30px;">
-			</div>
+					</div>
 		</div>
+							</div>
+		</section>
+							</div>
+		
+		<style id="skip-link-styles">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
 
-	</section>
-	<section class="sec" style="box-shadow: inset 0px 0px 30px 30px #000958bf;">
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+		<script>
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
 
-		<h1 style="color: white;font-size: 2rem; margin-top: 30px; margin-bottom: 30px;">
-			Quem me escuta tem <br>RESULTADOS
-		</h1>
-		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9" style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/Qy8jDB_sCpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap ">
-  				<div class="ratio ratio-16x9" style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/FXEUzrueY-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/pLKq-UoazyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/NRMK3BS2lh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/KMdEDiJWWQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/nz_XVVMZw8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/ooJFmFqSZK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/UpyJgkdUvwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-  			<div class="gallery-cell video-wrap">
-  				<div class="ratio ratio-16x9"  style="z-index: 20 !important;">
-    				<iframe width="640" height="480" src="https://www.youtube.com/embed/0C3hbWURJU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    				</iframe>
-    			</div>
-  			</div>
-		</div>
-		<div class="acord-img">
-			<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' style="margin-top: 60px">
-	  			<div class="gallery-cell ce">
-	  				<img src="imagens/cel1.png?v=2" style="width: 100%">
-	  			</div>
-	  			<div class="gallery-cell ce">
-	  				<img src="imagens/cel2.png?v=2" style="width: 100%">
-	  			</div>
-	  			<div class="gallery-cell ce">
-	  				<img src="imagens/cel3.png?v=2" style="width: 100%">
-	  			</div>
-	  			<div class="gallery-cell ce">
-	  				<img src="imagens/cel4.png?v=2" style="width: 100%">
-	  			</div>
-	  			<div class="gallery-cell ce">
-	  				<img src="imagens/cel5.png?v=2" style="width: 100%">
-	  			</div>
-			</div>
-		</div>
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
 
-	</section>
-	<section class="sec2">
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
 
-		<div class="bloco3" style="">
-			<div style="text-align: left;">
-				<h1 style=";font-size: 2rem; margin-top: 20px;font-weight: 700;">
-					Como funcionam os Códigos da Renda?
-				</h1>
-				<p style="font-size: 1.3rem; margin-top: 30px">
-					Os Códigos da Renda usam o poder computacional <br>do seu dispositivo para assumir uma Profissão <br>de forma Semi-Autônoma na Internet.
-				</p>
-				<div class="euro">
-					<img src="imagens/eurosd.png?v=2" style="width: 60%;margin-top: 20px">
-				</div>
-				<p style="font-size: 1.3rem; margin-top: 20px; text-align: justify;">
-					Com as combinações matemáticas<br> avançadas geradas pelo app é <br>possível ter uma renda <br>recorrente caindo em conta <br>todos os dias no piloto automático.
-				</p>
-				<div class="btpai" style="width: fit-content;">
-					<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
-						QUERO RECEBER OS CÓDIGOS DA RENDA!
-					</a>
-					<div style="margin:auto; width: fit-content;">
-						<img src="imagens/comprasegura.png?v=2" style="margin: auto; margin-top: 30px;">
-					</div>
-				</div>	
-			</div>
-			<div class="imagens" style="">
-				<img class="img1" src="imagens/doiscel.png?v=2">
-			</div>
-		</div>
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
 
-	</section>
-	<section style="background-color: #000958; padding-bottom: 60px;">
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
 
-		<div class="per1">
-			<div style="position: relative; width: fit-content;margin-top: -20px;">
-				<img src="imagens/2cel.png?v=2" style="width:100%">
-				<img src="imagens/7dias.png?v=2" style="position: absolute; margin: auto; width: 45%; right: 40%;bottom: 0;">
-			</div>
-			<div style="padding-left: 100px; width: fit-content;margin: auto;">
-				<h1 style="color: white; margin-top: 60px;">
-					Ou você tem <br>resultado, ou eu <br><span style="color: #3CF20F;">devolvo todo seu <br>dinheiro</span>
-				</h1>
-				<div class="btpai" style="width: fit-content;">
-					<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
-						QUERO RECEBER OS CÓDIGOS DA RENDA!
-					</a>
-					<div style="margin:auto; width: fit-content;">
-						<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
-					</div>
-				</div>	
-			</div>
-		</div>
-		<h1 class="perg">
-			PERGUNTAS <br style="display: none">FREQUENTES
-		</h1>
-		<div class="container-lg">
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<h2 class="clearfix mb-0">
-							<a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								<i class="fa fa-chevron-circle-down"></i> 
-								O que são os Códigos da Renda?
-							</a>									
-						</h2>
-					</div>
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-						<div class="card-body">
-							Infelizmente não se pode explicar o que são os <strong>Códigos da Renda,</strong> você precisa ver por si próprio. Assista ao Vídeo no Topo da Página, esta é a <strong>ÚNICA</strong> forma de você entender como <strong>tudo funciona.</strong>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								<i class="fa fa-chevron-circle-down"></i> 
-								O que preciso para receber os Códigos?
-							</a>
-						</h2>
-					</div>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							<ul>
-		        				<li>
-		        					De um Smartphone Android ou IOS fabricado <strong>após 2017.</strong>
-		        				</li>	        			
-								<li>
-									Uma <strong>Conta Corrente</strong> em seu Nome para Sacar os seus Ganhos.
-								</li>
-		        				<li>
-		        					Ao menos <strong>R$ 60,00</strong> para começar.
-		        				</li>
-		        				<li>
-		        					Ter <strong>VONTADE</strong> de participar e <strong>Receber Pagamentos</strong> em Conta.
-		        				</li>
-		        			</ul>
-		        		</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Quanto eu Posso Ganhar?
-							</a>                     
-						</h2>
-					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						<div class="card-body">
-							O resultado <strong>pode variar</strong> de pessoa para pessoa.
-		        			<br>
-							Só no <strong>último ano,</strong> o Grupo de Pessoas que acompanham o meu trabalho nos Códigos da Renda, sacou entre <strong>R$1.300,00 a R$7.000,00 EXTRAS por Semana.</strong>
-							<br>
-							Isso foi a fase de Testes. <strong>Agora</strong> a estratégia <strong>está otimizada</strong> com potencial nunca isto antes.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingFour">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Como faço para receber os Códigos?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-						<div class="card-body">
-							A <strong>ÚNICA FORMA</strong> é através do <strong>Botão Abaixo:</strong> “Quero Receber os Códigos da Renda”.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingFive">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Como vou ter Acesso?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-						<div class="card-body">
-							O seu acesso é enviado <strong>IMEDIATAMENTE</strong> após a confirmação da inscrição, através de <strong>e-mail e SMS.</strong>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingSix">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Quanto tempo demora para chegar o meu acesso?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-						<div class="card-body">
-							PIX/Cartão de Crédito: Acesso <strong>IMEDIATO</strong>
-							<br>
-							Boleto Bancário: Acesso <strong>após Confirmação</strong> do Pagamento (1 a 3 dias úteis).
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingSeven">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Como vou Aprender a usar os Códigos da Renda?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-						<div class="card-body">
-							Através do <strong>aplicativo oficial</strong> da nossa comunidade. Já está <strong>tudo pronto</strong> e <strong>pré-configurado</strong> para você usar. Dentro do App você também tem acesso a vídeo aulas <strong>ensinando tudo,</strong> clique por clique.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingEight">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Por Quanto Tempo é o Acesso?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-						<div class="card-body">
-							O <strong>Acesso é Anual,</strong> por 12 Meses você tem acesso <strong>ILIMITADO</strong> aos códigos gerados de pagamentos em conta.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingNine">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Vou ter suporte se precisar?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-						<div class="card-body">
-							Sim, você contará com canal de <strong>suporte todos os dias da semana</strong> para te ajudar em tudo o que você precisar.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingTen">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Em quais dispositivos os Códigos da Renda funcionam?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-						<div class="card-body">
-							Em <strong>qualquer celular</strong> Android/IOS fabricado <strong>após 2017.</strong> Funciona também em <strong>Tablets/Desktops.</strong>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingEleven">
-						<h2 class="mb-0">
-							<a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-								<i class="fa fa-chevron-circle-down"></i> 
-								Tenho garantia? Posso pedir Reembolso?
-							</a>                               
-						</h2>
-					</div>
-					<div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
-						<div class="card-body">
-							Te damos <strong>garantia de funcionamento da ferramenta.</strong> Você pode estar optando pelo cancelamento/reembolso da compra em um prazo de <strong>até sete dias.</strong> Para isso você deverá contatar nossa central de relacionamento e suporte.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="btpai" style="width: fit-content;margin: auto;">
-			<a class="btne btn custom-url" target="_blank" style="margin-top: 35px !important;">
-				QUERO RECEBER OS CÓDIGOS DA RENDA!
-			</a>
-			<div style="margin:auto; width: fit-content;">
-				<img src="imagens/comprasegura2.png?v=2" style="margin: auto; margin-top: 30px;">
-			</div>
-		</div>
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
 
-	</section>
-	<section class="sec3">
-
-		<div class="fot">
-			<div class="fotit0">
-				<img src="imagens/logo.svg?v=2" style="width: 80%">
-				<p style="text-align: left; margin-top: 25px;">
-					Aviso legal: Não existem garantias no Mercado de Renda Variável, nem Ganhos Fixos. Os resultados podem variar de pessoa para pessoa.
-				</p>
-			</div>
-			<div class="fotit">
-				<div>
-					<p>
-						Precisa de ajuda?
-					</p>
-					<div style=" border: 2px solid #3CF20F;border-radius: 20px; padding: 5px 15px 5px 15px;width: 95% !important;margin: auto;">
-						<a style="text-decoration: none; color: #3CF20F;font-weight: 700;" href="https://faqfacil.com/clubedarenda2/" target="_blank">
-							ACESSE <br>NOSSO FAQ
-						</a>
-					</div>
-				</div>
-				<div>
-					<p>
-						Compre com segurança
-					</p>
-					<img src="imagens/siteblindado.png?v=2">
-				</div>
-			</div>
-			<div style="width: 25%">
-				<p>
-					Formas de pagamento
-				</p>
-				<div style="width: fit-content; display: flex; flex-direction: column;">
-					<div>
-						<img src="imagens/master.png?v=2" style="width: 25%">
-						<img src="imagens/visa.png?v=2" style="width: 25%">
-						<img src="imagens/elo.png?v=2" style="width: 25%">
-					</div>
-					<div>
-						<img src="imagens/american.png?v=2" style="width: 25%">
-						<img src="imagens/diners.png?v=2" style="width: 25%">
-						<img src="imagens/boleto.png?v=2" style="width: 25%">
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
 	</script>
-	<script src="scripts/jquery-3.3.1.js?v=5">
-	</script>
-	<script src="scripts/youtube-mobilefb1b.js?v=9">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
-    <script type="text/javascript">
-    
-        var query = location.search.slice(1);
-        var partes = query.split('&');
-        var data = {};
-        partes.forEach(function (parte) {
-            var chaveValor = parte.split('=');
-            var chave = chaveValor[0];
-            var valor = chaveValor[1];
-            data[chave] = valor;
-        });
-        var url = data['src'];
-        $(document).ready(function () {
-            $('.custom-url').attr('href', "https://codigosdarenda.com/codigos-red2/?" + query);
-        });
-
-    </script>
-
-    <script type="text/javascript">
-
-		var back_redirect_back_link = 'https://codigosdarenda.com/codigos-back1/?' + query;
-		history.pushState({},"",location.href);
-	    history.pushState({},"",location.href);
-	    window.onpopstate = function(){
-	        setTimeout(function () {
-	        	location.href = back_redirect_back_link;
-	        },1);
-	    };
-
-    </script>
-
-</body>
+	<script src='https://passoslucrativo.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.6.5' id='elementor-webpack-runtime-js'></script>
+<script src='https://passoslucrativo.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://passoslucrativo.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://passoslucrativo.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.6.5' id='elementor-frontend-modules-js'></script>
+<script src='https://passoslucrativo.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://passoslucrativo.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/passoslucrativo.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6,"title":"TICTO%20%E2%80%93%20Passos%20lucrativos%20%E2%80%93%2097%20%E2%80%93%20COM%20DELAY%20-%20passos%20lucrativo","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://passoslucrativo.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.5' id='elementor-frontend-js'></script>
+<script src='https://passoslucrativo.com/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://passoslucrativo.com/wp-includes/js/wp-util.min.js?ver=6.0' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://passoslucrativo.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.7.4.2' id='wpforms-elementor-js'></script>
+	</body>
 </html>
