@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>      
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CBQ6C8BC77UESBO9C700');
+  ttq.page();
+ttq.track('ViewContent')
+}(window, document, 'ttq');
+</script>
+    <script data-obct type = "text/javascript">
+        /* DO NOT MODIFY THIS CODE*/
+        !function(_window, _document) {
+            var OB_ADV_ID = '002cbfdc1a4d3207c95e6bca316c3bc73c';
+            if (_window.obApi) {
+            var toArray = function(object) {
+                return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+            };
+            _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+            return;
+            }
+            var api = _window.obApi = function() {
+            api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+            };
+            api.version = '1.1';
+            api.loaded = true;
+            api.marketerId = OB_ADV_ID;
+            api.queue = [];
+            var tag = _document.createElement('script');
+            tag.async = true;
+            tag.src = '//amplify.outbrain.com/cp/obtp.js';
+            tag.type = 'text/javascript';
+            var script = _document.getElementsByTagName('script')[0];
+            script.parentNode.insertBefore(tag, script);
+        }(window, document);
+        
+        obApi('track', 'PAGE_VIEW');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Ads: 300024524 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-300024524"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'AW-300024524');
+        </script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDP62FS09N"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-JDP62FS09N');
+        </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhando no Automático</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+	
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+
+        (function(b) {
+        
+        var a = {
+        
+        version: "0.0.1",
+        
+        history_api: typeof history.pushState !== "undefined",
+        
+        init: function() {
+        
+        b.location.hash = "#no-back";
+        
+        a.configure();
+        
+        },
+        
+        hasChanged: function() {
+        
+        if (b.location.hash == "#no-back") {
+        
+        b.location.hash = "#";
+        
+        if (b.location.search == null || b.location.search == undefined || b.location.search ==
+        
+        '') {
+        
+        b.location.href = "https://ganhandonoautomatico.com/back";
+        
+        } else {
+        
+        if (location.search.indexOf("src") > -1) {
+        
+        var partes = location.search.slice(1).split('&');
+        
+        var data = {};
+        
+        var new_search = '?';
+        
+        partes.forEach(function(parte) {
+        
+        var chaveValor = parte.split('=');
+        
+        var chave = chaveValor[0];
+        
+        var valor = chaveValor[1];
+        
+        data[chave] = valor;
+        
+        });
+        
+        data.src = data.src + "-->back_home";
+        
+        new_search += JSON.stringify(data).replace(/[{}"]/g, "").replace(/[:]/g, "=")
+        
+        .replace(/[,]/g, "&");
+        
+        b.location.href = "https://ganhandonoautomatico.com/back/#" + new_search;
+        
+        } else {
+        
+        b.location.href = "https://ganhandonoautomatico.com/back" + b.location.search + "&src=back_home";
+        
+        }
+        
+        }
+        
+        }
+        
+        },
+        
+        checkCompat: function() {
+        
+        if (b.addEventListener) {
+        
+        b.addEventListener("hashchange", a.hasChanged, false);
+        
+        } else {
+        
+        if (b.attachEvent) {
+        
+        b.attachEvent("onhashchange", a.hasChanged);
+        
+        } else {
+        
+        b.onhashchange = a.hasChanged;
+        
+        }
+        
+        }
+        
+        },
+        
+        configure: function() {
+        
+        if (b.location.hash == "#no-back") {
+        
+        if (this.history_api) {
+        
+        history.pushState(null, "", "#");
+        
+        } else {
+        
+        // b.location.hash = "#";
+        
+        if (b.location.search == null || b.location.search == undefined || b.location.search ==
+        
+        '') {
+        
+        b.location.href = "https://ganhandonoautomatico.com/back/";
+        
+        } else {
+        
+        if (location.search.indexOf("src") > -1) {
+        
+        var partes = location.search.slice(1).split('&');
+        
+        var data = {};
+        
+        var new_search = '?';
+        
+        partes.forEach(function(parte) {
+        
+        var chaveValor = parte.split('=');
+        
+        var chave = chaveValor[0];
+        
+        var valor = chaveValor[1];
+        
+        data[chave] = valor;
+        
+        });
+        
+        data.src = data.src + "-->back_home";
+        
+        new_search += JSON.stringify(data).replace(/[{}"]/g, "").replace(/[:]/g, "=")
+        
+        .replace(/[,]/g, "&");
+        
+        b.location.href = "https://ganhandonoautomatico.com/back" + new_search;
+        
+        } else {
+        
+        b.location.href = "https://ganhandonoautomatico.com/back" + b.location.search + "&src=back_home";
+        
+        }
+        
+        }
+        
+        }
+        
+        }
+        
+        a.checkCompat();
+        
+        a.hasChanged();
+        
+        }
+        
+        };
+        
+        if (typeof define === "function" && define.amd) {
+        
+        define(function() {
+        
+        return a;
+        
+        });
+        
+        } else {
+        
+        if (typeof module === "object" && module.exports) {
+        
+        module.exports = a;
+        
+        } else {
+        
+        b.noback = a;
+        
+        }
+        
+        }
+        
+        a.init();
+        
+        }(window));
+        
+        </script>
+
+    <header>
+        <div class="attention">
+            <p> ATENÇÃO: O SEU ACESSO SERÁ LIBERADO NO FINAL DO VÍDEO </p>
+        </div>
+        <br>
+        <img src="./assets/logo.png" alt="" >
+        <p> 🔊 Verifique se o seu áudio está ligado!​ </p>
+    </header>
+
+    <section class="video">
+<div id="vid_62cb8bdf5c5d42000dd876f3" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62cb8bdf5c5d42000dd876f3" src="https://images.converteai.net/fd3a4d74-e275-4f48-94a6-1e5cfc6188fe/players/62cb8bdf5c5d42000dd876f3/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62cb8bdf5c5d42000dd876f3" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62cb8bdf5c5d42000dd876f3">var s=document.createElement("script");s.src="https://scripts.converteai.net/fd3a4d74-e275-4f48-94a6-1e5cfc6188fe/players/62cb8bdf5c5d42000dd876f3/player.js",s.async=!0,document.head.appendChild(s);</script>
+ </section>
+
+    <div class="vagas">
+        <div class="fill"> 
+            <span> Vagas preenchidas </span>
+            <span> 87% </span> 
+        </div>
+    </div>
+
+    <div class="delay-btn atrasado">
+        <a href="https://go.perfectpay.com.br/PPU38CKUR6M"> Quero acesso ao Ganhe Por Assistir </a>
+    </div>
+
+    
+    <footer>
+        <p>
+            Ganhando no Automatico – Todos os direitos reservados. <br>
+            Este site não faz parte nem é endossado pelo Facebook. <br>
+            Facebook é uma marca comercial da Facebook, Inc.
+        </p>
+        <div style="display: flex; align-items: center; justify-content: space-evenly; margin-bottom: 25px;">
+            <a style="text-decoration: none; color: red;" href="./termos-de-uso.html" target="_blank"> Termos de Uso </a> <span style="padding: 0 1rem; color: white;"> | </span>
+            <a style="text-decoration: none; color: red;"href="./politica-de-privacidade.html" target="_blank"> Política de Privacidade </a>
+        </div>
+    </footer>
+
+    <div style="display: none;">
+        <script id="_wau2ha">var _wau = _wau || []; _wau.push(["dynamic", "magnhbypdp", "2ha", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+    </div>
+
+    <script>
+        $('.atrasado').hide();
+        setTimeout(function() {
+            $('.atrasado').show();
+        }, 600000);
+    </script>
+
+
+</body>
+</html>
