@@ -739,22 +739,6 @@ perguntas </span>
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-  var newUrl = location.pathname + location.search;
-
-  (function(window, location) {
-  history.replaceState(null, document.title, newUrl+"#!/backbutton");
-  history.pushState(null, document.title, newUrl);
-  window.addEventListener("popstate", function() {
-  if(location.hash === "#!/backbutton") {
-  history.replaceState(null, document.title, newUrl);
-  setTimeout(function(){
-  location.replace("https://lotoclub.online/backlike/");
-  },0);
-  }
-  }, false);
-  }(window, location));
-  </script> </div>
 </div>
 </div>
 </div>
@@ -796,6 +780,25 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <script id='elementor-pro-frontend-js-before'>
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lotoclub.online\/wp-admin\/admin-ajax.php","nonce":"c5e70dfa9c","urls":{"assets":"https:\/\/lotoclub.online\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lotoclub.online\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lotoclub.online\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 </script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '8402984489713350');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=8402984489713350&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <script src='https://lotoclub.online/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.6.4' id='elementor-pro-frontend-js'></script>
 <script src='https://lotoclub.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
 <script src='https://lotoclub.online/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
