@@ -3,6 +3,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
 <head>
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 <link rel="preload" href="https://scripts.converteai.net/537b5827-822f-45ac-9ff6-5f2bedf63aa6/players/6369afce916f4d000bfa391d/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/537b5827-822f-45ac-9ff6-5f2bedf63aa6/players/6369afce916f4d000bfa391d/thumbnail.jpg" as="image">
