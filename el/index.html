@@ -3,6 +3,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 <link rel="preload" href="https://scripts.converteai.net/537b5827-822f-45ac-9ff6-5f2bedf63aa6/players/6369b134f28d2a000abd450b/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/537b5827-822f-45ac-9ff6-5f2bedf63aa6/players/6369b134f28d2a000abd450b/thumbnail.jpg" as="image">
@@ -198,7 +215,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <script id='wp-i18n-js-after'>
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
-
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -215,7 +231,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=865915107736580&ev=PageView&noscript=1"
 /></noscript>
 
-<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -231,7 +246,6 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=840588127284562&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
 <script id='elementor-pro-frontend-js-before'>
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/tikcompany.com.br\/wp-admin\/admin-ajax.php","nonce":"acb090914b","urls":{"assets":"https:\/\/tikcompany.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/tikcompany.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/tikcompany.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
