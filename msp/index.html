@@ -1,38 +1,33 @@
 
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquina de Dólar &#8211; Tema</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Máquina de Dólar &#8211; Tema</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//code.jquery.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-<link rel='stylesheet' id='detsec-style-master-css'  href='https://maquinadolares.com/wp-content/themes/theme_pv/assets/css/master.min.css?ver=6.0.3' type='text/css' media='all' />
-<link rel='stylesheet' id='detsec-font-inter-css'  href='https://maquinadolares.com/wp-content/themes/theme_pv/assets/fonts/inter/stylesheet.css?ver=6.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='detsec-style-master-css' href='https://maquinadolares.com/wp-content/themes/theme_pv/assets/css/master.min.css?ver=6.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='detsec-font-inter-css' href='https://maquinadolares.com/wp-content/themes/theme_pv/assets/fonts/inter/stylesheet.css?ver=6.0.3' type='text/css' media='all' />
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat:700,600italic,600%7CRoboto:700italic,900,700&#038;display=swap&#038;ver=1665225653" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,600italic,600%7CRoboto:700italic,900,700&#038;display=swap&#038;ver=1665225653" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,600italic,600%7CRoboto:700italic,900,700&#038;display=swap&#038;ver=1665225653" /></noscript><style id='rocket-lazyload-inline-css' type='text/css'>
 .rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://maquinadolares.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
 </style>
 <link rel="https://api.w.org/" href="https://maquinadolares.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://maquinadolares.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://maquinadolares.com/wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://maquinadolares.com/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 6.0.3" />
 <script type="rocketlazyloadscript" src="https://checkout-prd-api.mycheckout.com.br/api/v1/scripts/inject-cookie.js" defer></script>
 
-<!-- Google Tag Manager -->
 <script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TTJGMZV');</script>
-<!-- End Google Tag Manager -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -48,9 +43,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=767173671070670&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -66,9 +60,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=380542987597072&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -84,9 +77,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=5458660347546095&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -102,9 +94,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=742349693490576&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Global site tag (gtag.js) - Google Ads: AW-408994163 -->
+
 <script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=AW-408994163"></script>
 <script type="rocketlazyloadscript">
   window.dataLayer = window.dataLayer || [];
@@ -114,7 +105,6 @@ src="https://www.facebook.com/tr?id=742349693490576&ev=PageView&noscript=1"
   gtag('config', 'AW-408994163');
 </script>
 
-<!-- Meta Pixel Code -->
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -130,9 +120,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=472589001094974&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -148,9 +137,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=636134911467483&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -166,9 +154,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=728591181787348&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -184,9 +171,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=324015219888251&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -202,9 +188,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1134985807226818&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -220,9 +205,8 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=645585930207266&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
-<!-- Meta Pixel Code -->
+
 <script type="rocketlazyloadscript">
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -238,10 +222,9 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=397176672623682&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+
 <meta name="generator" content="Redux 4.3.12" /><meta name="redi-version" content="1.0.9" /><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
 <body class="theme-body" style="background-color: #030303">
-
 <style>
 h1.headline {
   font-family: Montserrat;
@@ -402,33 +385,27 @@ h1.headline {
 }
 }
 </style>
-
 <header class="header" style="background-color: #AE0000">
-    <span>Você e algumas pessoas de <span id="cidade"></span> foram selecionadas para usar a Inteligência Artificial</span>
+<span>Você e algumas pessoas de <span id="cidade"></span> foram selecionadas para usar a Inteligência Artificial</span>
 </header>
-
 <main>
-    <section class="section main">
-        <div class="container">
-            <h1 class="headline">
-                Dê apenas 2 cliques nessa Inteligência Artifical e ganhe no mínimo $50 Dólares por dia!            </h1>
-            <p class="subheadline">
-                Inteligência artificial criada no brasil está pagando 50 dólares ao dia!            </p>
-        </div>
-        <div class="video-container">
-            <div class="video">
-                <script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="scr_62fd80f66b33f900096498e2">var s=document.createElement("script");s.src="https://scripts.converteai.net/f2b3c308-12bd-47ae-9bc7-aaccfa2d1fc2/players/62fd80f66b33f900096498e2/player.js",s.async=!0,document.head.appendChild(s);</script>                <div id="smartplayer-lazy-load">
-                                                            <img width="780" height="439" class="smartplayer-lazy-load-thumbnail"
-                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%20439'%3E%3C/svg%3E"
-                        alt="Miniatura de vídeo" data-lazy-src="https://maquinadolares.com/wp-content/uploads/2022/08/miniatura-01-1.png"><noscript><img width="780" height="439" class="smartplayer-lazy-load-thumbnail"
+<section class="section main">
+<div class="container">
+<h1 class="headline">
+Dê apenas 2 cliques nessa Inteligência Artifical e ganhe no mínimo $50 Dólares por dia! </h1>
+<p class="subheadline">
+Inteligência artificial criada no brasil está pagando 50 dólares ao dia! </p>
+</div>
+<div class="video-container">
+<div class="video">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="scr_62fd80f66b33f900096498e2">var s=document.createElement("script");s.src="https://scripts.converteai.net/76de3f7e-b796-47d0-9700-064b27363b33/players/638bb241d4dabe0009bd1108/player.js",s.async=!0,document.head.appendChild(s);</script> <div id="smartplayer-lazy-load">
+  <img width="780" height="439" class="smartplayer-lazy-load-thumbnail" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%20439'%3E%3C/svg%3E" alt="Miniatura de vídeo" data-lazy-src="https://maquinadolares.com/wp-content/uploads/2022/08/miniatura-01-1.png"><noscript><img width="780" height="439" class="smartplayer-lazy-load-thumbnail"
                         src="https://maquinadolares.com/wp-content/uploads/2022/08/miniatura-01-1.png"
                         alt="Miniatura de vídeo"></noscript>
-                                        <div class="smartplay-lazy-load-wrapper">
-                        <span class="smartplay-lazy-load-span">Seu vídeo já começou</span>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px" y="0px" width="46.75px" height="32.563px" viewBox="7.999 9.062 46.75 32.563"
-                            enable-background="new 7.999 9.062 46.75 32.563" xml:space="preserve">
-                            <style>
+<div class="smartplay-lazy-load-wrapper">
+<span class="smartplay-lazy-load-span">Seu vídeo já começou</span>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.75px" height="32.563px" viewBox="7.999 9.062 46.75 32.563" enable-background="new 7.999 9.062 46.75 32.563" xml:space="preserve">
+<style>
                             @-webkit-keyframes BLINK {
                                 0% {
                                     opacity: 0;
@@ -491,75 +468,60 @@ h1.headline {
                                 border: 4px solid red;
                             }
                             </style>
-                            <g class="adjustable fg">
-                                <path class="smartplay-lazy-load-svg-color"
-                                    d="M53.249,39.616c-0.186,0-0.371-0.051-0.537-0.157l-43.5-27.75c-0.466-0.297-0.603-0.916-0.306-1.381c0.298-0.466,0.917-0.601,1.381-0.306l43.5,27.75c0.467,0.297,0.604,0.916,0.307,1.381C53.901,39.453,53.579,39.616,53.249,39.616z">
-                                </path>
-                                <path class="blink_3 smartplay-lazy-load-svg-color"
-                                    d="M48.896,33.467l1.699,1.085c3.497-7.791,2.073-17.271-4.313-23.659c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414C50.581,18.019,51.913,26.463,48.896,33.467z">
-                                </path>
-                                <path class="blink_3 smartplay-lazy-load-svg-color"
-                                    d="M46.926,36.956c-0.612,0.863-1.286,1.695-2.059,2.469c-0.392,0.391-0.392,1.023,0,1.414c0.194,0.195,0.45,0.293,0.707,0.293c0.256,0,0.512-0.098,0.706-0.293c0.878-0.878,1.642-1.824,2.333-2.807L46.926,36.956z">
-                                </path>
-                                <path class="blink_2 smartplay-lazy-load-svg-color"
-                                    d="M42.543,29.415l1.777,1.135c1.545-5.315,0.229-11.293-3.953-15.476c-0.392-0.391-1.023-0.391-1.414,0c-0.392,0.391-0.392,1.023,0,1.414C42.454,19.987,43.639,24.925,42.543,29.415z">
-                                </path>
-                                <path class="blink_2 smartplay-lazy-load-svg-color"
-                                    d="M41,33.174c-0.563,0.94-1.235,1.837-2.047,2.646c-0.391,0.392-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.916-0.914,1.676-1.924,2.317-2.984L41,33.174z">
-                                </path>
-                                <path class="blink_1 smartplay-lazy-load-svg-color"
-                                    d="M35.771,25.094l2.003,1.277c0.012-0.203,0.029-0.404,0.029-0.609c0-3.079-1.2-5.974-3.381-8.153c-0.391-0.391-1.022-0.391-1.414,0c-0.391,0.391-0.391,1.023,0,1.414C34.652,20.666,35.613,22.802,35.771,25.094z">
-                                </path>
-                                <path class="blink_1 smartplay-lazy-load-svg-color"
-                                    d="M35.084,29.401c-0.474,1.145-1.172,2.197-2.076,3.1c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293c0.257,0,0.513-0.098,0.707-0.293c1.008-1.006,1.795-2.17,2.361-3.43L35.084,29.401z">
-                                </path>
-                                <polygon class="smartplay-lazy-load-svg-color"
-                                    points="28.124,20.215 28.124,14.991 24.635,17.99  ">
-                                </polygon>
-                                <path class="smartplay-lazy-load-svg-color"
-                                    d="M20.921,20.366h-6.423c-0.553,0-1,0.508-1,1.135v8.229c0,0.627,0.447,1.135,1,1.135h7.375l6.25,5.875V24.96L20.921,20.366z">
-                                </path>
-                            </g>
-                        </svg><span class="smartplay-lazy-load-span">Clique para ouvir</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <p class="alert-sound">
-                <img width="640" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%3E%3C/svg%3E" alt="Icone de som"
-                    class="sound-icon" data-lazy-src="https://maquinadolares.com/wp-content/themes/theme_pv/assets/icons/sound.svg"><noscript><img width="640" height="512" src="https://maquinadolares.com/wp-content/themes/theme_pv/assets/icons/sound.svg" alt="Icone de som"
+<g class="adjustable fg">
+<path class="smartplay-lazy-load-svg-color" d="M53.249,39.616c-0.186,0-0.371-0.051-0.537-0.157l-43.5-27.75c-0.466-0.297-0.603-0.916-0.306-1.381c0.298-0.466,0.917-0.601,1.381-0.306l43.5,27.75c0.467,0.297,0.604,0.916,0.307,1.381C53.901,39.453,53.579,39.616,53.249,39.616z">
+ </path>
+<path class="blink_3 smartplay-lazy-load-svg-color" d="M48.896,33.467l1.699,1.085c3.497-7.791,2.073-17.271-4.313-23.659c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414C50.581,18.019,51.913,26.463,48.896,33.467z">
+</path>
+<path class="blink_3 smartplay-lazy-load-svg-color" d="M46.926,36.956c-0.612,0.863-1.286,1.695-2.059,2.469c-0.392,0.391-0.392,1.023,0,1.414c0.194,0.195,0.45,0.293,0.707,0.293c0.256,0,0.512-0.098,0.706-0.293c0.878-0.878,1.642-1.824,2.333-2.807L46.926,36.956z">
+</path>
+<path class="blink_2 smartplay-lazy-load-svg-color" d="M42.543,29.415l1.777,1.135c1.545-5.315,0.229-11.293-3.953-15.476c-0.392-0.391-1.023-0.391-1.414,0c-0.392,0.391-0.392,1.023,0,1.414C42.454,19.987,43.639,24.925,42.543,29.415z">
+</path>
+<path class="blink_2 smartplay-lazy-load-svg-color" d="M41,33.174c-0.563,0.94-1.235,1.837-2.047,2.646c-0.391,0.392-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.916-0.914,1.676-1.924,2.317-2.984L41,33.174z">
+</path>
+<path class="blink_1 smartplay-lazy-load-svg-color" d="M35.771,25.094l2.003,1.277c0.012-0.203,0.029-0.404,0.029-0.609c0-3.079-1.2-5.974-3.381-8.153c-0.391-0.391-1.022-0.391-1.414,0c-0.391,0.391-0.391,1.023,0,1.414C34.652,20.666,35.613,22.802,35.771,25.094z">
+</path>
+<path class="blink_1 smartplay-lazy-load-svg-color" d="M35.084,29.401c-0.474,1.145-1.172,2.197-2.076,3.1c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293c0.257,0,0.513-0.098,0.707-0.293c1.008-1.006,1.795-2.17,2.361-3.43L35.084,29.401z">
+</path>
+<polygon class="smartplay-lazy-load-svg-color" points="28.124,20.215 28.124,14.991 24.635,17.99  ">
+</polygon>
+<path class="smartplay-lazy-load-svg-color" d="M20.921,20.366h-6.423c-0.553,0-1,0.508-1,1.135v8.229c0,0.627,0.447,1.135,1,1.135h7.375l6.25,5.875V24.96L20.921,20.366z">
+</path>
+</g>
+</svg><span class="smartplay-lazy-load-span">Clique para ouvir</span>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<p class="alert-sound">
+<img width="640" height="512" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20512'%3E%3C/svg%3E" alt="Icone de som" class="sound-icon" data-lazy-src="https://maquinadolares.com/wp-content/themes/theme_pv/assets/icons/sound.svg"><noscript><img width="640" height="512" src="https://maquinadolares.com/wp-content/themes/theme_pv/assets/icons/sound.svg" alt="Icone de som"
                     class="sound-icon"></noscript>
-                Por favor verifique se o som está ligado.            </p>
-
-            <p class="alert-condition" style="margin: 32px 0px">
-                Atenção: Assista o vídeo completo para liberar seu acesso!            </p>
-        </div>
-        <div class="container hidden" style="display:none">
-            <style>
+Por favor verifique se o som está ligado. </p>
+<p class="alert-condition" style="margin: 32px 0px">
+Atenção: Assista o vídeo completo para liberar seu acesso! </p>
+</div>
+<div class="container hidden" style="display:none">
+<style>
             .pv-button {
                 background-color: #3F7D0A            }
 
             .pv-button:hover {
                 background-color: #FCE701            }
             </style>
-            <a class="pv-button" href="https://pay.kiwify.com.br/itCVeQf">
-                QUERO APROVEITAR ESSA OPORTUNIDADE            </a>
-        </div>
-    </section>
+<a class="pv-button" href="https://pay.kiwify.com.br/itCVeQf">
+QUERO APROVEITAR ESSA OPORTUNIDADE </a>
+</div>
+</section>
 </main>
 
-
 <script type="rocketlazyloadscript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
-
 <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
 $('.hidden').hide();
 setTimeout(function() {
     $('.hidden').show();
 }, 1032000);
 });</script>
-
-
 <script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.slim.min.js?ver=6.0.3' id='detsec-jquery-js' defer></script>
 <script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://maquinadolares.com/wp-content/themes/theme_pv/assets/js/script.js?ver=1666075037' id='detsec-script-js' defer></script>
 <script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
@@ -568,7 +530,6 @@ images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.adde
 if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://maquinadolares.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script><footer class="footer hidden">
 </footer>
 
-<!-- Localização -->
 <script type="rocketlazyloadscript">
 var request = new XMLHttpRequest();
 request.open('GET', 'https://wtfismyip.com/json', true);
@@ -582,8 +543,6 @@ request.onload = function() {
 request.onerror = function() {};
 request.send();
 </script>
-
 </body>
-
 </html>
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1666075037 -->
+
