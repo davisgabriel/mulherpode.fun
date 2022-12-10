@@ -3,6 +3,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
 <head>
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 <link rel="preload" href="https://scripts.converteai.net/0b78de58-5db3-44f1-a2a7-cea866f82cd5/players/638d8e26ffa0b600097460bd/player.js" as="script">
 <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
 <link rel="preload" href="https://images.converteai.net/0b78de58-5db3-44f1-a2a7-cea866f82cd5/players/638d8e26ffa0b600097460bd/thumbnail.jpg" as="image">
@@ -887,7 +904,6 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=5945923315460452&ev=PageView&noscript=1"
 /></noscript>
-
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -903,7 +919,6 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1343733849726649&ev=PageView&noscript=1"
 /></noscript>
-
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -934,7 +949,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=678199210616776&ev=PageView&noscript=1"
 /></noscript>
-<!-- Meta Pixel Code -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -950,7 +965,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1199518107267820&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
