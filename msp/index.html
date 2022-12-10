@@ -3,6 +3,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
 <head>
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
 <meta name="robots" content="noindex, nofollow">
 <link rel="shortcut icon" href="data:" />
 <meta property="og:type" content="website">
@@ -381,7 +398,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1126945014599157&ev=PageView&noscript=1"
 /></noscript>
-<!-- Meta Pixel Code -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -397,7 +414,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1285307448706366&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
