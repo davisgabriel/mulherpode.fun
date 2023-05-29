@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -123,7 +124,7 @@ var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"s
 </div>
 <div class="elementor-element elementor-element-4beafa06 elementor-widget elementor-widget-html" data-id="4beafa06" data-element_type="widget" data-widget_type="html.default">
 <div class="elementor-widget-container">
- </div>
+</div>
 </div>
 <div class="elementor-element elementor-element-3e1a72c1 elementor-widget elementor-widget-html" data-id="3e1a72c1" data-element_type="widget" data-widget_type="html.default">
 <div class="elementor-widget-container">
@@ -201,5 +202,26 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 </script>
 <script src="https://segredodaverdade.fun/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.8" id="elementor-frontend-js"></script>
 <script src="https://segredodaverdade.fun/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.2.1" id="pro-elements-handlers-js"></script>
+<script>
+    let prefix = ["https://pay.kiwify.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();</script>
 </body>
 </html>
