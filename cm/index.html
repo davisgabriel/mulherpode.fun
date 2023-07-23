@@ -137,7 +137,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-7537d434 elementor-align-center elementor-widget elementor-widget-button" data-id="7537d434" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://checkout.payt.com.br/204fdcae117b31aa8d74aad10e7e37ce?src=mitoface&#038;utm_source=Facebook&#038;utm_campaign=campaign.name&#038;utm_content=ad.name" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="https://go.perfectpay.com.br/PPU38CMLH19" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Comprar Agora!</span>
 		</span>
@@ -200,7 +200,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-55d10333 elementor-align-center elementor-widget elementor-widget-button" data-id="55d10333" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://checkout.payt.com.br/e735133a3cde8ee533d95d2150e869e5?src=mitoface&#038;utm_source=Facebook&#038;utm_campaign=campaign.name&#038;utm_content=ad.name" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="https://go.perfectpay.com.br/PPU38CMLH1A" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Comprar Agora!</span>
 		</span>
@@ -263,7 +263,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-element elementor-element-3b6451b4 elementor-align-center elementor-widget elementor-widget-button" data-id="3b6451b4" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a href="https://checkout.payt.com.br/1bff3f64f354e35b89422273e74cab8f?src=mitoface&#038;utm_source=Facebook&#038;utm_campaign=campaign.name&#038;utm_content=ad.name" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+			<a href="https://go.perfectpay.com.br/PPU38CMLH17" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-text">Comprar Agora!</span>
 		</span>
@@ -942,5 +942,27 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src='https://decifrandoaabundacia.club/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.3.4' id='pro-preloaded-elements-handlers-js'></script>
 <script src='https://decifrandoaabundacia.club/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.3.1' id='preloaded-modules-js'></script>
 <script src='https://decifrandoaabundacia.club/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.3.4' id='e-sticky-js'></script>
+<script>
+    let prefix = ["https://checkout.perfectpay.com.br", "https://go.perfectpay.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+</script>
 	</body>
 </html>
