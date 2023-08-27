@@ -5,7 +5,14 @@
 
 
 <head><base href="1off3r.html">
-    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5MFGMPG');</script>
+<!-- End Google Tag Manager -->
+
     <link href="css/mynewstyle.css" rel="stylesheet" type="text/css">
     <link href="css/comments.css" rel="stylesheet" type="text/css">
     <link rel="preload" href="images/headline.png" as="image">
@@ -25,11 +32,50 @@
     <script src="js/toastr.min.js"></script>
     <script src="js/notificacoestoastr.js"></script>
     <script src="js/faq.js"></script>
-     
+
+    <!--AREA DO GTM-->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W5MFGMPG');</script>
+    <!--FIM-->       
 
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
 
+    <!--Script BackRedirect-->        
+<script>
 
+ 
+var query = window.location.search;
+ 
+
+var back_redirect_back_link = '' + query;
+
+
+history.pushState({}, "", location.href);
+
+history.pushState({}, "", location.href);
+
+ 
+
+ 
+
+window.onpopstate = function () {
+
+setTimeout(function (0) {
+
+location.href = back_redirect_back_link;
+
+}, 1);
+
+};
+
+ 
+
+ 
+
+</script>
 
     <style>
         .header{
@@ -49,7 +95,29 @@
 
 <body>
     
-   
+    <!-- CONTEUDO DA PAGINA -->
+    <div class = "allcontent" style="overflow-x: hidden; min-height: 100%; display: flex; flex-direction: column;">
+        
+        <!-- SECAO PRINCIPAL DA PAGINA  -->
+        <div class="section wf-section" >
+            <div class="container w-container" id="containerContent"  style="max-width: 780px;">
+                <header class="header">
+                    <div align="center" style="color: black;">
+                        <p><b>ATENÇÃO</b>: O Último Dia Para Assistir Essa Apresentação é Hoje! </font></span><strong id="current_date" style="color: red;"></strong> </p>
+                        <div>
+                </header>  
+                <!-- COMEÇO VIDEO -->
+                <div class="conteudo">
+
+                    <div class="video-the-wrapper">
+
+                    
+                  
+
+                    </div>
+
+                </div>
+                <!-- FIM VIDEO -->
 
 
                 
@@ -62,7 +130,12 @@
         <div class="show-on-call-action" style="background-color: #fefbfb; padding-top: 2%; display: none;">
             <div class="pageWrapper" style="max-width: 94%; margin-left: 3%; ">
             
-                
+                <!-- --------------------------------- -->
+                <!-- ------------ OFERTA  ------------ -->
+                <!-- --------------------------------- -->
+                <section class="priceBlock text-center" data-scroll-index="4">
+                    <div class="container">
+                        <div class="row justify-content-center">
 
                             <!-- START OF 3 PRICES BOXES OFFERING PRODUCT -->
 
@@ -1250,10 +1323,105 @@
     </div> 
     <!-- FIM DO CONTEUDO DA PAGINA -->
 
+    <!-- SCRIPT QUE CARREGA O VIDEO -->
 
 
-    
-    
+    <!-- FIM DO JAVASCRIPT QUE CARREGA O VIDEO -->
+
+    <!-- SCRIPT PARA MOSTRAR SECAO DE OFERTA -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var SECONDS_TO_DISPLAY = ; /* esperara esta quantidade de segundos */
+            var CLASS_TO_DISPLAY = ".show-on-call-action";
+            var attempts = 0;
+            var elsHiddenList = [];
+            var elsDisplayed = false;
+            var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+            var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+            var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+            setTimeout(function () { 
+                elsHiddenList = Array.prototype.slice.call(elsHidden); 
+            }, 0);
+            var showHiddenElements = function () {
+                elsDisplayed = true;
+                elsHiddenList.forEach((e) => e.style.display = "");
+                //localStorage.setItem(alreadyDisplayedKey, true)
+                // Dynamically load faq js file
+                var script = document.createElement('script'); 
+                script.src = 'js/faq.js';
+                document.body.appendChild(script);
+                // Dynamically load countdown js file
+                var script2 = document.createElement('script'); 
+                script2.src = 'js/countdown.js';
+                document.body.appendChild(script2);
+                
+            }
+            var startWatchVideoProgress = function (0) {
+                if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+                    if (attempts >= 0) {
+                        return;
+                    }
+                    attempts += 1;
+                    return setTimeout(function (0) { startWatchVideoProgress() }, 0);
+                }
+                smartplayer.instances[0].on('timeupdate', () => {
+                    if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) { 
+                        return; 
+                    }
+                    if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) {
+                        return;
+                    }
+                    showHiddenElements();
+                })
+            }
+            if (alreadyElsDisplayed === 'true') {
+                setTimeout(function () { showHiddenElements(); }, 0);
+            } else {
+                startWatchVideoProgress()
+            }
+        });
+    </script>
+    <!-- FIM DO SCRIPT PARA MOSTRAR SECAO DE OFERTA -->
+
+    <script type="text/javascript">
+                          
+            var data = new Date();
+            var dia = String(data.getDate()).padStart(2, '0');
+            var mes = String(data.getMonth() + 1).padStart(2, '0');
+            var ano = data.getFullYear();
+            document.getElementById("current_date").innerHTML = dia + "/" + mes + "/" + ano;
+    </script>
+        <!-- SCRIPT PARA PASSAR SRC PARA PRÓXIMA PÁGINA BY CHATGPT-->
+        <script>
+            (function() {
+                function getUrlParameter(name) {
+                    const url = window.location.href;
+                    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                    const results = regex.exec(url);
+                    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                }
+                function addSrcToLinks(src) {
+                    const links = document.getElementsByTagName('a');
+                    for (let i = 0; i < links.length; i++) {
+                        const link = links[i];
+                        const href = link.getAttribute('href');
+                        if (href && href.indexOf('#') !== 0) {
+                            const url = new URL(href);
+                            url.searchParams.set('src', src);
+                            link.setAttribute('href', url.toString());
+                        }
+                    }
+                }
+                const src = getUrlParameter('src');
+                if (src) {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        addSrcToLinks(src);
+                    });
+                }
+            })();
+        </script>
+        <!-- FIM DO SCRIPT PARA PASSAR SRC PARA PRÓXIMA PÁGINA BY CHATGPT-->
 
 </body>
 
