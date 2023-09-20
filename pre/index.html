@@ -1,46 +1,18 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script>
-(function() {
-     const utmParamQueryString = new URLSearchParams(window.location.search);
-     if (utmParamQueryString.toString()) {
-          var navLinks = document.querySelectorAll('a');
-          navLinks.forEach(function(item) {
-               if (item.href.indexOf('checkout.mycheckout.com.br') !== -1) {
-                    if (item.href.indexOf('?') === -1) {
-                         item.href += '?' + utmParamQueryString.toString();
-                    } else {
-                         item.href += '&' + utmParamQueryString.toString();
-                    }
-               }
-          });
-     }
-})();
-</script>
-<link rel="preload" href="https://scripts.converteai.net/3f969bcf-ba82-4334-8dc1-d61f7d46078d/players/63ac759b22206d000a63bb85/player.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-<link rel="preload" href="https://images.converteai.net/3f969bcf-ba82-4334-8dc1-d61f7d46078d/players/63ac759b22206d000a63bb85/thumbnail.jpg" as="image">
-<link rel="preload" href="https://cdn.converteai.net/3f969bcf-ba82-4334-8dc1-d61f7d46078d/63ac74178fa5cc0009ec67fd/playlist.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://api.vturb.com.br">
-<meta charset="UTF-8">
-<title>Conhecer &#8211; My WordPress</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+		<title>Elementor #436 &#8211; My Blog</title>
 <meta name='robots' content='max-image-preview:large' />
-<script type='application/javascript'>console.log('PixelYourSite Free version 9.2.0');</script>
-<title>Conhecer &#8211; My WordPress</title>
-<link rel='dns-prefetch' href='//www.googletagmanager.com' />
-<link rel="alternate" type="application/rss+xml" title="Feed para My WordPress &raquo;" href="https://nogueiranegocios.online/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Feed de comentários para My WordPress &raquo;" href="https://nogueiranegocios.online/comments/feed/" />
+<link rel='dns-prefetch' href='//unpkg.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel="alternate" type="application/rss+xml" title="Feed para My Blog &raquo;" href="https://onovoconhecimento.fun/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para My Blog &raquo;" href="https://onovoconhecimento.fun/comments/feed/" />
 <script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/nogueiranegocios.online\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/onovoconhecimento.fun\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
 /*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
 <style>
 img.wp-smiley,
@@ -56,541 +28,914 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<style id='wp-block-library-inline-css'>
-:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}
+	<link rel='stylesheet' id='jkit-elements-main-css' href='https://onovoconhecimento.fun/wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.6.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.23.0' media='all' />
+<link rel='stylesheet' id='elementor-common-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/css/common.min.css?ver=3.16.3' media='all' />
+<link rel='stylesheet' id='e-theme-ui-light-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/css/theme-light.min.css?ver=3.16.3' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://onovoconhecimento.fun/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
 </style>
 <style id='global-styles-inline-css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #1a4548;--wp--preset--color--secondary: #ffe2c7;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--duotone--foreground-and-background: url('#wp-duotone-foreground-and-background');--wp--preset--duotone--foreground-and-secondary: url('#wp-duotone-foreground-and-secondary');--wp--preset--duotone--foreground-and-tertiary: url('#wp-duotone-foreground-and-tertiary');--wp--preset--duotone--primary-and-background: url('#wp-duotone-primary-and-background');--wp--preset--duotone--primary-and-secondary: url('#wp-duotone-primary-and-secondary');--wp--preset--duotone--primary-and-tertiary: url('#wp-duotone-primary-and-tertiary');--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.125rem;--wp--preset--font-size--large: 1.75rem;--wp--preset--font-size--x-large: clamp(1.75rem, 3vw, 2.25rem);--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--custom--spacing--small: max(1.25rem, 5vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);--wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);--wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;}body { margin: 0;--wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1000px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: 1.5rem; }body { --wp--style--block-gap: 1.5rem; }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-flex{gap: 1.5rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: var(--wp--custom--typography--line-height--normal);padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--foreground);text-decoration: underline;}h1{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--colossal);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}h3{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--huge);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--preset--font-size--x-large);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 700;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<style id='wp-webfonts-inline-css'>
-@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+<link rel='stylesheet' id='pa-admin-css' href='https://onovoconhecimento.fun/wp-content/plugins/premium-addons-for-elementor/admin/assets/css/admin.css?ver=4.10.4' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.16.3' media='all' />
+<style id='elementor-frontend-inline-css'>
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
 </style>
-<link rel='stylesheet' id='twentytwentytwo-style-css' href='https://nogueiranegocios.online/wp-content/themes/twentytwentytwo/style.css?ver=1.2' media='all' />
-<link rel='stylesheet' id='elementor-icons-css' href='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.7.4' media='all' />
-<link rel='stylesheet' id='elementor-post-5-css' href='https://nogueiranegocios.online/wp-content/uploads/elementor/css/post-5.css?ver=1664026577' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://nogueiranegocios.online/wp-content/uploads/elementor/css/global.css?ver=1664026976' media='all' />
-<link rel='stylesheet' id='elementor-post-640-css' href='https://nogueiranegocios.online/wp-content/uploads/elementor/css/post-640.css?ver=1669656885' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBebas+Neue%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.1.1' media='all' />
-<script src='https://nogueiranegocios.online/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
-<script src='https://nogueiranegocios.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script src='https://nogueiranegocios.online/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.1.1' id='jquery-bind-first-js'></script>
-<script src='https://nogueiranegocios.online/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3' id='js-cookie-js'></script>
-<script id='pys-js-extra'>
-var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","name":"PageView","pixelIds":["518093756521777"],"eventID":"1d786eb8-e386-4280-8276-3191a2f5f123","params":{"page_title":"Conhecer","post_type":"page","post_id":640,"plugin":"PixelYourSite","user_role":"guest","event_url":"nogueiranegocios.online\/conhescer\/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["518093756521777"],"advancedMatching":[],"removeMetadata":false,"contentParams":{"post_type":"page","post_id":640,"content_name":"Conhecer"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"ajaxForServerEvent":true,"serverApiEnabled":true,"wooCRSendFromServer":false},"debug":"","siteUrl":"https:\/\/nogueiranegocios.online","ajaxUrl":"https:\/\/nogueiranegocios.online\/wp-admin\/admin-ajax.php","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false},"woo":{"enabled":false},"edd":{"enabled":false}};
+<link rel='stylesheet' id='swiper-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://onovoconhecimento.fun/wp-content/uploads/elementor/css/post-7.css?ver=1694552002' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://onovoconhecimento.fun/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.6.4' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://onovoconhecimento.fun/wp-content/uploads/elementor/css/global.css?ver=1694552005' media='all' />
+<link rel='stylesheet' id='elementor-post-436-css' href='https://onovoconhecimento.fun/wp-content/uploads/elementor/css/post-436.css?ver=1695171805' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://onovoconhecimento.fun/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://onovoconhecimento.fun/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1' media='all' />
+<link rel='stylesheet' id='happy-elementor-addons-admin-css' href='https://onovoconhecimento.fun/wp-content/plugins/happy-elementor-addons/assets/admin/css/admin.min.css?ver=3.8.6' media='all' />
+<link rel='stylesheet' id='select2-css' href='//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css?ver=3.8.6' media='all' />
+<link rel='stylesheet' id='happy-icons-css' href='https://onovoconhecimento.fun/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=3.8.6' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+<link rel='stylesheet' id='wpr-text-animations-css-css' href='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/css/lib/animations/text-animations.min.css?ver=1.3.73' media='all' />
+<link rel='stylesheet' id='wpr-addons-css-css' href='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/css/frontend.min.css?ver=1.3.73' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.10.4' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.3.1' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script data-cfasync="false" src='https://onovoconhecimento.fun/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script data-cfasync="false" src='https://onovoconhecimento.fun/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script id="elementor-pro-app-js-before">
+var elementorAppProConfig = {"baseUrl":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/pro-elements\/","site-editor":{"urls":{"legacy_view":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=theme"}},"kit-library":[],"onboarding":[]};
 </script>
-<script src='https://nogueiranegocios.online/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0' id='pys-js'></script>
-<link rel="https://api.w.org/" href="https://nogueiranegocios.online/wp-json/" /><link rel="alternate" type="application/json" href="https://nogueiranegocios.online/wp-json/wp/v2/pages/640" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nogueiranegocios.online/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://nogueiranegocios.online/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 6.1.1" />
-<link rel="canonical" href="https://nogueiranegocios.online/conhescer/" />
-<link rel='shortlink' href='https://nogueiranegocios.online/?p=640' />
-<link rel="alternate" type="application/json+oembed" href="https://nogueiranegocios.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogueiranegocios.online%2Fconhescer%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://nogueiranegocios.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnogueiranegocios.online%2Fconhescer%2F&#038;format=xml" />
-<meta name="generator" content="Site Kit by Google 1.86.0" />
-</script><meta name="facebook-domain-verification" content="egsb1utyy1c92q1i1ty91abnse5tuu" /> <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="page-template page-template-elementor_canvas page page-id-640 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-640">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-foreground-and-background"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-foreground-and-secondary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.88627450980392" /><feFuncB type="table" tableValues="0 0.78039215686275" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-foreground-and-tertiary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.96470588235294" /><feFuncG type="table" tableValues="0 0.96470588235294" /><feFuncB type="table" tableValues="0 0.96470588235294" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-primary-and-background"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.10196078431373 1" /><feFuncG type="table" tableValues="0.27058823529412 1" /><feFuncB type="table" tableValues="0.28235294117647 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-primary-and-secondary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.10196078431373 1" /><feFuncG type="table" tableValues="0.27058823529412 0.88627450980392" /><feFuncB type="table" tableValues="0.28235294117647 0.78039215686275" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-primary-and-tertiary"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.10196078431373 0.96470588235294" /><feFuncG type="table" tableValues="0.27058823529412 0.96470588235294" /><feFuncB type="table" tableValues="0.28235294117647 0.96470588235294" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL5CMD7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<div data-elementor-type="wp-page" data-elementor-id="640" class="elementor elementor-640">
-<section class="elementor-section elementor-top-section elementor-element elementor-element-5620ad54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5620ad54" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71e7676" data-id="71e7676" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-4868441f elementor-widget elementor-widget-html" data-id="4868441f" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '5119442098179319');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=5119442098179319&ev=PageView&noscript=1"
-/></noscript>
-</div>
-</div>
-<div class="elementor-element elementor-element-2c18dd2e elementor-widget elementor-widget-html" data-id="2c18dd2e" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script>
-document.addEventListener("contextmenu", function (e){
-    e.preventDefault();
-}, false);
-</script>
-<script>
-document.onkeypress = function (event) {
-event = (event || window.event);
-if (event.keyCode == 123) {return false;}
-if (event.keyCode == 93) {return false;}
-if (event.keyCode == 85) {return false;}
-if (event.keyCode == 80) {return false;}
-if (event.keyCode == 44) {return false;}
-if (event.keyCode == 73) {return false;}
-}
-document.onmousedown = function (event) {
-event = (event || window.event);
-if (event.keyCode == 123) {return false;}
-if (event.keyCode == 93) {return false;}
-if (event.keyCode == 85) {return false;}
-if (event.keyCode == 80) {return false;}
-if (event.keyCode == 44) {return false;}
-if (event.keyCode == 73) {return false;}
-}
-document.onkeydown = function (event) {
-event = (event || window.event);
-if (event.keyCode == 123) {return false;}
-if (event.keyCode == 93) {return false;}
-if (event.keyCode == 85) {return false;}
-if (event.keyCode == 80) {return false;}
-if (event.keyCode == 44) {return false;}
-if (event.keyCode == 73) {return false;}
-}
-</script> </div>
-</div>
-<div class="elementor-element elementor-element-3411e8c elementor-widget elementor-widget-html" data-id="3411e8c" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script>
-        (function(b) {
-            var a = {
-                version: "0.0.1",
-                history_api: typeof history.pushState !== "undefined",
-                init: function() {
-                    b.location.hash = "#no-back";
-                    a.configure();
-                },
-                hasChanged: function() {
-                    if (b.location.hash == "#no-back") {
-                        b.location.hash = "#";
-                        b.location.href = "https://negociosoliveira.online/bk02"; //LINK PARA REDIRECIONAR AQUI
-                    }
-                },
-                checkCompat: function() {
-                    if (b.addEventListener) {
-                        b.addEventListener("hashchange", a.hasChanged, false);
-                    } else {
-                        if (b.attachEvent) {
-                            b.attachEvent("onhashchange", a.hasChanged);
-                        } else {
-                            b.onhashchange = a.hasChanged;
-                        }
-                    }
-                },
-                configure: function() {
-                    if (b.location.hash == "#no-back") {
-                        if (this.history_api) {
-                            history.pushState(null, "", "#");
-                        } else {
-                            b.location.hash = "#";
-                            b.location.href = "https://negociosoliveira.online/bk02"; //LINK PARA REDIRECIONAR AQUI
-                        }
-                    }
-                    a.checkCompat();
-                    a.hasChanged();
-                }
-            };
-            if (typeof define === "function" && define.amd) {
-                define(function() {
-                    return a;
-                });
-            } else {
-                if (typeof module === "object" && module.exports) {
-                    module.exports = a;
-                } else {
-                    b.noback = a;
-                }
-            }
-            a.init();
-        }(window));
-    </script> </div>
-</div>
-<div class="elementor-element elementor-element-421304bc elementor-widget elementor-widget-spacer" data-id="421304bc" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.7.4 - 31-08-2022 */
-.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-container{--container-widget-width:100%}.e-container>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));-ms-flex-item-align:stretch;align-self:stretch;-ms-flex-negative:0;flex-shrink:0}.e-container>.elementor-widget-spacer>.elementor-widget-container,.e-container>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-container>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}</style> <div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-1cbdb041 elementor-widget elementor-widget-image" data-id="1cbdb041" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.7.4 - 31-08-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img decoding="async" width="800" height="140" src="https://nogueiranegocios.online/wp-content/uploads/2022/11/Design-sem-nome-29.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://nogueiranegocios.online/wp-content/uploads/2022/11/Design-sem-nome-29.png 800w, https://nogueiranegocios.online/wp-content/uploads/2022/11/Design-sem-nome-29-300x53.png 300w, https://nogueiranegocios.online/wp-content/uploads/2022/11/Design-sem-nome-29-768x134.png 768w" sizes="(max-width: 800px) 100vw, 800px" /> </div>
-</div>
-<div class="elementor-element elementor-element-5363920a elementor-widget elementor-widget-html" data-id="5363920a" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<div id="vid_63ac759b22206d000a63bb85" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63ac759b22206d000a63bb85" src="https://images.converteai.net/3f969bcf-ba82-4334-8dc1-d61f7d46078d/players/63ac759b22206d000a63bb85/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63ac759b22206d000a63bb85" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63ac759b22206d000a63bb85">var s=document.createElement("script");s.src="https://scripts.converteai.net/3f969bcf-ba82-4334-8dc1-d61f7d46078d/players/63ac759b22206d000a63bb85/player.js",s.async=!0,document.head.appendChild(s);</script> </div>
-</div>
-<div class="elementor-element elementor-element-18c8f6c6 elementor-mobile-align-center elementor-align-center esconder elementor-widget elementor-widget-button" data-id="18c8f6c6" data-element_type="widget" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a href="https://checkout.mycheckout.com.br/checkout/6347a5441b7d276a0d821a61" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-text">QUERO MEU ACESSO!</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-3d484b8e elementor-widget elementor-widget-spacer" data-id="3d484b8e" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-6d7d8394 esconder elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6d7d8394" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6efa6e44" data-id="6efa6e44" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-34ce8f70 elementor-widget elementor-widget-spacer" data-id="34ce8f70" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-7f7d47bf elementor-widget elementor-widget-image" data-id="7f7d47bf" data-element_type="widget" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" width="300" height="295" src="https://nogueiranegocios.online/wp-content/uploads/2022/11/Design-sem-nome-_32_.webp" class="attachment-large size-large" alt="" loading="lazy" /> </div>
-</div>
-<div class="elementor-element elementor-element-59d49e9c elementor-widget elementor-widget-heading" data-id="59d49e9c" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.7.4 - 31-08-2022 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Tenho Garantia?</h2> </div>
-</div>
-<div class="elementor-element elementor-element-7288c538 elementor-widget elementor-widget-text-editor" data-id="7288c538" data-element_type="widget" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.7.4 - 31-08-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p><strong>Garantia Incondicional, Acesse e teste por 7 dias, sem nenhum compromisso! E se você desejar desistir, devolvemos todo o seu dinheiro.</strong></p> </div>
-</div>
-<div class="elementor-element elementor-element-1e14dd36 elementor-mobile-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="1e14dd36" data-element_type="widget" data-widget_type="button.default">
-<div class="elementor-widget-container">
-<div class="elementor-button-wrapper">
-<a href="https://checkout.mycheckout.com.br/checkout/6347a5441b7d276a0d821a61" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-text">quero acessar com garantia</span>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-55aa13fd elementor-widget elementor-widget-spacer" data-id="55aa13fd" data-element_type="widget" data-widget_type="spacer.default">
-<div class="elementor-widget-container">
-<div class="elementor-spacer">
-<div class="elementor-spacer-inner"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-18c5365 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="18c5365" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ea8d66a" data-id="ea8d66a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-3e8713c8 elementor-widget elementor-widget-html" data-id="3e8713c8" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script>
+<link rel="https://api.w.org/" href="https://onovoconhecimento.fun/wp-json/" /><link rel="alternate" type="application/json" href="https://onovoconhecimento.fun/wp-json/wp/v2/pages/436" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://onovoconhecimento.fun/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.1" />
+<link rel="canonical" href="https://onovoconhecimento.fun/elementor-436/" />
+<link rel='shortlink' href='https://onovoconhecimento.fun/?p=436' />
+<link rel="alternate" type="application/json+oembed" href="https://onovoconhecimento.fun/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fonovoconhecimento.fun%2Felementor-436%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://onovoconhecimento.fun/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fonovoconhecimento.fun%2Felementor-436%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.16.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<style id="wpr_lightbox_styles">
+				.lg-backdrop {
+					background-color: rgba(0,0,0,0.6) !important;
+				}
+				.lg-toolbar,
+				.lg-dropdown {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-dropdown:after {
+					border-bottom-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-sub-html {
+					background-color: rgba(0,0,0,0.8) !important;
+				}
+				.lg-thumb-outer,
+				.lg-progress-bar {
+					background-color: #444444 !important;
+				}
+				.lg-progress {
+					background-color: #a90707 !important;
+				}
+				.lg-icon {
+					color: #efefef !important;
+					font-size: 20px !important;
+				}
+				.lg-icon.lg-toogle-thumb {
+					font-size: 24px !important;
+				}
+				.lg-icon:hover,
+				.lg-dropdown-text:hover {
+					color: #ffffff !important;
+				}
+				.lg-sub-html,
+				.lg-dropdown-text {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				#lg-counter {
+					color: #efefef !important;
+					font-size: 14px !important;
+				}
+				.lg-prev,
+				.lg-next {
+					font-size: 35px !important;
+				}
 
-    let prefix = ["https://pay.kiwify.com.br"];
+				/* Defaults */
+				.lg-icon {
+				background-color: transparent !important;
+				}
 
- 
+				#lg-counter {
+				opacity: 0.9;
+				}
 
-function getParams() {
+				.lg-thumb-outer {
+				padding: 0 10px;
+				}
 
-    let t = "",
+				.lg-thumb-item {
+				border-radius: 0 !important;
+				border: none !important;
+				opacity: 0.5;
+				}
 
-        e = window.top.location.href,
-
-        r = new URL(e);
-
-    if (null != r) {
-
-        let a = r.searchParams.get("utm_source"),
-
-            n = r.searchParams.get("utm_medium"),
-
-            o = r.searchParams.get("utm_campaign"),
-
-            m = r.searchParams.get("utm_term"),
-
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-
-    }
-
-    return t
-
-}! function() {
-
-    var t = new URLSearchParams(window.location.search);
-
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-
-    })
-
-}(); </script> </div>
+				.lg-thumb-item.active {
+					opacity: 1;
+				}
+	         </style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body data-rsssl=1 class="page-template page-template-elementor_canvas page page-id-436 logged-in jkit-color-scheme elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-436">
+			<div data-elementor-type="wp-page" data-elementor-id="436" class="elementor elementor-436">
+									<section class="elementor-section elementor-inner-section elementor-element elementor-element-1b619fbf elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="1b619fbf" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-77150337" data-id="77150337" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7059dd14 elementor-widget elementor-widget-html" data-id="7059dd14" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<div id="vid_64d178e6fc6f58000926bf18" style="position:relative;width:100%;padding: 56.25% 0 0;"><img decoding="async" id="thumb_64d178e6fc6f58000926bf18" src="https://images.converteai.net/a38264b4-fa21-4516-8edb-322d7061d970/players/64d178e6fc6f58000926bf18/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64d178e6fc6f58000926bf18" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64d178e6fc6f58000926bf18">var s=document.createElement("script");s.src="https://scripts.converteai.net/a38264b4-fa21-4516-8edb-322d7061d970/players/64d178e6fc6f58000926bf18/player.js",s.async=!0,document.head.appendChild(s);</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1accfd4e elementor-list-item-link-inline elementor-align-center elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="1accfd4e" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-volume-up"></i>						</span>
+										<span class="elementor-icon-list-text"> POR FAVOR, VERIFIQUE SE O SEU SOM ESTÁ LIGADO!</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1f46beb0 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="1f46beb0" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5cd62cda" data-id="5cd62cda" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7060840c elementor-widget elementor-widget-spacer" data-id="7060840c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4ac4deb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="4ac4deb6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4638b809" data-id="4638b809" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-68fb6344 elementor-section-full_width elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="68fb6344" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1aaa34a6" data-id="1aaa34a6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-205ce3b1 elementor-widget elementor-widget-text-editor" data-id="205ce3b1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b> Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. </p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-219c8d72 esconder elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="219c8d72" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3c59ee80 esconder" data-id="3c59ee80" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1f488c96 elementor-widget elementor-widget-heading" data-id="1f488c96" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Depoimentos de quem já fez o método Sedução 30s </h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-42046b73 esconder elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="42046b73" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58ac1156 esconder" data-id="58ac1156" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1cd287bd elementor-widget elementor-widget-spacer" data-id="1cd287bd" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-66141515 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="66141515" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7e363683" data-id="7e363683" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-20804a3 elementor-widget elementor-widget-image" data-id="20804a3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img fetchpriority="high" width="737" height="909" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-2.png" class="attachment-large size-large wp-image-179" alt="" decoding="async" srcset="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-2.png 737w, https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-2-243x300.png 243w" sizes="(max-width: 737px) 100vw, 737px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-17a23a1" data-id="17a23a1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6cab4208 elementor-widget elementor-widget-image" data-id="6cab4208" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="737" height="909" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-1.png" class="attachment-large size-large wp-image-180" alt="" decoding="async" srcset="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-1.png 737w, https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled-design-1-243x300.png 243w" sizes="(max-width: 737px) 100vw, 737px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8b86e67" data-id="8b86e67" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-30b168fa elementor-widget elementor-widget-image" data-id="30b168fa" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="737" height="909" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/WhatsApp-Image-2022-01-25-at-18.24.19-1.jpeg" class="attachment-large size-large wp-image-181" alt="" decoding="async" srcset="https://onovoconhecimento.fun/wp-content/uploads/2023/08/WhatsApp-Image-2022-01-25-at-18.24.19-1.jpeg 737w, https://onovoconhecimento.fun/wp-content/uploads/2023/08/WhatsApp-Image-2022-01-25-at-18.24.19-1-243x300.jpeg 243w" sizes="(max-width: 737px) 100vw, 737px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<div class="elementor-element elementor-element-7f052067 elementor-widget elementor-widget-spacer" data-id="7f052067" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b7f1ba2 elementor-widget elementor-widget-testimonial" data-id="b7f1ba2" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-testimonial-wrapper{overflow:hidden;text-align:center}.elementor-testimonial-wrapper .elementor-testimonial-content{font-size:1.3em;margin-bottom:20px}.elementor-testimonial-wrapper .elementor-testimonial-name{line-height:1.5;display:block}.elementor-testimonial-wrapper .elementor-testimonial-job{font-size:.85em;display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta{width:100%;line-height:1}.elementor-testimonial-wrapper .elementor-testimonial-meta-inner{display:inline-block}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image{display:table-cell;vertical-align:middle}.elementor-testimonial-wrapper .elementor-testimonial-meta .elementor-testimonial-image img{width:60px;height:60px;border-radius:50%;-o-object-fit:cover;object-fit:cover;max-width:none}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-image{padding-right:15px}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-details{text-align:left}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-details,.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{display:block}.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-top .elementor-testimonial-image{margin-bottom:20px}</style>		<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">“A coisa mais importante que aprendi com vc que mais me ajudou foi como se portar e agir nos primeiros segundos após eu conhecer alguma mulher. Eu nunca tinha percebido como isso era importante, você explicou de uma forma simples completamente tudo que alguém precisa saber sobre a linguagem corporal e me mostrou como usá-la na minha vida, é algo que coloco em prática todos os dias, todas as coisas que você me mostrou sobre como usar a linguagem corporal em qualquer situação ou circunstância mudaram a minha vida. Hoje, eu recebo muito mais atenção das mulheres. É incrível, sem contar que suas explicações são bastante detalhadas e fáceis de seguir.”</div>
+			
+						<div class="elementor-testimonial-meta">
+				<div class="elementor-testimonial-meta-inner">
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Paulo Fernando</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7470005e elementor-widget elementor-widget-testimonial" data-id="7470005e" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">“Não tenho palavras para agradecer ao método Sedução 30s após os primeiros dois dias aprendendo e estudando, eu saí, conheci uma garota de 37 anos, levei ela para minha casa e transamos loucamente até as 7 horas da manhã. O que vc ensina no método realmente funciona, Obrigado!”</div>
+			
+						<div class="elementor-testimonial-meta">
+				<div class="elementor-testimonial-meta-inner">
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Jorge Batista</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2616dcf4 elementor-widget elementor-widget-testimonial" data-id="2616dcf4" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">“As estratégias que você me ensinou transformaram completamente a maneira como eu interajo com as mulheres, eu não preciso mais perseguir elas para obter atenção e encontros, elas vêm até mim agora! Meu único arrependimento é não ter conhecido o método Sedução 30s mais cedo. Muito Obrigado Por Tudo!”</div>
+			
+						<div class="elementor-testimonial-meta">
+				<div class="elementor-testimonial-meta-inner">
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">João Marcelo</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-487967de elementor-widget elementor-widget-testimonial" data-id="487967de" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">“Para falar a verdade, não consigo mensurar o meu agradecimento a esse método poderoso, ainda não consigo acreditar o quanto eu mudei em relação a forma em que eu me comunico com as mulheres hoje, literalmente, eu fui de um cara que não tinha nenhum encontro à alguns anos com uma mulher diferente para um cara que sai com uma mulher diferente quase todos os dias da semana, penas aplicando as dicas e técnicas que aprendi ao decorrer do método.”
 </div>
-<div class="elementor-element elementor-element-2cf71763 elementor-widget elementor-widget-html" data-id="2cf71763" data-element_type="widget" data-widget_type="html.default">
-<div class="elementor-widget-container">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+			
+						<div class="elementor-testimonial-meta">
+				<div class="elementor-testimonial-meta-inner">
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Felipe Júnior </div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-62fca0d elementor-widget elementor-widget-testimonial" data-id="62fca0d" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">Muito Obrigado… Suas dicas e técnicas me fizeram abrir os olhos e entender em quais aspectos eu estava errando na hora de me relacionar com as mulheres.</div>
+			
+						<div class="elementor-testimonial-meta">
+				<div class="elementor-testimonial-meta-inner">
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Gabriel Silva</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-723427bb elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="723427bb" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-14ab652d" data-id="14ab652d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-14f7eacc elementor-widget elementor-widget-heading" data-id="14f7eacc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Tenha acesso ao Método Sedução 30s com 50% de desconto hoje</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1a6f7db3 elementor-widget elementor-widget-image" data-id="1a6f7db3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://pay.hotmart.com/S61168616F?checkoutMode=10&#038;split=12">
+							<img loading="lazy" width="382" height="196" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/oferta.png" class="attachment-large size-large wp-image-185" alt="" decoding="async" srcset="https://onovoconhecimento.fun/wp-content/uploads/2023/08/oferta.png 382w, https://onovoconhecimento.fun/wp-content/uploads/2023/08/oferta-300x154.png 300w" sizes="(max-width: 382px) 100vw, 382px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-3c872152 elementor-align-center animated-fast elementor-widget elementor-widget-button" data-id="3c872152" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.hotmart.com/S61168616F?checkoutMode=10&#038;split=12">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Aproveitar o desconto</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5aea8fb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="5aea8fb6" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6f1ae89f" data-id="6f1ae89f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-470c4df8 elementor-widget elementor-widget-heading" data-id="470c4df8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Perguntas frequentes</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3eb7184e elementor-widget elementor-widget-accordion" data-id="3eb7184e" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.16.0 - 14-09-2023 */
+.elementor-accordion{text-align:left}.elementor-accordion .elementor-accordion-item{border:1px solid #d5d8dc}.elementor-accordion .elementor-accordion-item+.elementor-accordion-item{border-top:none}.elementor-accordion .elementor-tab-title{margin:0;padding:15px 20px;font-weight:700;line-height:1;cursor:pointer;outline:none}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{display:inline-block;width:1.5em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon svg{width:1em;height:1em}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-right{float:right;text-align:right}.elementor-accordion .elementor-tab-title .elementor-accordion-icon.elementor-accordion-icon-left{float:left;text-align:left}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-closed{display:block}.elementor-accordion .elementor-tab-title .elementor-accordion-icon .elementor-accordion-icon-opened,.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-closed{display:none}.elementor-accordion .elementor-tab-title.elementor-active .elementor-accordion-icon-opened{display:block}.elementor-accordion .elementor-tab-content{display:none;padding:15px 20px;border-top:1px solid #d5d8dc}@media (max-width:767px){.elementor-accordion .elementor-tab-title{padding:12px 15px}.elementor-accordion .elementor-tab-title .elementor-accordion-icon{width:1.2em}.elementor-accordion .elementor-tab-content{padding:7px 15px}}.e-con-inner>.elementor-widget-accordion,.e-con>.elementor-widget-accordion{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1051" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1051" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Tenho medo de comprar e não funcionar e agora?</a>
+					</div>
+					<div id="elementor-tab-content-1051" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1051"><p>O método é comprovado por milhares de homens ao redor do mundo e você ainda possui uma garantia absoluta de 7 dias.</p><p> </p><p>Se você dentro desse tempo, por algum motivo, achar que este método não faz sentido e que, milagrosamente, só não funciona com você, basta mandar um único e-mail e terá 100% do seu dinheiro de volta, sem contestar seus motivos e sem burocracia.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1052" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1052" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Não tenho dinheiro mas quero comprar, o que eu faço?</a>
+					</div>
+					<div id="elementor-tab-content-1052" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1052"><p>O preço não é um impeditivo, você pode ter o seu acesso por apenas R$ 19,19 ao mês dividindo em até 12x! Ou seja, por apenas R$ 0,63 por dia…</p><p> </p><p>É mais barato que um lanche que você come em um final de semana, para ter acesso a todo conhecimento de quase 1 década e mais de 100 mil reais investido.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1053" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1053" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Quais as formas de pagamento?</a>
+					</div>
+					<div id="elementor-tab-content-1053" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1053"><p>Você pode parcelar em até 12x vezes no cartão de crédito.</p><p> </p><p>À vista pode ser feito via pix ou boleto.</p><p> </p><p>Lembrando que, pagamentos via boleto pode demorar até 3 dias para o sistema identificar o pagamento.</p><p> </p><p>Cartão de crédito e pix, o acesso e material é liberado em instantes</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1054" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1054" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-plus"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Como vou receber acesso?</a>
+					</div>
+					<div id="elementor-tab-content-1054" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1054"><p>Assim que efetuar o pagamento e o mesmo ser aprovado, chegará em instantes para você o acesso da área de membros no e-mail em que fez a compra e assim já consegue acessar o material completo.</p></div>
+				</div>
+								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2b585d8b elementor-align-center animated-fast elementor-widget elementor-widget-button" data-id="2b585d8b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.hotmart.com/S61168616F?checkoutMode=10&#038;split=12">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Eu quero meu desconto do Sedução 30s</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-433afc7c elementor-widget elementor-widget-image" data-id="433afc7c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" width="381" height="44" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Metodos-de-Pagamento-Para-Pagina-de-Vendas-1.png" class="attachment-large size-large wp-image-160" alt="" decoding="async" srcset="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Metodos-de-Pagamento-Para-Pagina-de-Vendas-1.png 381w, https://onovoconhecimento.fun/wp-content/uploads/2023/08/Metodos-de-Pagamento-Para-Pagina-de-Vendas-1-300x35.png 300w" sizes="(max-width: 381px) 100vw, 381px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4546b46a elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="4546b46a" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-459e44a" data-id="459e44a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-793c7e00 elementor-widget elementor-widget-spacer" data-id="793c7e00" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3753c303 esconder elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="3753c303" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-4330e178" data-id="4330e178" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-77010b1e elementor-widget elementor-widget-spacer" data-id="77010b1e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4c3a824e elementor-widget elementor-widget-text-editor" data-id="4c3a824e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<h5 class="elementor-heading-title elementor-size-default elementor-inline-editing pen" contenteditable="true" data-elementor-setting-key="title" data-pen-placeholder="Digite aqui..."><span style="color: #ffffff;">PIRATARIA É</span> <span style="color: #ff0000;">CRIME</span></h5>						</div>
+				</div>
+				<div class="elementor-element elementor-element-31650dd7 elementor-widget elementor-widget-text-editor" data-id="31650dd7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>A venda do Projeto Sedução 30s só pode ser realizada através deste site, registrado em nome de Web Generation. Qualquer outro site onde você encontre este programa é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificações e recuse conteúdos ilegais ou pirateados. NÃO adquira programas parecidos e que não são baseados em anos de estudo da psicologia comportamental. Não nos responsabilizamos por compras realizadas em outros sites.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-46765452" data-id="46765452" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2c4c087f elementor-widget elementor-widget-image" data-id="2c4c087f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" width="100" height="100" src="https://onovoconhecimento.fun/wp-content/uploads/2023/08/Untitled_design-removebg-preview.png" class="attachment-thumbnail size-thumbnail wp-image-198" alt="" decoding="async" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-39a67773 elementor-widget elementor-widget-text-editor" data-id="39a67773" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Copyright 2020 &#8211; Web Generation ®<br />Todos os direitos reservados.</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5f448f89 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="5f448f89" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4305f70e" data-id="4305f70e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5d2a8835 elementor-widget elementor-widget-text-editor" data-id="5d2a8835" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Dúvidas? Me chama no WhatsApp</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-46ec316 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="46ec316" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="https://wa.me/5511961443707?text=Preciso+de+mais+inform%C3%A7%C3%B5es+">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fab fa-whatsapp"></i>						</span>
+										<span class="elementor-icon-list-text"> (11)961443707</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7c64a825 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="7c64a825" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5aed8a32" data-id="5aed8a32" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2f0756f6 elementor-widget elementor-widget-text-editor" data-id="2f0756f6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><span style="color: #999999;"><a style="color: #999999;" href="https://seducao30s.com/termos/" target="_blank" rel="noopener">Termos de Uso</a>           <a style="color: #999999;" href="https://seducao30s.com/politicas/" target="_blank" rel="noopener">Políticas de Privacidade</a></span></p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3bcac292 elementor-section-boxed elementor-section-height-default elementor-section-height-default wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no" data-id="3bcac292" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3087c938" data-id="3087c938" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7180a19c elementor-widget elementor-widget-html" data-id="7180a19c" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//www.youtube.com/player_api"></script>
+<!--Início do codigo para delay de conteudo-->
 <style>
     .esconder {
         display: none;
     }
 </style>
+
 <script>
         $(document).ready(function() {
         setTimeout(() => {
             $('.esconder').fadeIn('slow');
-        }, 5669999* 1 * 1000) // 30 é a quantidade em segundos do delay
+        }, 1515 * 1 * 1000) // 30 é a quantidade em segundos do delay
     })
-</script> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-2539bb48 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2539bb48" data-element_type="section">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-6d687ba2" data-id="6d687ba2" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-1cc02f05 elementor-widget elementor-widget-heading" data-id="1cc02f05" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><a href="https://nogueiranegocios.online/termos-de-uso/">Termos de Uso E Condição</a></h2> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-63bfdcc0" data-id="63bfdcc0" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-25ff4f9 elementor-widget elementor-widget-heading" data-id="25ff4f9" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><a href="https://nogueiranegocios.online/politica-de-privacidade/">Políticas de Privacidade</a></h2> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-31adfe7e" data-id="31adfe7e" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-473e5244 elementor-widget elementor-widget-heading" data-id="473e5244" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Horário de Funcionamento: De Segunda A segunada das 08:00 as 00:00.</h2> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-a9a8adf" data-id="a9a8adf" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-6e914c97 elementor-widget elementor-widget-heading" data-id="6e914c97" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">CNPJ:46.245.663/0001-42</h2> </div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7d1cddbc" data-id="7d1cddbc" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-<div class="elementor-element elementor-element-7b5ad98b elementor-widget elementor-widget-heading" data-id="7b5ad98b" data-element_type="widget" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default"><a href="https://nogueiranegocios.online/termos-de-uso/">Politicas de Devolução</a></h2> </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-<style id="skip-link-styles">
-		.skip-link.screen-reader-text {
-			border: 0;
-			clip: rect(1px,1px,1px,1px);
-			clip-path: inset(50%);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute !important;
-			width: 1px;
-			word-wrap: normal !important;
-		}
+</script>
+<!--Fim do codigo para delay de conteudo-->
+<script>
+    var player;
+    var firstTimePlaying = true;
+    var isVideoLoaded = false;
+    var playerState;
 
-		.skip-link.screen-reader-text:focus {
-			background-color: #eee;
-			clip: auto !important;
-			clip-path: none;
-			color: #444;
-			display: block;
-			font-size: 1em;
-			height: auto;
-			left: 5px;
-			line-height: normal;
-			padding: 15px 23px 14px;
-			text-decoration: none;
-			top: 5px;
-			width: auto;
-			z-index: 100000;
-		}
-	</style>
-<script>
-	( function() {
-		var skipLinkTarget = document.querySelector( 'main' ),
-			sibling,
-			skipLinkTargetID,
-			skipLink;
+    (function () {
+        $('#video').load(function () {
+            player = new YT.Player('video', {
+                width: '100%',
+                //videoId: '_pu9wCjLXlw',
 
-		// Early exit if a skip-link target can't be located.
-		if ( ! skipLinkTarget ) {
-			return;
-		}
+                events: {
+                    'onReady': function (event) {
+                        $(document).trigger('player.video.loaded');
+                        isVideoLoaded = true;
 
-		// Get the site wrapper.
-		// The skip-link will be injected in the beginning of it.
-		sibling = document.querySelector( '.wp-site-blocks' );
+                        //console.log('automute');
+                        player.unMute();
+                        //$('.video-paused-btn').hide();
+                    },
+                    'onStateChange': function (event) {
+                        playerState = event;
+                        if (event.data === YT.PlayerState.PLAYING) {
+                            $(document).trigger('player.video.started');
+                            $('.youtube-overlay').attr('style', 'display:block!important');
 
-		// Early exit if the root element was not found.
-		if ( ! sibling ) {
-			return;
-		}
+                            $('.play-text').fadeOut(200);
+                            
 
-		// Get the skip-link target's ID, and generate one if it doesn't exist.
-		skipLinkTargetID = skipLinkTarget.id;
-		if ( ! skipLinkTargetID ) {
-			skipLinkTargetID = 'wp--skip-link--target';
-			skipLinkTarget.id = skipLinkTargetID;
-		}
+                            if ($('body, html').width() > 1000 && firstTimePlaying === false) {
+                                $('.new-video-container').addClass('new-video-fullscreen');
+                            }
 
-		// Create the skip link.
-		skipLink = document.createElement( 'a' );
-		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
-		skipLink.href = '#' + skipLinkTargetID;
-		skipLink.innerHTML = 'Pular para o conteúdo';
+                            // Fix iOS YT player muted
+                        }
+                        if (event.data === YT.PlayerState.PAUSED) {
+                            $(document).trigger('player.video.paused');
+                            $('.video-pause').show();
 
-		// Inject the skip link.
-		sibling.parentElement.insertBefore( skipLink, sibling );
-	}() );
-	</script>
-<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=518093756521777&ev=PageView&noscript=1&cd%5Bpage_title%5D=Conhecer&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=640&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=nogueiranegocios.online%2Fconhescer%2F" alt=""></noscript>
-<script src='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.7.4' id='elementor-webpack-runtime-js'></script>
-<script src='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.7.4' id='elementor-frontend-modules-js'></script>
-<script src='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script src='https://nogueiranegocios.online/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
-<script id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.7.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/nogueiranegocios.online\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":640,"title":"Conhecer%20%E2%80%93%20My%20WordPress","excerpt":"","featuredImage":false}};
+                            $('.new-video-container').removeClass('new-video-fullscreen');
+
+                            $('.new-video-container .video-border').height('auto');
+                            $('.new-video-container .video-border, .new-video-container, .new-video-container .video, .new-video-container iframe').attr('style', '');
+
+                            console.log('paused');
+                        }
+                    }
+                }
+            });
+
+            $(document).on('player.video.loaded', function () {
+                var playButton = document.getElementById("play-button-video");
+                var videoStarted = false;
+
+                //autoPlay
+                if (playButton) {
+                    $("#play-button-video").css('background', 'none');
+
+                }
+                videoStarted = true;
+                player.playVideo();
+
+                // play button
+                if (playButton) {
+                    playButton.addEventListener("click", function () {
+                        if (!videoStarted) {
+                            $("#play-button-video").css('background', 'none');
+                            videoStarted = true;
+                        }
+
+                        if (player.getPlayerState() === 1 && firstTimePlaying === false) {
+                            player.pauseVideo();
+                            $('.video-paused-btn, .continue-text, .pageBox').fadeIn(400);
+                        } else {
+                            player.unMute();
+                            player.playVideo();
+                            $('.pageBox').hide();
+                            $('.video-paused-btn, .continue-text').fadeOut(400);
+                        }
+
+                        firstTimePlaying = false;
+                    });
+                }
+                // every second fire the playing event
+                setInterval(function () {
+                    // broadcast the event
+                    $(document).trigger('player.video.playing', [{
+                        playbackTime: player.getCurrentTime(),
+                        videoLength: player.getDuration()
+                    }]);
+                }, 1000);
+            });
+        })
+    })();
 </script>
+
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1604798916640965');
-fbq('track', 'PageView');
+    var videoDivHeight;
+    var videoPaused = false;
+    var btnSoundClick = false;
+
+    $(document).ready(function () {
+
+
+        $(document).trigger('player.video.play');
+
+        countWrapperHeight();
+
+        $(window).resize(function () {
+            countWrapperHeight();
+        });
+
+        $('.wistia-video-container').click(function () {
+            var that = $(this);
+            fullScreenVideo(that);
+        });
+
+        $('.video-paused-btn, .continue-text, .yt-thumbnail').on('click', function () {
+
+            var video = $('.wistia-video-container video');
+            video.prop('muted', false);
+            // video.get(0).play();
+
+            if (typeof player !== 'undefined') {
+                player.unMute();
+                player.playVideo();
+            }
+
+            $('body').addClass('full-body-video');
+            countWrapperHeight();
+        });
+
+        // Fix for mobile video height
+        if ($('body').hasClass('mobile')) {
+            var videoBoxHei = $('#video-box').height();
+        }
+
+        $(document).on("player.video.loaded", function () {
+            videoDivHeight = $('.wistia-video-container').height();
+            player.seekTo(0.1, true);
+        });
+
+        $(document).on("player.video.started", function () {
+
+            $('#play-button-video').css('background', 'none');
+            $('.continue-text').hide();
+            videoPaused = false;
+        });
+
+        $(document).on("player.video.paused", function () {
+            videoPaused = true;
+            $('.video-paused-btn').show();
+
+            var videoOffsetBottom = $('.video-absolute').offset().top + $('.video-absolute').height() - 20;
+
+            if ($(window).scrollTop() < videoOffsetBottom)
+                $('.continue-text').show();
+
+
+            $('body').removeClass('full-body-video');
+            countWrapperHeight();
+        });
+
+        function fullScreenVideo(that) {
+            var video = that.find('video').get(0);
+            $('.unmute-text').hide();
+
+            if (btnSoundClick === true) {
+                $('body').removeClass('full-body-video');
+                player.pauseVideo();
+                btnSoundClick = false;
+            }
+
+            if (videoPaused === true) {
+
+                countWrapperHeight();
+                $('.continue-text').show();
+            } else {
+                $('body').addClass('full-body-video');
+                countWrapperHeight();
+                $('.video-paused-btn, .btn-sound-on, .continue-text').hide();
+
+                // Fix iOS address bar
+                if ($('body').hasClass('mobile')) {
+                    $('html, body').animate({
+                        scrollTop: -100
+                    }, 100);
+                } else {
+                    window.scroll(0, 0);
+                }
+            }
+        }
+
+        function countWrapperHeight() {
+            if ($('body').hasClass('full-body-video')) {
+                var videoHei = $('.wistia-video-container').height() - $('#video-box .wrapper').offset().top;
+                // Push the content below the video
+                $('#video-box .wrapper').height(videoHei);
+            } else {
+                $('#video-box .wrapper').height('auto');
+            }
+        }
+
+    });
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+		<script type="text/template" id="tmpl-elementor-templates-modal__header">
+	<div class="elementor-templates-modal__header__logo-area"></div>
+	<div class="elementor-templates-modal__header__menu-area"></div>
+	<div class="elementor-templates-modal__header__items-area">
+		<# if ( closeType ) { #>
+			<div class="elementor-templates-modal__header__close elementor-templates-modal__header__close--{{{ closeType }}} elementor-templates-modal__header__item">
+				<# if ( 'skip' === closeType ) { #>
+				<span>Pular</span>
+				<# } #>
+				<i class="eicon-close" aria-hidden="true"></i>
+				<span class="elementor-screen-only">Fechar</span>
+			</div>
+		<# } #>
+		<div id="elementor-template-library-header-tools"></div>
+	</div>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1604798916640965&ev=PageView&noscript=1"
-/></noscript>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '667247108427182');
-fbq('track', 'PageView');
+
+<script type="text/template" id="tmpl-elementor-templates-modal__header__logo">
+	<span class="elementor-templates-modal__header__logo__icon-wrapper e-logo-wrapper">
+		<i class="eicon-elementor"></i>
+	</span>
+	<span class="elementor-templates-modal__header__logo__title">{{{ title }}}</span>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=667247108427182&ev=PageView&noscript=1"
-/></noscript>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '878179236875026');
-fbq('track', 'PageView');
+<script type="text/template" id="tmpl-elementor-finder">
+	<div id="elementor-finder__search">
+		<i class="eicon-search" aria-hidden="true"></i>
+		<input id="elementor-finder__search__input" placeholder="Digite para encontrar algo no Elementor" autocomplete="off">
+	</div>
+	<div id="elementor-finder__content"></div>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=878179236875026&ev=PageView&noscript=1"
-/></noscript>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '481194324151738');
-fbq('track', 'PageView');
+
+<script type="text/template" id="tmpl-elementor-finder-results-container">
+	<div id="elementor-finder__no-results">Nenhum resultado foi encontrado</div>
+	<div id="elementor-finder__results"></div>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=481194324151738&ev=PageView&noscript=1"
-/></noscript>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '844377723438650');
-fbq('track', 'PageView');
+
+<script type="text/template" id="tmpl-elementor-finder__results__category">
+	<div class="elementor-finder__results__category__title">{{{ title }}}</div>
+	<div class="elementor-finder__results__category__items"></div>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=844377723438650&ev=PageView&noscript=1"
-/></noscript>
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2079157005601449');
-  fbq('track', 'PageView');
+
+<script type="text/template" id="tmpl-elementor-finder__results__item">
+	<a href="{{ url }}" class="elementor-finder__results__item__link">
+		<div class="elementor-finder__results__item__icon">
+			<i class="eicon-{{{ icon }}}" aria-hidden="true"></i>
+		</div>
+		<div class="elementor-finder__results__item__title">{{{ title }}}</div>
+		<# if ( description ) { #>
+			<div class="elementor-finder__results__item__description">- {{{ description }}}</div>
+		<# } #>
+
+		<# if ( lock ) { #>
+		<div class="elementor-finder__results__item__badge"><i class="{{{ lock.badge.icon }}}"></i>{{ lock.badge.text }}</div>
+		<# } #>
+	</a>
+	<# if ( actions.length ) { #>
+		<div class="elementor-finder__results__item__actions">
+		<# jQuery.each( actions, function() { #>
+			<a class="elementor-finder__results__item__action elementor-finder__results__item__action--{{ this.name }}" href="{{ this.url }}" target="_blank">
+				<i class="eicon-{{{ this.icon }}}"></i>
+			</a>
+		<# } ); #>
+		</div>
+	<# } #>
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2079157005601449&ev=PageView&noscript=1"
-/></noscript>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '932011994443260');
-fbq('track', 'PageView');
+<link rel='stylesheet' id='jeg-dynamic-style-css' href='https://onovoconhecimento.fun/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.2.9' media='all' />
+<script id='pa-admin-bar-js-extra'>
+var PaDynamicAssets = {"nonce":"c713f71406","post_id":"436","ajaxurl":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php"};
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=932011994443260&ev=PageView&noscript=1"
-/></noscript>
-<script src='https://nogueiranegocios.online/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.7.4' id='elementor-frontend-js'></script>
-</body>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/premium-addons-for-elementor/admin/assets/js/admin-bar.js?ver=4.10.4' id='pa-admin-bar-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/js/lib/particles/particles.js?ver=3.0.6' id='wpr-particles-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/js/lib/jarallax/jarallax.min.js?ver=1.12.7' id='wpr-jarallax-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/js/lib/parallax/parallax.min.js?ver=1.0' id='wpr-parallax-hover-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
+<script id='happy-elementor-addons-admin-js-extra'>
+var HappyAdmin = {"nonce":"63f222cd3b","post_id":"436","ajax_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php"};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/happy-elementor-addons/assets/admin/js/admin.min.js?ver=3.8.6' id='happy-elementor-addons-admin-js'></script>
+<script src='//unpkg.com/micromodal/dist/micromodal.min.js?ver=3.8.6' id='micromodal-js'></script>
+<script src='//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js?ver=3.8.6' id='select2-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/backbone.min.js?ver=1.4.1' id='backbone-js'></script>
+<script id='wp-api-request-js-extra'>
+var wpApiSettings = {"root":"https:\/\/onovoconhecimento.fun\/wp-json\/","nonce":"0afbe08959","versionString":"wp\/v2\/"};
+</script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/api-request.min.js?ver=6.3.1' id='wp-api-request-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/wp-api.min.js?ver=6.3.1' id='wp-api-js'></script>
+<script src='//unpkg.com/alpinejs?ver=3.8.6' id='alpine-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2' id='jquery-ui-mouse-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.2' id='jquery-ui-draggable-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/backbone/backbone.marionette.min.js?ver=2.4.5.e1' id='backbone-marionette-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/backbone/backbone.radio.min.js?ver=1.0.4' id='backbone-radio-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/common-modules.min.js?ver=3.16.3' id='elementor-common-modules-js'></script>
+<script id="elementor-web-cli-js-before">
+var elementorWebCliConfig = {"isDebug":false,"urls":{"rest":"https:\/\/onovoconhecimento.fun\/wp-json\/","assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"nonce":"0afbe08959","version":"3.16.3"};
+var elementorWebCliConfig = {"isDebug":false,"urls":{"rest":"https:\/\/onovoconhecimento.fun\/wp-json\/","assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"nonce":"0afbe08959","version":"3.16.3"};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/web-cli.min.js?ver=3.16.3' id='elementor-web-cli-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0' id='elementor-dialog-js'></script>
+<script id="elementor-dev-tools-js-before">
+var elementorDevToolsConfig = {"isDebug":false,"urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"deprecation":{"soft_notices":[],"soft_version_count":4,"hard_version_count":8,"current_version":"3.16.3"}};
+var elementorDevToolsConfig = {"isDebug":false,"urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"deprecation":{"soft_notices":[],"soft_version_count":4,"hard_version_count":8,"current_version":"3.16.3"}};
+var elementorDevToolsConfig = {"isDebug":false,"urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"deprecation":{"soft_notices":[],"soft_version_count":4,"hard_version_count":8,"current_version":"3.16.3"}};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/dev-tools.min.js?ver=3.16.3' id='elementor-dev-tools-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script src='https://onovoconhecimento.fun/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='elementor-common-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "elementor", {"translation-revision-date":"2023-08-25 19:07:59+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n > 1;","lang":"pt_BR"},"If you do not enable uploading unfiltered files, any SVG or JSON (including lottie) files used in the uploaded template will not be imported.":["Se voc\u00ea n\u00e3o Habilitar o Carregamento de Arquivos Sem Filtro, quaisquer Arquivos SVG ou JSON (incluindo Lottie) usados no Modelo Enviado n\u00e3o ser\u00e3o Importados."],"Enable and Import":["Habilitar e Importar"],"Import Without Enabling":["Importar Sem Habilitar"],"The file exceeds the maximum upload size for this site.":["O arquivo excede o tamanho m\u00e1ximo de envio para este site."],"Uploading...":["Enviando\u2026"],"Enable Unfiltered File Uploads":["Permitir envio de arquivos sem filtrar"],"Unable to connect":["Imposs\u00edvel Conectar"],"Before you enable unfiltered files upload, note that such files include a security risk. Elementor does run a process to remove possible malicious code, but there is still risk involved when using such files.":["Antes de permitir o carregamento de arquivos n\u00e3o filtrados, observe que tais arquivos incluem um risco de seguran\u00e7a. A Elementor executa um processo para remover poss\u00edveis c\u00f3digos maliciosos, mas ainda h\u00e1 risco envolvido ao usar tais arquivos."],"Finder":["Explorador"],"Enable":["Ativar"],"Cancel":["Cancelar"]}},"comment":{"reference":"assets\/js\/common.js"}} );
+</script>
+<script id="elementor-common-js-before">
+var elementorCommonConfig = {"version":"3.16.3","isRTL":false,"isDebug":false,"isElementorDebug":false,"activeModules":["ajax","finder","connect","event-tracker"],"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"e_global_styleguide":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/","rest":"https:\/\/onovoconhecimento.fun\/wp-json\/"},"filesUpload":{"unfilteredFiles":true},"library_connect":{"is_connected":false,"subscription_plans":[{"label":null,"promotion_url":null,"color":null},{"label":"Pro","promotion_url":"https:\/\/elementor.com\/pro\/?utm_source=template-library&utm_medium=wp-dash&utm_campaign=gopro","color":"#92003B"}],"base_access_level":0,"current_access_level":0},"ajax":{"url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php","nonce":"2b1fbf614f"},"finder":{"data":{"edit":{"title":"Editar","dynamic":true,"name":"edit"},"general":{"title":"Geral","dynamic":false,"items":{"saved-templates":{"title":"Modelos salvos","icon":"library-save","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=library","keywords":["template","section","page","library"]},"system-info":{"title":"Informa\u00e7\u00f5es do sistema","icon":"info-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-system-info","keywords":["system","info","environment","elementor"]},"role-manager":{"title":"Gerenciador de fun\u00e7\u00f5es","icon":"person","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-role-manager","keywords":["role","manager","user","elementor"]},"knowledge-base":{"title":"Base de conhecimento","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=go_knowledge_base_site","keywords":["help","knowledge","docs","elementor"]},"theme-builder":{"title":"Construtor de tema","icon":"library-save","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-app&ver=3.16.3#\/site-editor","keywords":["template","header","footer","single","archive","search","404","library"]},"kit-library":{"title":"Biblioteca de Kits","icon":"kit-parts","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-app&ver=3.16.3#\/kit-library","keywords":["kit library","kit","library","site parts","parts","assets","templates"]},"popups":{"title":"Popups","icon":"library-save","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=popup&elementor_library_type=popup","keywords":["template","popup","library"]}},"name":"general"},"create":{"title":"Criar","dynamic":false,"items":{"page":{"title":"Adicionar Novo Modelo de P\u00e1gina","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&template_type=page&_wpnonce=cbc92ee85e","keywords":["Adicionar Novo Modelo de P\u00e1gina","post","page","template","new","create"]},"section":{"title":"Adicionar novo Section","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=section","keywords":["Adicionar novo Section","post","page","template","new","create"]},"container":{"title":"Adicionar novo Cont\u00eainer","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&template_type=container&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Cont\u00eainer","post","page","template","new","create"]},"wp-post":{"title":"Adicionar novo Post","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=post&template_type=wp-post&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Post","post","page","template","new","create"]},"wp-page":{"title":"Adicionar novo P\u00e1gina","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=page&template_type=wp-page&_wpnonce=cbc92ee85e","keywords":["Adicionar novo P\u00e1gina","post","page","template","new","create"]},"wpr-theme-builder":{"title":"Adicionar novo WPR Theme Builder","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&template_type=wpr-theme-builder&_wpnonce=cbc92ee85e","keywords":["Adicionar novo WPR Theme Builder","post","page","template","new","create"]},"wpr-popups":{"title":"Adicionar novo WPR Popup","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&template_type=wpr-popups&_wpnonce=cbc92ee85e","keywords":["Adicionar novo WPR Popup","post","page","template","new","create"]},"landing-page":{"title":"Adicionar novo Landing Page","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=e-landing-page&template_type=landing-page&_wpnonce=cbc92ee85e#library","keywords":["Adicionar novo Landing Page","post","page","template","new","create"]},"popup":{"title":"Adicionar novo Popup","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=stack","keywords":["Adicionar novo Popup","post","page","template","new","create"]},"header":{"title":"Adicionar novo Header","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=header","keywords":["Adicionar novo Header","post","page","template","new","create"]},"footer":{"title":"Adicionar novo Footer","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=footer","keywords":["Adicionar novo Footer","post","page","template","new","create"]},"single":{"title":"Adicionar novo Single","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=single","keywords":["Adicionar novo Single","post","page","template","new","create"]},"single-post":{"title":"Adicionar novo Single Post","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=single-post","keywords":["Adicionar novo Single Post","post","page","template","new","create"]},"single-page":{"title":"Adicionar novo Single Page","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=single-page&_elementor_template_sub_type=page","keywords":["Adicionar novo Single Page","post","page","template","new","create"]},"archive":{"title":"Adicionar novo Archive","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=archive","keywords":["Adicionar novo Archive","post","page","template","new","create"]},"search-results":{"title":"Adicionar novo Search Results","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=archive&_elementor_template_sub_type=search","keywords":["Adicionar novo Search Results","post","page","template","new","create"]},"error-404":{"title":"Adicionar novo Error 404","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=error-404&_elementor_template_sub_type=not_found404","keywords":["Adicionar novo Error 404","post","page","template","new","create"]},"code_snippet":{"title":"Adicionar novo Custom Code","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=elementor_library&_wpnonce=cbc92ee85e&template_type=stack","keywords":["Adicionar novo Custom Code","post","page","template","new","create"]},"wpr_templates":{"title":"Adicionar novo Royal Templates","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=wpr_templates&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Royal Templates","post","page","template","new","create"]},"ha_library":{"title":"Adicionar novo Theme Builder","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=ha_library&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Theme Builder","post","page","template","new","create"]},"jkit-header":{"title":"Adicionar novo Post","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=jkit-header&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Post","post","page","template","new","create"]},"jkit-footer":{"title":"Adicionar novo Post","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=jkit-footer&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Post","post","page","template","new","create"]},"jkit-template":{"title":"Adicionar novo Post","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=jkit-template&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Post","post","page","template","new","create"]},"wpr_mega_menu":{"title":"Adicionar novo Royal Mega Menu","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?action=elementor_new_post&post_type=wpr_mega_menu&_wpnonce=cbc92ee85e","keywords":["Adicionar novo Royal Mega Menu","post","page","template","new","create"]},"popups":{"title":"Add New Popup","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_library&tabs_group=popup&elementor_library_type=popup#add_new","keywords":["template","theme","popup","new","create"]},"theme-template":{"title":"Add New Theme Template","icon":"plus-circle-o","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-app&ver=3.16.3#\/site-editor\/add-new","keywords":["template","theme","new","create"]}},"name":"create"},"site":{"title":"Site","dynamic":false,"items":{"homepage":{"title":"In\u00edcio","url":"https:\/\/onovoconhecimento.fun","icon":"home-heart","keywords":["home","page"]},"wordpress-dashboard":{"title":"Painel","icon":"dashboard","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/","keywords":["dashboard","wordpress"]},"wordpress-menus":{"title":"Menus","icon":"wordpress","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/nav-menus.php","keywords":["menu","wordpress"]},"wordpress-themes":{"title":"Temas","icon":"wordpress","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/themes.php","keywords":["themes","wordpress"]},"wordpress-customizer":{"title":"Personalizar","icon":"wordpress","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/customize.php","keywords":["customizer","wordpress"]},"wordpress-plugins":{"title":"Plugins","icon":"wordpress","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/plugins.php","keywords":["plugins","wordpress"]},"wordpress-users":{"title":"Usu\u00e1rios","icon":"wordpress","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/users.php","keywords":["users","profile","wordpress"]}},"name":"site"},"settings":{"title":"Configura\u00e7\u00f5es","dynamic":false,"items":{"general-settings":{"title":"Configura\u00e7\u00f5es gerais","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor","keywords":["general","settings","elementor"]},"advanced":{"title":"Avan\u00e7ado","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor#tab-advanced","keywords":["advanced","settings","elementor"]},"experiments":{"title":"Experimentos","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor#tab-experiments","keywords":["settings","elementor","experiments"]},"custom-fonts":{"title":"Custom Fonts","icon":"typography","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_font","keywords":["custom","fonts","elementor"]},"custom-icons":{"title":"Custom Icons","icon":"favorite","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=elementor_icons","keywords":["custom","icons","elementor"]}},"name":"settings"},"tools":{"title":"Ferramentas","dynamic":false,"items":{"tools":{"title":"Ferramentas","icon":"tools","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-tools","keywords":["tools","regenerate css","safe mode","debug bar","sync library","elementor"]},"replace-url":{"title":"Substituir URL","icon":"tools","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-tools#tab-replace_url","keywords":["tools","replace url","domain","elementor"]},"maintenance-mode":{"title":"Modo de manuten\u00e7\u00e3o","icon":"tools","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-tools#tab-maintenance_mode","keywords":["tools","maintenance","coming soon","elementor"]},"import-export":{"title":"Importar\/Exportar","icon":"import-export","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-tools#tab-import-export-kit","keywords":["tools","import export","import","export","kit"]},"version-control":{"title":"Controle de Vers\u00e3o","icon":"time-line","url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-tools#tab-versions","keywords":["tools","version","control","rollback","beta","elementor"]}},"name":"tools"},"happy-finder":{"title":"Edit + Happy Clone","dynamic":true,"name":"happy-finder"}}},"connect":[],"event-tracker":{"isUserDataShared":false}};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/common.min.js?ver=3.16.3' id='elementor-common-js'></script>
+<script id="elementor-app-loader-js-before">
+var elementorAppConfig = {"menu_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-app&ver=3.16.3#\/site-editor","assets_url":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/","pages_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/edit.php?post_type=page","return_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/","hasPro":true,"admin_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/","login_url":"https:\/\/onovoconhecimento.fun\/wp-login.php","base_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin.php?page=elementor-app&ver=3.16.3","site-editor":[],"import-export":[],"kit-library":[],"onboarding":[]};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/app-loader.min.js?ver=3.16.3' id='elementor-app-loader-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.16.3' id='elementor-webpack-runtime-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.16.3' id='elementor-frontend-modules-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.16.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"e_global_styleguide":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":436,"title":"Elementor%20%23436%20%E2%80%93%20My%20Blog","excerpt":"","featuredImage":false},"user":{"roles":["administrator"]}};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.16.3' id='elementor-frontend-js'></script>
+<script id="elementor-frontend-js-after">
+var jkit_ajax_url = "https://onovoconhecimento.fun/?jkit-ajax-request=jkit_elements", jkit_nonce = "dab0705308";
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.1' id='jkit-sticky-element-js'></script>
+<script id='happy-elementor-addons-js-extra'>
+var HappyLocalize = {"ajax_url":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php","nonce":"3fdcf79a8d","pdf_js_lib":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.8.6' id='happy-elementor-addons-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.6.4' id='elementor-pro-webpack-runtime-js'></script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php","nonce":"f985c42dd8","urls":{"assets":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/pro-elements\/assets\/","rest":"https:\/\/onovoconhecimento.fun\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/onovoconhecimento.fun\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.6.4' id='elementor-pro-frontend-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.6.4' id='pro-elements-handlers-js'></script>
+<script id='wpr-addons-js-js-extra'>
+var WprConfig = {"ajaxurl":"https:\/\/onovoconhecimento.fun\/wp-admin\/admin-ajax.php","resturl":"https:\/\/onovoconhecimento.fun\/wp-json\/wpraddons\/v1","nonce":"0019607da0","comparePageID":"","comparePageURL":"https:\/\/onovoconhecimento.fun\/elementor-436\/","wishlistPageID":"","wishlistPageURL":"https:\/\/onovoconhecimento.fun\/elementor-436\/","chooseQuantityText":"Please select the required number of items.","site_key":"","is_admin":"1","input_empty":"Please fill out this field","select_empty":"Nothing selected","file_empty":"Please upload a file","recaptcha_error":"Recaptcha Error"};
+</script>
+<script data-cfasync="false" src='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/js/frontend.min.js?ver=1.3.73' id='wpr-addons-js-js'></script>
+<script src='https://onovoconhecimento.fun/wp-content/plugins/royal-elementor-addons/assets/js/modal-popups.min.js?ver=1.3.73' id='wpr-modal-popups-js-js'></script>
+	</body>
 </html>
