@@ -1,0 +1,173 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background: #fff;
+	color: #394655;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @keyframes bounceInDown {
+ from, 60%, 75%, 90%, to {
+ -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+ animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+ 0% {
+ opacity: 0;
+ -webkit-transform: translate3d(0, -3000px, 0);
+ transform: translate3d(0, -3000px, 0);
+}
+ 60% {
+ opacity: 1;
+ -webkit-transform: translate3d(0, 25px, 0);
+ transform: translate3d(0, 25px, 0);
+}
+ 75% {
+ -webkit-transform: translate3d(0, -10px, 0);
+ transform: translate3d(0, -10px, 0);
+}
+ 90% {
+ -webkit-transform: translate3d(0, 5px, 0);
+ transform: translate3d(0, 5px, 0);
+}
+ to {
+ -webkit-transform: none;
+ transform: none;
+}
+}
+.bounceInDown {
+	-webkit-animation-name: bounceInDown;
+	animation-name: bounceInDown;
+}
+ @-webkit-keyframes bounceInUp {
+ from, 60%, 75%, 90%, to {
+ -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+ animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+ from {
+ opacity: 0;
+ -webkit-transform: translate3d(0, 3000px, 0);
+ transform: translate3d(0, 3000px, 0);
+}
+ 60% {
+ opacity: 1;
+ -webkit-transform: translate3d(0, -20px, 0);
+ transform: translate3d(0, -20px, 0);
+}
+ 75% {
+ -webkit-transform: translate3d(0, 10px, 0);
+ transform: translate3d(0, 10px, 0);
+}
+ 90% {
+ -webkit-transform: translate3d(0, -5px, 0);
+ transform: translate3d(0, -5px, 0);
+}
+ to {
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+}
+}
+ @keyframes bounceInUp {
+ from, 60%, 75%, 90%, to {
+ -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+ animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+ from {
+ opacity: 0;
+ -webkit-transform: translate3d(0, 3000px, 0);
+ transform: translate3d(0, 3000px, 0);
+}
+ 60% {
+ opacity: 1;
+ -webkit-transform: translate3d(0, -20px, 0);
+ transform: translate3d(0, -20px, 0);
+}
+ 75% {
+ -webkit-transform: translate3d(0, 10px, 0);
+ transform: translate3d(0, 10px, 0);
+}
+ 90% {
+ -webkit-transform: translate3d(0, -5px, 0);
+ transform: translate3d(0, -5px, 0);
+}
+ to {
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+}
+}
+.bounceInUp {
+	-webkit-animation-name: bounceInUp;
+	animation-name: bounceInUp;
+}
+.rocket img, .smoke-rocket img {
+	width: 100%;
+}
+.rocket {
+	margin: 30px auto 0;
+	-webkit-animation: animation-rocket linear 1.5s infinite both;
+	animation: animation-rocket linear 1.5s infinite both;
+}
+@keyframes animation-rocket {
+0% {
+transform: translate(0px, 0px);
+}
+15% {
+transform: translate(0px, -35px);
+}
+30% {
+transform: translate(0px, 0px);
+}
+45% {
+transform: translate(0px, -15px);
+}
+60% {
+transform: translate(0px, 0px);
+}
+75% {
+transform: translate(0px, -5px);
+}
+100% {
+transform: translate(0px, 0px);
+}
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AgiusCloud - Ágil e Rápido. Simples Assim.</title>
+</head>
+<body>
+<table style="height: 100%;" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><div style="margin-top: 50px">
+          <div class="animated bounceInDown" style="text-align: center;">
+            <div style="width: 60%;max-width: 380px;min-width: 250px;text-align: center;margin: 0 auto;"><a href="https://agius.cloud" target="_blank"><img style="max-width: 380px;width: 100%;" src="https://agius.cloud/wp-content/uploads/2017/11/logo.svg" alt="rocket"></a></div>
+              <h5 style="font-family: Comfortaa">Painel de Gerenciamento Otimizado para VPS</h5>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td><div style="bottom: 20px;width: 100%;">
+          <div class="animated bounceInUp">
+            <div class="rocket" style="text-align: center;"><img src="https://agius.cloud/wp-content/uploads/2018/02/logo_agiuscloud.svg" style="max-width: 300px;width: 25%;min-width: 200px;" alt="foguete"></div>
+            <div style="text-align: center;"><img style="width: 25%;max-width: 350px;min-width: 250px" src="https://agius.cloud/wp-includes/images/newapp/nuvem.svg" alt="nuvem"></div>
+          </div>
+        </div></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
